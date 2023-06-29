@@ -50,6 +50,7 @@ export const NavContainer = styled.div`
   li {
     display: inline-block;
     font-size: 19px;
+    color: #ffffff;
   }
   @media only screen and (max-width: 1150px) {
     display: none;

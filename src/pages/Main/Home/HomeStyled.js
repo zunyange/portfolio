@@ -2,14 +2,37 @@ import styled from 'styled-components';
 
 export const Home = styled.div`
   height: 100vh;
-  /* background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  width: 100%;
+  background-color: #ffffff;
+  /* background: linear-gradient(
+      136deg,
+      rgb(68, 132, 206),
+      rgb(26, 215, 192),
+      rgb(255, 155, 17),
+      rgb(155, 89, 182),
+      rgb(255, 127, 127),
+      rgb(236, 240, 241)
+    )
+    0% 0% / 1200% 1200%; */
+  background: linear-gradient(60deg, #ff6596, #60bef8, #d88cff);
+  background-size: 500% 500%;
+  animation: color 50s ease-in-out infinite;
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
 `;
 
 export const IntroduceBox = styled.div``;
 export const IntroduceWrap = styled.div`
-  color: #374151;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,9 +46,9 @@ export const IntroduceWrap = styled.div`
 `;
 export const Introduce = styled.div`
   /* font-family: fontCafe; */
-  font-size: 30px;
+  font-size: 40px;
   width: 800px;
-  line-height: 50px;
+  line-height: 55px;
 `;
 
 export const SubIntroduce = styled.div`
@@ -37,10 +60,14 @@ export const SubIntroduce = styled.div`
   display: inline-block;
 `;
 
+export const SubIntroduceTwo = styled(SubIntroduce)`
+  padding-top: 0px;
+`;
+
 export const Span = styled.span`
   font-weight: bold;
   font-size: ${({ first }) => (first ? '20px' : '22px')};
-  color: ${({ first }) => (first ? '#ff9999' : '#3178c6')};
+  color: ${({ first }) => (first ? '#db7680' : '#3178c6')};
 `;
 
 export const IntroduceImg = styled.img`
