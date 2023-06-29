@@ -94,7 +94,6 @@ const Nav = ({
         ) : (
           <S.NavScroll>
             <S.NavWrap>
-              <S.NavLogo src="/images/Kim/PlusLogo.png" alt="다비수 로고" />
               <S.NavContainer>
                 <S.NavLiWhite onClick={onMoveHome}>Home</S.NavLiWhite>
                 <S.NavLiWhite onClick={onMoveAbout}>About me</S.NavLiWhite>

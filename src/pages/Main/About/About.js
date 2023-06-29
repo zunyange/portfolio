@@ -6,6 +6,18 @@ const About = () => {
   return (
     <S.About>
       <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
+      <Width>dd</Width>
     </S.About>
   );
 };

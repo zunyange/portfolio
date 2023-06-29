@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const Home = styled.div`
   height: 100vh;
-  background-color: #fff;
+  /* background-color: #fff;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 `;
 
 export const IntroduceBox = styled.div``;
@@ -35,12 +35,14 @@ export const SubIntroduce = styled.div`
   display: flex;
   padding-top: 20px;
   display: inline-block;
-  span {
-    color: #3178c6;
-    font-weight: bold;
-    font-size: 22px;
-  }
 `;
+
+export const Span = styled.span`
+  font-weight: bold;
+  font-size: ${({ first }) => (first ? '20px' : '22px')};
+  color: ${({ first }) => (first ? '#ff9999' : '#3178c6')};
+`;
+
 export const IntroduceImg = styled.img`
   width: 230px;
   position: absolute;
