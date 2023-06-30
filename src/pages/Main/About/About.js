@@ -5,19 +5,15 @@ import { Width } from '../../../styles/common';
 const About = () => {
   return (
     <S.About>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
-      <Width>dd</Width>
+      <Width>
+        <S.SubIntroduce>
+          현재는 성장하는 습관을 만들기 위해 기술 블로그에 꾸준히 기록하고
+          있으며, 리팩토링과 새로운 기술 향상을 위해{' '}
+          <S.Span>TypeScript </S.Span>
+          기반의 프로젝트를 진행중입니다.
+        </S.SubIntroduce>
+        <S.IntroduceImg src="images/MyImg2.png" />
+      </Width>
     </S.About>
   );
 };

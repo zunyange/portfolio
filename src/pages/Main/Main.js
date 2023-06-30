@@ -3,6 +3,7 @@ import './MainStyled.js';
 import Nav from '../../components/Nav/Nav';
 import Home from '../../pages/Main/Home/Home';
 import About from '../../pages/Main/About/About';
+import { Star } from '../../styles/common.js';
 
 const Main = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
@@ -39,7 +40,9 @@ const Main = () => {
         onMoveResume={onMoveResume}
         onMoveContact={onMoveContact}
       />
+      <Star />
       <Home />
+
       <About />
     </div>
   );

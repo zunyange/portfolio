@@ -12,8 +12,8 @@ export const NavBox = styled.div`
 `;
 
 export const NavScroll = styled(NavBox)`
-  background-color: #ffffff;
-  opacity: 0.9;
+  backdrop-filter: blur(2px);
+  background: hsla(0, 0%, 100%, 0.25);
 `;
 
 export const NavWrap = styled.nav`
@@ -43,13 +43,12 @@ export const NavLogo = styled.img`
 
 export const NavContainer = styled.div`
   margin: 0 auto;
-  width: 600px;
+  width: 700px;
   display: flex;
   justify-content: space-around;
-  backdrop-filter: blur(2px);
   li {
     display: inline-block;
-    font-size: 19px;
+    font-size: 21px;
     color: #ffffff;
   }
   @media only screen and (max-width: 1150px) {
