@@ -7,10 +7,12 @@ import FontBase from '../fonts/Belanosima-Regular.ttf';
 const GlobalStyle = createGlobalStyle`
 ${reset}  
   body{
+    position: relative;
+    width: 100%;
+    height: 100%;
     font-family: FontBase;
     word-break: keep-all;
-    height: 100%;
-    margin: 0;
+    margin: 0 auto;
   }
 
 @font-face {
