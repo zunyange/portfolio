@@ -51,7 +51,7 @@ export const NavContainer = styled.div`
     font-size: 21px;
     color: #ffffff;
   }
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 768px) {
     display: none;
     position: absolute;
   }
@@ -71,16 +71,13 @@ export const NavLiWhite = styled(NavLi)`
 
 export const Menubar = styled.img`
   display: none;
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
+    height: 30px;
     margin-right: 3%;
     cursor: pointer;
-  }
-  @media only screen and (max-width: 530px) {
-    height: 30px;
   }
   @media only screen and (max-width: 310px) {
     height: 25px;
@@ -88,7 +85,7 @@ export const Menubar = styled.img`
 `;
 
 export const NavToggle = styled.div`
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 768px) {
     position: absolute;
     right: 0;
     border: 1px solid transparent;

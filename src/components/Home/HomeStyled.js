@@ -43,11 +43,13 @@ export const Introduce = styled.div`
 
 export const SubIntroduce = styled.div`
   font-size: 20px;
-  width: 600px;
+  width: 650px;
   line-height: 30px;
   display: flex;
   padding-top: 20px;
   display: inline-block;
+  font-family: fontLight;
+  font-weight: bold;
 `;
 
 export const GoTo = styled.div`

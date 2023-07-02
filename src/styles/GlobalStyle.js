@@ -8,6 +8,8 @@ import FontLight from '../fonts/IBMPlexSansKR-ExtraLight.ttf';
 const GlobalStyle = createGlobalStyle`
 ${reset}  
   body{
+    background: ${({ theme }) => theme.bgColor};
+    color: ${({ theme }) => theme.textColor};
     position: relative;
     width: 100%;
     height: 100%;

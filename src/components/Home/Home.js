@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './HomeStyled.js';
-import { Width } from '../../../styles/common.js';
+import { Width } from '../../styles/common.js';
 
-const Home = () => {
+const Home = ({ home }) => {
   // const txt = '사용자 중심 설계에 중점을 둔 문제 해결사';
   // const txt = '김준영';
   const txt = '안녕하세요 ! 포용력을 포옹한 개발자, 김준영입니다.';
@@ -24,7 +24,7 @@ const Home = () => {
     alert('이력서를 다운받으시겠습니까?');
   };
   return (
-    <S.Home>
+    <S.Home ref={home}>
       <Width>
         <S.IntroduceWrap>
           <S.Introduce>

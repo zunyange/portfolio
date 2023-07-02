@@ -1,10 +1,10 @@
 import React from 'react';
 import * as S from './AboutStyled.js';
-import { Width } from '../../../styles/common';
+import { Width } from '../../styles/common.js';
 
-const About = () => {
+const About = ({ about }) => {
   return (
-    <S.About>
+    <S.About ref={about}>
       <Width>
         <S.SubIntroduce>
           현재는 성장하는 습관을 만들기 위해 기술 블로그에 꾸준히 기록하고

@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
-import './MainStyled.js';
 import Nav from '../../components/Nav/Nav';
-import Home from '../../pages/Main/Home/Home';
-import About from '../../pages/Main/About/About';
+import Home from '../../components/Home/Home.js';
+import About from '../../components/About/About.js';
 import { Star } from '../../styles/common.js';
 
 const Main = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
-  const brand = React.useRef(null);
-  const program = React.useRef(null);
-  const franchisee = React.useRef(null);
+  const home = React.useRef(null);
+  const about = React.useRef(null);
+  const project = React.useRef(null);
   const findFranchisee = React.useRef(null);
   const business = React.useRef(null);
 
   const onMoveHome = () => {
-    brand.current?.scrollIntoView({ behavior: 'smooth' });
+    home.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const onMoveAboutme = () => {
-    program.current?.scrollIntoView({ behavior: 'smooth' });
+    about.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const onMoveProject = () => {
-    franchisee.current?.scrollIntoView({ behavior: 'smooth' });
+    project.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const onMoveResume = () => {
     findFranchisee.current?.scrollIntoView({ behavior: 'smooth' });
@@ -30,7 +29,7 @@ const Main = () => {
   };
 
   return (
-    <div className="main">
+    <div>
       <Nav
         isShowMenu={isShowMenu}
         setIsShowMenu={setIsShowMenu}
@@ -41,9 +40,8 @@ const Main = () => {
         onMoveContact={onMoveContact}
       />
       <Star />
-      <Home />
-
-      <About />
+      <Home home={home} />
+      <About about={about} />
     </div>
   );
 };

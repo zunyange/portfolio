@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as S from './NavStyled';
+import '../../../src/styles.css';
 
 const Nav = ({
   isShowMenu,
@@ -74,8 +75,8 @@ const Nav = ({
                 <S.NavLi onClick={onMoveContact}>Contact</S.NavLi>
               </S.NavContainer>
               <S.Menubar
-                src="/images/Nav/NavMenu.png"
-                alt="메뉴"
+                src="/images/menu.png"
+                alt="Menu"
                 onClick={() => setIsShowMenu(!isShowMenu)}
               />
             </S.NavWrap>
@@ -102,8 +103,8 @@ const Nav = ({
                 <S.NavLiWhite onClick={onMoveContact}>Contact</S.NavLiWhite>
               </S.NavContainer>
               <S.Menubar
-                src="/images/Nav/MenuWhite.png"
-                alt="메뉴"
+                src="/images/menu.png"
+                alt="Menu"
                 onClick={() => setIsShowMenu(!isShowMenu)}
               />
             </S.NavWrap>
