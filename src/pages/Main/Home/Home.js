@@ -19,6 +19,10 @@ const Home = () => {
     }
     return () => clearInterval(interval);
   });
+
+  const AskToAdmit = () => {
+    alert('이력서를 다운받으시겠습니까?');
+  };
   return (
     <S.Home>
       <Width>
@@ -35,10 +39,41 @@ const Home = () => {
             개발자입니다.
           </S.SubIntroduce>
           <S.GoTo>
-            <S.GoToGithub src="/images/github.png" alt="Github" />
-            <S.GoToVelog src="/images/velog.png" alt="Velog" />
-            <S.GoToLinkedin src="/images/linkedin.png" alt="Linkedin" />
+            <a
+              href="https://github.com/zunyange"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <S.GoToGithub src="/images/github.png" alt="Github" />
+            </a>
+            <a
+              href="https://velog.io/@zunyange"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <S.GoToVelog src="/images/velog.png" alt="Velog" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/junyoung-kim-067765281/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <S.GoToLinkedin src="/images/linkedin.png" alt="Linkedin" />
+            </a>
+            {/* <a href="mailto:giveyoung530@gmail.com">
+              <S.GoToMail src="/images/mail.png" alt="Gmail" />
+            </a> */}
+            <S.GoToResume
+              onClick={AskToAdmit}
+              src="/images/resume.png"
+              alt="Resume"
+            />
           </S.GoTo>
+          <S.MoreWrap>
+            <S.MoreAbout href="#aboutme" role="button">
+              More about me
+            </S.MoreAbout>
+          </S.MoreWrap>
         </S.IntroduceWrap>
       </Width>
     </S.Home>

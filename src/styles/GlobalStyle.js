@@ -1,8 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import Cafe24 from '../fonts/Cafe24Ssurround.ttf';
-import CafeBold from '../fonts/Cafe24Oneprettynight.ttf';
+import FontBend from '../fonts/Cafe24Oneprettynight.ttf';
 import FontBase from '../fonts/Belanosima-Regular.ttf';
+import FontLight from '../fonts/IBMPlexSansKR-ExtraLight.ttf';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}  
@@ -16,8 +17,8 @@ ${reset}
   }
 
 @font-face {
-  font-family: 'CafeBold';
-  src: url(${CafeBold})
+  font-family: 'FontBend';
+  src: url(${FontBend})
 } 
 
 @font-face {
@@ -28,6 +29,11 @@ ${reset}
 @font-face {
   font-family: 'fontBase';
   src: url(${FontBase})
+} 
+
+@font-face {
+  font-family: 'FontLight';
+  src: url(${FontLight})
 } 
   
 `;

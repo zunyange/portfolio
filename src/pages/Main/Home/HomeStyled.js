@@ -29,6 +29,7 @@ export const IntroduceWrap = styled.div`
   text-align: center;
   width: 100%;
   min-height: 100vh;
+
   p {
     font-size: 50px;
     font-weight: bold;
@@ -51,19 +52,18 @@ export const SubIntroduce = styled.div`
 
 export const GoTo = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 20px;
   margin-top: 40px;
 `;
 
 export const GoToGithub = styled.img`
   width: 50px;
   cursor: pointer;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  transition: all 0.8s;
+  //왜 안될까 ㅜㅜㅜㅜ
   &:hover {
     content: url('images/github-bk.png');
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    transition: all 0.8s;
   }
 `;
 
@@ -83,6 +83,39 @@ export const GoToLinkedin = styled.img`
   }
 `;
 
+// export const GoToMail = styled.img`
+//   width: 50px;
+//   cursor: pointer;
+//   &:hover {
+//     content: url('images/mail-bk.png');
+//   }
+// `;
+
+export const GoToResume = styled.img`
+  width: 50px;
+  cursor: pointer;
+  &:hover {
+    content: url('images/resume-bk.png');
+  }
+`;
+
+export const MoreWrap = styled.div``;
+export const MoreAbout = styled.div`
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: fontLight;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    opacity: 0.8;
+    color: #000000;
+  }
+`;
 export const Span = styled.span`
   font-weight: bold;
   font-size: ${({ first }) => (first ? '20px' : '22px')};
