@@ -21,12 +21,14 @@ export const Home = styled.div`
 `;
 
 export const IntroduceWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   text-align: center;
-  ///////////
   width: 100%;
-  height: 100vh;
-
+  min-height: 100vh;
   p {
     font-size: 50px;
     font-weight: bold;
@@ -47,7 +49,39 @@ export const SubIntroduce = styled.div`
   display: inline-block;
 `;
 
-export const GoTo = styled.div``;
+export const GoTo = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+`;
+
+export const GoToGithub = styled.img`
+  width: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    content: url('images/github-bk.png');
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+`;
+
+export const GoToVelog = styled.img`
+  width: 50px;
+  cursor: pointer;
+  &:hover {
+    content: url('images/velog-bk.png');
+  }
+`;
+
+export const GoToLinkedin = styled.img`
+  width: 50px;
+  cursor: pointer;
+  &:hover {
+    content: url('images/linkedin-bk.png');
+  }
+`;
 
 export const Span = styled.span`
   font-weight: bold;

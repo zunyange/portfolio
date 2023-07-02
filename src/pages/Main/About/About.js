@@ -12,7 +12,7 @@ const About = () => {
           <S.Span>TypeScript </S.Span>
           기반의 프로젝트를 진행중입니다.
         </S.SubIntroduce>
-        <S.IntroduceImg src="images/MyImg2.png" />
+        <S.IntroduceImg src="images/MyImg.png" />
       </Width>
     </S.About>
   );
