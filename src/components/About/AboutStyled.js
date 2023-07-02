@@ -7,9 +7,8 @@ export const About = styled.div`
   background-color: #ffffff;
 `;
 
-export const SubIntroduce = styled.div`
-  padding-top: 0px;
-  font-size: 20px;
+export const Introduce = styled.div`
+  font-size: 18px;
   width: 600px;
   line-height: 30px;
   display: flex;
@@ -18,7 +17,7 @@ export const SubIntroduce = styled.div`
 
 export const Span = styled.span`
   font-weight: bold;
-  font-size: ${({ first }) => (first ? '20px' : '22px')};
+  font-size: 21px;
   color: #3178c6;
 `;
 
@@ -28,3 +27,34 @@ export const IntroduceImg = styled.img`
   bottom: 0;
   right: 200px;
 `;
+
+export const SkillWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Skill = styled.div`
+  font-size: 30px;
+`;
+export const SkillBox = styled.div`
+  display: flex;
+  gap: 20px;
+  width: 700px;
+  margin-top: 20px;
+  overflow: auto;
+  white-space: nowrap;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  /* overflow: hidden; */
+
+  img {
+    /* display: block; */
+    width: 60px;
+  }
+`;
+
+// export const SkillWrap = styled.div``;
+// export const SkillWrap = styled.div``;
