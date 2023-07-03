@@ -29,32 +29,49 @@ export const IntroduceImg = styled.img`
 `;
 
 export const SkillWrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  overflow: hidden;
+  min-height: 100vh;
 `;
 
 export const Skill = styled.div`
   font-size: 30px;
 `;
+
 export const SkillBox = styled.div`
   display: flex;
-  gap: 20px;
-  width: 700px;
-  margin-top: 20px;
-  overflow: auto;
-  white-space: nowrap;
-  ::-webkit-scrollbar {
-    display: none;
+  animation: scroll 10s linear infinite;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-300px);
+    }
   }
-  /* overflow: hidden; */
+  &:hover {
+    animation-play-state: paused;
+  }
+`;
+
+export const ImgWrap = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  perspective: 100px;
 
   img {
     /* display: block; */
     width: 60px;
+    transition: transform 0.5s;
+    &:hover {
+      transform: translateZ(10px);
+    }
   }
 `;
-
 // export const SkillWrap = styled.div``;
 // export const SkillWrap = styled.div``;

@@ -24,9 +24,9 @@ const About = ({ about }) => {
           <S.SkillBox>
             {data.map(info => {
               return (
-                <div key={info.id}>
+                <S.ImgWrap key={info.id}>
                   <img src={info.src} alt={info.name} />
-                </div>
+                </S.ImgWrap>
               );
             })}
           </S.SkillBox>
