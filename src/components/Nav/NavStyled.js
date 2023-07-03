@@ -46,6 +46,7 @@ export const NavContainer = styled.div`
   width: 700px;
   display: flex;
   justify-content: space-around;
+  font-family: 'fontEng';
   li {
     display: inline-block;
     font-size: 21px;

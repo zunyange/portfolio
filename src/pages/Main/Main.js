@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from '../../components/Nav/Nav';
 import Home from '../../components/Home/Home.js';
 import About from '../../components/About/About.js';
+import Project from '../../components/Project/Project.js';
 import { Star } from '../../styles/common.js';
 
 const Main = () => {
@@ -42,6 +43,7 @@ const Main = () => {
       <Star />
       <Home home={home} />
       <About about={about} />
+      <Project project={project} />
     </div>
   );
 };

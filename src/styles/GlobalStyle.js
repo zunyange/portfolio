@@ -2,8 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import Cafe24 from '../fonts/Cafe24Ssurround.ttf';
 import FontBend from '../fonts/Cafe24Oneprettynight.ttf';
-import FontBase from '../fonts/Belanosima-Regular.ttf';
+import FontEng from '../fonts/Belanosima-Regular.ttf';
 import FontLight from '../fonts/IBMPlexSansKR-ExtraLight.ttf';
+import FontBase from '../fonts/IBMPlexSansKR-Light.ttf';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}  
@@ -19,7 +20,7 @@ ${reset}
   }
 
 @font-face {
-  font-family: 'FontBend';
+  font-family: 'fontBend';
   src: url(${FontBend})
 } 
 
@@ -29,15 +30,19 @@ ${reset}
 } 
 
 @font-face {
-  font-family: 'fontBase';
-  src: url(${FontBase})
+  font-family: 'fontEng';
+  src: url(${FontEng})
 } 
 
 @font-face {
-  font-family: 'FontLight';
+  font-family: 'fontLight';
   src: url(${FontLight})
 } 
   
+@font-face {
+  font-family: 'fontBase';
+  src: url(${FontBase})
+} 
 `;
 
 export default GlobalStyle;

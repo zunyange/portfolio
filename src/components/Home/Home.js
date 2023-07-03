@@ -44,28 +44,28 @@ const Home = ({ home }) => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <S.GoToGithub src="/images/github.png" alt="Github" />
+              <S.GoToGithub src="/images/icon/github.png" alt="Github" />
             </a>
             <a
               href="https://velog.io/@zunyange"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <S.GoToVelog src="/images/velog.png" alt="Velog" />
+              <S.GoToVelog src="/images/icon/velog.png" alt="Velog" />
             </a>
             <a
               href="https://www.linkedin.com/in/junyoung-kim-067765281/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <S.GoToLinkedin src="/images/linkedin.png" alt="Linkedin" />
+              <S.GoToLinkedin src="/images/icon/linkedin.png" alt="Linkedin" />
             </a>
             {/* <a href="mailto:giveyoung530@gmail.com">
               <S.GoToMail src="/images/mail.png" alt="Gmail" />
             </a> */}
             <S.GoToResume
               onClick={AskToAdmit}
-              src="/images/resume.png"
+              src="/images/icon/resume.png"
               alt="Resume"
             />
           </S.GoTo>

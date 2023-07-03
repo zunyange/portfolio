@@ -36,9 +36,9 @@ export const IntroduceWrap = styled.div`
   }
 `;
 export const Introduce = styled.div`
-  /* font-family: fontCafe; */
   font-size: 40px;
   line-height: 55px;
+  font-family: 'fontEng';
 `;
 
 export const SubIntroduce = styled.div`
@@ -64,7 +64,7 @@ export const GoToGithub = styled.img`
   transition: all 0.8s;
   //왜 안될까 ㅜㅜㅜㅜ
   &:hover {
-    content: url('images/github-bk.png');
+    content: url('images/icon/github-bk.png');
     transition: all 0.8s;
   }
 `;
@@ -73,7 +73,7 @@ export const GoToVelog = styled.img`
   width: 50px;
   cursor: pointer;
   &:hover {
-    content: url('images/velog-bk.png');
+    content: url('images/icon/velog-bk.png');
   }
 `;
 
@@ -81,7 +81,7 @@ export const GoToLinkedin = styled.img`
   width: 50px;
   cursor: pointer;
   &:hover {
-    content: url('images/linkedin-bk.png');
+    content: url('images/icon/linkedin-bk.png');
   }
 `;
 
@@ -89,7 +89,7 @@ export const GoToLinkedin = styled.img`
 //   width: 50px;
 //   cursor: pointer;
 //   &:hover {
-//     content: url('images/mail-bk.png');
+//     content: url('images/icon/mail-bk.png');
 //   }
 // `;
 
@@ -97,7 +97,7 @@ export const GoToResume = styled.img`
   width: 50px;
   cursor: pointer;
   &:hover {
-    content: url('images/resume-bk.png');
+    content: url('images/icon/resume-bk.png');
   }
 `;
 
