@@ -13,7 +13,7 @@ export const Star = styled.img`
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 `;
 
 export const Aboutme = styled.div`
@@ -77,7 +77,7 @@ export const Mail = styled.li`
     }
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 10s infinite linear;
+    -webkit-animation: hue 5s infinite linear;
   }
 `;
 
@@ -98,21 +98,22 @@ export const SkillWrap = styled.div`
 export const SkillTitle = styled.div`
   width: 150px;
   font-size: 30px;
-  font-family: fontCafe;
+  font-family: fontEng;
 `;
 
 export const SkillBox = styled.div`
-  /* display: flex; */
-  overflow: hidden;
-  white-space: nowrap;
+  display: flex;
+  width: 500px;
+  overflow-wrap: normal;
+  /* overflow: hidden;
+  white-space: nowrap; */
 `;
 export const ImgWrap = styled.div`
-  display: inline-block;
-  animation: 20s slide infinite linear;
+  margin-right: 30px;
+  /* animation: 20s slide infinite linear; */
   img {
-    margin: 0 10px;
     width: 60px;
-    @keyframes slide {
+    /* @keyframes slide {
       from {
         transform: translateX(0);
       }
@@ -123,10 +124,52 @@ export const ImgWrap = styled.div`
 
     &:hover {
       transform: translateZ(10px);
-    }
+    } */
+  }
+  span {
+    font-family: fontEng;
+    /* color: #ccc; */
+    font-size: 12px;
   }
 `;
 
+export const ExpWrap = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 1000px;
+  padding: 20px;
+  border-bottom: solid 1px #ccc;
+`;
+
+export const ExpTitle = styled.div`
+  width: 150px;
+  font-size: 30px;
+  font-family: fontEng;
+`;
+
+export const ExpBox = styled.div``;
+
+export const Enterprise = styled.div`
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 100px;
+  }
+`;
+
+export const ExpConent = styled.div`
+  display: flex;
+  text-align: left;
+  padding: ${({ title }) => (title ? '5px 0 10px 0' : '3px 0')};
+  font-family: ${({ title }) => (title ? 'fontBold' : 'fontBase')};
+`;
+
+// export const ExpWeb = styled.div`
+//   display: flex;
+//   &:hover {
+//     cursor: pointer;
+//   }
+// `;
 //////////////////
 
 // export const Introduce = styled.div`

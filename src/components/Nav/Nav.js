@@ -75,7 +75,7 @@ const Nav = ({
                 <S.NavLi onClick={onMoveContact}>Contact</S.NavLi>
               </S.NavContainer>
               <S.Menubar
-                src="/images/menu.png"
+                src="/images/icon/menu.png"
                 alt="Menu"
                 onClick={() => setIsShowMenu(!isShowMenu)}
               />
@@ -103,7 +103,7 @@ const Nav = ({
                 <S.NavLiWhite onClick={onMoveContact}>Contact</S.NavLiWhite>
               </S.NavContainer>
               <S.Menubar
-                src="/images/menu.png"
+                src="/images/icon/menu.png"
                 alt="Menu"
                 onClick={() => setIsShowMenu(!isShowMenu)}
               />

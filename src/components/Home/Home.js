@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as S from './HomeStyled.js';
 import { Width } from '../../styles/common.js';
 
-const Home = ({ home }) => {
+const Home = ({ home, onMoveAbout }) => {
   // const txt = '사용자 중심 설계에 중점을 둔 문제 해결사';
   // const txt = '김준영';
   const txt = '안녕하세요 ! 포용력을 포옹한 개발자, 김준영입니다.';
@@ -70,7 +70,7 @@ const Home = ({ home }) => {
             />
           </S.GoTo>
           <S.MoreWrap>
-            <S.MoreAbout href="#aboutme" role="button">
+            <S.MoreAbout href="#aboutme" onClick={onMoveAbout} role="button">
               More about me
             </S.MoreAbout>
           </S.MoreWrap>

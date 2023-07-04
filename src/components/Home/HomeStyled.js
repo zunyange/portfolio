@@ -48,8 +48,6 @@ export const SubIntroduce = styled.div`
   display: flex;
   padding-top: 20px;
   display: inline-block;
-  font-family: fontLight;
-  font-weight: bold;
 `;
 
 export const GoTo = styled.div`
@@ -108,8 +106,6 @@ export const MoreAbout = styled.div`
   padding: 0.8rem;
   margin-top: 40px;
   font-size: 20px;
-  font-weight: bold;
-  font-family: fontLight;
   cursor: pointer;
   &:hover {
     border: 1px solid #ffffff;

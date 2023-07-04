@@ -5,7 +5,12 @@ import { Width } from '../../styles/common.js';
 const Project = ({ project }) => {
   return (
     <S.Project ref={project}>
-      <Width>dd</Width>
+      <Width>
+        <S.ProjectWrap>
+          <S.Title>Project</S.Title>
+          <S.Projects>dd</S.Projects>
+        </S.ProjectWrap>
+      </Width>
     </S.Project>
   );
 };

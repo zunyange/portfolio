@@ -3,7 +3,7 @@ import reset from 'styled-reset';
 import Cafe24 from '../fonts/Cafe24Ssurround.ttf';
 import FontBend from '../fonts/Cafe24Oneprettynight.ttf';
 import FontEng from '../fonts/Belanosima-Regular.ttf';
-import FontLight from '../fonts/IBMPlexSansKR-ExtraLight.ttf';
+import FontBold from '../fonts/IBMPlexSansKR-Medium.ttf';
 import FontBase from '../fonts/IBMPlexSansKR-Light.ttf';
 
 const GlobalStyle = createGlobalStyle`
@@ -35,8 +35,8 @@ ${reset}
 } 
 
 @font-face {
-  font-family: 'fontLight';
-  src: url(${FontLight})
+  font-family: 'fontBold';
+  src: url(${FontBold})
 } 
   
 @font-face {

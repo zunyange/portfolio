@@ -16,7 +16,7 @@ const Main = () => {
   const onMoveHome = () => {
     home.current?.scrollIntoView({ behavior: 'smooth' });
   };
-  const onMoveAboutme = () => {
+  const onMoveAbout = () => {
     about.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const onMoveProject = () => {
@@ -35,13 +35,13 @@ const Main = () => {
         isShowMenu={isShowMenu}
         setIsShowMenu={setIsShowMenu}
         onMoveHome={onMoveHome}
-        onMoveAboutme={onMoveAboutme}
+        onMoveAbout={onMoveAbout}
         onMoveProject={onMoveProject}
         onMoveResume={onMoveResume}
         onMoveContact={onMoveContact}
       />
       <Star />
-      <Home home={home} />
+      <Home home={home} onMoveAbout={onMoveAbout} />
       <About about={about} />
       <Project project={project} />
     </div>
