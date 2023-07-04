@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "src": "images/icon/HTML.svg",
+    "src": "images/skill/HTML.svg",
     "name": "HTML"
   },
   {
     "id": 2,
-    "src": "/images/icon/JavaScript.svg",
+    "src": "/images/skill/JavaScript.svg",
     "name": "JavaScript"
   },
   {
     "id": 3,
-    "src": "/images/icon/CSS.svg",
+    "src": "/images/skill/CSS.svg",
     "name": "CSS"
   },
   {
     "id": 4,
-    "src": "/images/icon/Sass.svg",
+    "src": "/images/skill/Sass.svg",
     "name": "Sass"
   },
   {
     "id": 5,
-    "src": "/images/icon/StyledComponents.svg",
+    "src": "/images/skill/StyledComponents.svg",
     "name": "Styled-Component"
   },
-  { "id": 6, "src": "/images/icon/React-Light.svg", "name": "React" },
-  { "id": 7, "src": "/images/icon/TypeScript.svg", "name": "TypeScript" },
-  { "id": 8, "src": "/images/icon/NextJS-Dark.svg", "name": "Next.js" },
-  { "id": 9, "src": "/images/icon/NodeJS-Light.svg", "name": "Node.js" },
-  { "id": 10, "src": "/images/icon/VSCode-Dark.svg", "name": "VSCode" },
-  { "id": 11, "src": "/images/icon/Postman.svg", "name": "Postman" },
-  { "id": 12, "src": "/images/icon/Github-Dark.svg", "name": "Github" },
-  { "id": 13, "src": "/images/icon/Git.svg", "name": "Git" },
-  { "id": 14, "src": "/images/icon/Figma-Light.svg", "name": "Figma" },
-  { "id": 15, "src": "/images/icon/Vercel-Dark.svg", "name": "Vercel" },
-  { "id": 16, "src": "/images/icon/AWS-Light.svg", "name": "AWS" }
+  { "id": 6, "src": "/images/skill/React-Light.svg", "name": "React" },
+  { "id": 7, "src": "/images/skill/TypeScript.svg", "name": "TypeScript" },
+  { "id": 8, "src": "/images/skill/NextJS-Dark.svg", "name": "Next.js" },
+  { "id": 9, "src": "/images/skill/NodeJS-Light.svg", "name": "Node.js" },
+  { "id": 10, "src": "/images/skill/VSCode-Dark.svg", "name": "VSCode" },
+  { "id": 11, "src": "/images/skill/Postman.svg", "name": "Postman" },
+  { "id": 12, "src": "/images/skill/Github-Dark.svg", "name": "Github" },
+  { "id": 13, "src": "/images/skill/Git.svg", "name": "Git" },
+  { "id": 14, "src": "/images/skill/Figma-Light.svg", "name": "Figma" },
+  { "id": 15, "src": "/images/skill/Vercel-Dark.svg", "name": "Vercel" },
+  { "id": 16, "src": "/images/skill/AWS-Light.svg", "name": "AWS" }
 ]

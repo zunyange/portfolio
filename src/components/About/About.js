@@ -10,6 +10,7 @@ const About = ({ about }) => {
       .then(res => res.json())
       .then(data => setData(data));
   }, []);
+
   return (
     <S.About ref={about}>
       <Width>
@@ -36,13 +37,29 @@ const About = ({ about }) => {
               </S.School>
               <S.Appeal>
                 <img src="images/icon/smile.png" alt="smile" />
-                &nbsp; 어디에서나 긍정적인 태도로 임하는 자세를 중요하게
-                생각합니다.
+                &nbsp; 어디에서나 긍정적인 태도로!
               </S.Appeal>
             </S.ProfileBox>
           </S.ProfileWrap>
-
-          <S.SkillWrap>dd</S.SkillWrap>
+          <S.SkillWrap>
+            <S.SkillTitle>Skills</S.SkillTitle>
+            <S.SkillBox>
+              {data.map(info => {
+                return (
+                  <S.ImgWrap key={info.id}>
+                    <img src={info.src} alt={info.name} />
+                  </S.ImgWrap>
+                );
+              })}
+              {data.map(info => {
+                return (
+                  <S.ImgWrap key={info.id}>
+                    <img src={info.src} alt={info.name} />
+                  </S.ImgWrap>
+                );
+              })}
+            </S.SkillBox>
+          </S.SkillWrap>
         </S.Aboutme>
       </Width>
     </S.About>

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const About = styled.div`
   /* background-color: #e1efff; */
@@ -28,7 +28,7 @@ export const Aboutme = styled.div`
 
 export const ProfileWrap = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr;
   font-weight: bold;
   width: 1000px;
   padding: 20px;
@@ -64,6 +64,21 @@ export const Mail = styled.li`
     text-decoration-line: none;
     color: #000000;
   }
+  &:hover {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(90deg, #ff6596, #d88cff);
+    @-webkit-keyframes hue {
+      from {
+        -webkit-filter: hue-rotate(0deg);
+      }
+      to {
+        -webkit-filter: hue-rotate(-360deg);
+      }
+    }
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+  }
 `;
 
 export const School = styled.div`
@@ -72,22 +87,45 @@ export const School = styled.div`
 
 export const Appeal = styled.div`
   display: flex;
-  color: #f35626;
-  background-image: -webkit-linear-gradient(90deg, #ff6596, #d88cff);
+`;
+export const SkillWrap = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 1000px;
+  padding: 20px;
+  border-bottom: solid 1px #ccc;
+`;
+export const SkillTitle = styled.div`
+  width: 150px;
+  font-size: 30px;
+  font-family: fontCafe;
+`;
 
-  @-webkit-keyframes hue {
-    from {
-      -webkit-filter: hue-rotate(0deg);
+export const SkillBox = styled.div`
+  /* display: flex; */
+  overflow: hidden;
+  white-space: nowrap;
+`;
+export const ImgWrap = styled.div`
+  display: inline-block;
+  animation: 20s slide infinite linear;
+  img {
+    margin: 0 10px;
+    width: 60px;
+    @keyframes slide {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-2300%);
+      }
     }
-    to {
-      -webkit-filter: hue-rotate(-360deg);
+
+    &:hover {
+      transform: translateZ(10px);
     }
   }
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
 `;
-export const SkillWrap = styled.div``;
 
 //////////////////
 

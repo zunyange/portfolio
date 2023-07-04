@@ -6,7 +6,7 @@ export const Width = styled.div`
   display: block;
   width: 100%;
   height: 100%;
-  /* margin: 0; */
+  margin: 0;
 `;
 
 export const Star = styled.div`
