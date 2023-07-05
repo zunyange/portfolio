@@ -29,6 +29,9 @@ export const Aboutme = styled.div`
 export const ProfileWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
+  /* display: flex;
+  justify-content: center;
+  gap: 40px; */
   font-weight: bold;
   width: 1000px;
   padding: 20px;
@@ -152,6 +155,8 @@ export const ExpBox = styled.div``;
 export const Enterprise = styled.div`
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
+  color: #a4a4a4;
   img {
     width: 100px;
   }
@@ -160,6 +165,7 @@ export const Enterprise = styled.div`
 export const ExpConent = styled.div`
   display: flex;
   text-align: left;
+  line-height: 20px;
   padding: ${({ title }) => (title ? '5px 0 10px 0' : '3px 0')};
   font-family: ${({ title }) => (title ? 'fontBold' : 'fontBase')};
 `;
