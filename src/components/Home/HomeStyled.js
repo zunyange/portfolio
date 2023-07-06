@@ -52,7 +52,7 @@ export const SubIntroduce = styled.div`
 
 export const GoTo = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin-top: 40px;
 `;
 
@@ -71,7 +71,7 @@ export const GoToVelog = styled.img`
   width: 50px;
   cursor: pointer;
   &:hover {
-    content: url('images/icon/velog-bk.png');
+    content: url('images/icon/velog-green.png');
   }
 `;
 

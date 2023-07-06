@@ -136,38 +136,43 @@ export const ImgWrap = styled.div`
   }
 `;
 
-export const ExpWrap = styled.div`
+export const EduWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 1000px;
-  padding: 20px;
-  border-bottom: solid 1px #ccc;
+  padding: 20px 20px 0 20px;
+
+  border-bottom: ${({ one }) => (one ? '0' : 'solid 1px #ccc')};
 `;
 
-export const ExpTitle = styled.div`
+export const EduTitle = styled.div`
   width: 150px;
   font-size: 30px;
   font-family: fontEng;
 `;
 
-export const ExpBox = styled.div``;
+export const EduBox = styled.div``;
 
-export const Enterprise = styled.div`
+export const Education = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 14px;
   color: #a4a4a4;
-  img {
-    width: 100px;
+  padding: 5px 0;
+  span {
+    font-family: fontBold;
+    font-size: 18px;
+    color: #000000;
   }
 `;
 
-export const ExpConent = styled.div`
+export const Conent = styled.div`
   display: flex;
   text-align: left;
-  line-height: 20px;
-  padding: ${({ title }) => (title ? '5px 0 10px 0' : '3px 0')};
-  font-family: ${({ title }) => (title ? 'fontBold' : 'fontBase')};
+  line-height: 25px;
+  margin: ${({ title }) => (title ? '0 0 10px 0' : '0')};
+  border-bottom: ${({ last }) => (last ? 'solid 1px #ccc' : '0')};
+  padding-bottom: ${({ last }) => (last ? '25px' : '0')};
 `;
 
 // export const ExpWeb = styled.div`

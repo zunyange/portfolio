@@ -6,7 +6,9 @@ const Footer = () => {
   return (
     <FooterWrap>
       <Width>
-        <Footertext>© 2023 KimJunyoung All right reserved.</Footertext>
+        <Footertext>
+          Copyright © 2023 KimJunyoung. All right reserved.
+        </Footertext>
       </Width>
     </FooterWrap>
   );

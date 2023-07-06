@@ -44,8 +44,8 @@ const Main = () => {
       <Star />
       <Home home={home} onMoveAbout={onMoveAbout} />
       <About about={about} />
-      <Project project={project} />
-      <Footer />
+      {/* <Project project={project} /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

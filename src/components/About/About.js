@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './AboutStyled.js';
 import { Width } from '../../styles/common.js';
+import { AstPath } from 'prettier';
 
 const About = ({ about }) => {
   const [data, setData] = useState([]);
@@ -54,29 +55,31 @@ const About = ({ about }) => {
               })}
             </S.SkillBox>
           </S.SkillWrap>
-          <S.ExpWrap>
-            <S.ExpTitle>Experience</S.ExpTitle>
-            <S.ExpBox>
-              <S.Enterprise>
-                <img src="images/icon/Dabisu.png" alt="다비수디지탈" />
-                <div>2023.04~2023.05</div>
-              </S.Enterprise>
-              <S.ExpConent title>
-                다비수 디지탈 (아동 교육 콘텐츠 개발)
-              </S.ExpConent>
-              <S.ExpConent>
-                • &nbsp;새로운 브랜드의 정보 서비스 구축 프로젝트로서, 반응형 웹
-                UI 구현을 도맡아 함.
-              </S.ExpConent>
-              <S.ExpConent>
-                • &nbsp;개발 부서의 모든 팀원과 지속적으로 소통 및 협업을
-                하였고, 현업 개발자?사수?의 코드 리뷰를 통한 지속적인 코드를
-                개선하여 제품 완성도와 품질을 높혔습니다.
-              </S.ExpConent>
-              <S.ExpConent>
-                ✨ 현재 기업은 코드를 이어받아 제품의 연속성을 유지 및 향상시켜
-                사이트를 배포하였습니다.
-              </S.ExpConent>
+          <S.EduWrap one>
+            <S.EduTitle>Education</S.EduTitle>
+            <S.EduBox>
+              <S.Education>
+                <span>실무 중심의 코딩 전문 교육기관</span>
+                <div>2023.01~2023.04</div>
+              </S.Education>
+              <S.Conent title>Wecode</S.Conent>
+              <S.Conent>
+                • &nbsp;제품을 분석하고 제품의 가치를 파악하여 기능이 왜
+                필요하고 고객 니즈에 적합한지 판단합니다.
+              </S.Conent>
+              <S.Conent>
+                • &nbsp;개발 스크럼 문화를 도입한 팀 프로젝트를 통해
+                커뮤니케이션하는 소프트 스킬을 훈련함.
+              </S.Conent>
+              <S.Conent>
+                • &nbsp;코드를 학습하고 작업에 대한 깊은 이해하고 문서를
+                작성하는 개발 블로깅 문화를 익히며 협업할 수 있습니다.
+              </S.Conent>
+              <S.Conent last>
+                • &nbsp;기업 협업을 통해 다양한 규모의 실무 프로젝트에서 직접
+                참여하여 제품을 실제로 사용하는 고객을 경험함.
+              </S.Conent>
+              {/* <S.Conent>잔디, 개발블로그 => 성장가능성 & 스터디</S.Conent> */}
               {/* <a
                 href="https://dev.saedaron.com/"
                 target="_blank"
@@ -84,9 +87,34 @@ const About = ({ about }) => {
               >
                 https://dev.saedaron.com
               </a> */}
-              <S.ExpConent>(미완)</S.ExpConent>
-            </S.ExpBox>
-          </S.ExpWrap>
+            </S.EduBox>
+          </S.EduWrap>
+          <S.EduWrap two>
+            <S.EduTitle>&nbsp;</S.EduTitle>
+            <S.EduBox>
+              <S.Education>
+                <span>개발자를 위한 스터디 그룹</span>
+                <div>2023.05~</div>
+              </S.Education>
+              <S.Conent title>AfterWe</S.Conent>
+              <S.Conent>
+                • &nbsp;제품을 분석하고 제품의 가치를 파악하여 기능이 왜
+                필요하고 고객 니즈에 적합한지 판단합니다.
+              </S.Conent>
+              <S.Conent>
+                • &nbsp;개발 스크럼 문화를 도입한 팀 프로젝트를 통해
+                커뮤니케이션하는 소프트 스킬을 훈련함.
+              </S.Conent>
+              <S.Conent>
+                • &nbsp;코드를 학습하고 작업에 대한 깊은 이해하고 문서를
+                작성하는 개발 블로깅 문화를 익히며 협업할 수 있습니다.
+              </S.Conent>
+              <S.Conent last>
+                • &nbsp;기업 협업을 통해 다양한 규모의 실무 프로젝트에서 직접
+                참여하여 제품을 실제로 사용하는 고객을 경험함.
+              </S.Conent>
+            </S.EduBox>
+          </S.EduWrap>
         </S.Aboutme>
       </Width>
     </S.About>
