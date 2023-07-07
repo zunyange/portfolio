@@ -58,16 +58,18 @@ export const NavContainer = styled.div`
   }
 `;
 
-export const NavLi = styled.li`
-  cursor: pointer;
-  color: #374151;
-  :hover {
-    color: red;
+export const NavScrollContainer = styled(NavContainer)`
+  li {
+    color: #000000;
   }
 `;
 
+export const NavLi = styled.li`
+  cursor: pointer;
+`;
+
 export const NavLiWhite = styled(NavLi)`
-  color: black;
+  color: #ccc;
 `;
 
 export const Menubar = styled.img`

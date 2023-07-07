@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const About = styled.div`
   /* background-color: #e1efff; */
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background-color: #ffffff;
 `;
@@ -12,8 +12,8 @@ export const Star = styled.img`
 
 export const Title = styled.div`
   font-family: fontEng;
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin: 80px 0 40px 0;
 `;
 
 export const Aboutme = styled.div`
@@ -23,7 +23,8 @@ export const Aboutme = styled.div`
   justify-content: center;
   text-align: center;
   width: 100%;
-  min-height: 100vh;
+  margin-bottom: 80px;
+  /* min-height: 100vh; */
 `;
 
 export const ProfileWrap = styled.div`
@@ -95,12 +96,12 @@ export const SkillWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 1000px;
-  padding: 20px;
+  padding: 30px 20px;
   border-bottom: solid 1px #ccc;
 `;
 export const SkillTitle = styled.div`
   width: 150px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: fontEng;
 `;
 
@@ -140,14 +141,14 @@ export const EduWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 1000px;
-  padding: 20px 20px 0 20px;
-
-  border-bottom: ${({ one }) => (one ? '0' : 'solid 1px #ccc')};
+  padding: ${({ one }) => (one ? '30px 20px 0 20px' : '25px 20px 0 20px')};
+  border-bottom: ${({ three }) => (three ? 'solid 1px #ccc' : '0')};
+  padding-bottom: ${({ three }) => (three ? '30px' : '0')};
 `;
 
 export const EduTitle = styled.div`
   width: 150px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: fontEng;
 `;
 
@@ -166,10 +167,10 @@ export const Education = styled.div`
   }
 `;
 
-export const Conent = styled.div`
+export const Content = styled.div`
   display: flex;
   text-align: left;
-  line-height: 25px;
+  line-height: 27px;
   margin: ${({ title }) => (title ? '0 0 10px 0' : '0')};
   border-bottom: ${({ last }) => (last ? 'solid 1px #ccc' : '0')};
   padding-bottom: ${({ last }) => (last ? '25px' : '0')};

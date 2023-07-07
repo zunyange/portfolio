@@ -95,13 +95,13 @@ const Nav = ({
         ) : (
           <S.NavScroll>
             <S.NavWrap>
-              <S.NavContainer>
+              <S.NavScrollContainer>
                 <S.NavLiWhite onClick={onMoveHome}>Home</S.NavLiWhite>
                 <S.NavLiWhite onClick={onMoveAbout}>About me</S.NavLiWhite>
                 <S.NavLiWhite onClick={onMoveProject}>Project</S.NavLiWhite>
                 <S.NavLiWhite onClick={onMoveResume}>Resume</S.NavLiWhite>
                 <S.NavLiWhite onClick={onMoveContact}>Contact</S.NavLiWhite>
-              </S.NavContainer>
+              </S.NavScrollContainer>
               <S.Menubar
                 src="/images/icon/menu.png"
                 alt="Menu"
