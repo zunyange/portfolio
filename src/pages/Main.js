@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Nav from '../../components/Nav/Nav';
-import Home from '../../components/Home/Home.js';
-import About from '../../components/About/About.js';
-import Project from '../../components/Project/Project.js';
-import Footer from '../../components/Footer/Footer';
-import { Star } from '../../styles/common.js';
+import Nav from '../components/Nav/Nav';
+import Home from '../components/Home/Home.js';
+import About from '../components/About/About.js';
+import Project from '../components/Project/Project.js';
+import Footer from '../components/Footer/Footer';
+import { Star } from '../styles/common.js';
 
 const Main = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);

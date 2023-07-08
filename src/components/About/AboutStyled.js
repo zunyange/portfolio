@@ -81,7 +81,7 @@ export const Mail = styled.li`
     }
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 5s infinite linear;
+    -webkit-animation: hue 3s infinite linear;
   }
 `;
 

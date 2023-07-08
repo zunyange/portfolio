@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './AboutStyled.js';
 import { Width } from '../../styles/common.js';
-import { AstPath } from 'prettier';
 
 const About = ({ about }) => {
   const [data, setData] = useState([]);
@@ -65,7 +64,7 @@ const About = ({ about }) => {
               <S.Content title>AfterWe</S.Content>
               <S.Content>
                 • &nbsp;Frontend 6명, Backend 3명으로 이루어진 스터디
-                진행중입니다.
+                그룹입니다.
               </S.Content>
               <S.Content>
                 • &nbsp;CS 지식, JavaScript, React 등 기술적 질문에 대해
@@ -85,22 +84,17 @@ const About = ({ about }) => {
               </S.Education>
               <S.Content title>Wecode</S.Content>
               <S.Content>
-                • &nbsp;제품을 분석하고 제품의 가치를 파악하여 기능이 왜
-                필요하고 고객 니즈에 적합한지 판단할 수 있습니다.
-              </S.Content>
-              <S.Content>
                 • &nbsp;개발 스크럼 문화를 도입한 팀 프로젝트를 통해
                 커뮤니케이션하는 소프트 스킬을 훈련했습니다.
               </S.Content>
               <S.Content>
-                • &nbsp;코드를 학습하고 작업에 대한 깊은 이해하고 문서를
-                작성하는 개발 블로깅 문화를 익히며 협업할 수 있습니다.
-              </S.Content>
-              <S.Content last>
                 • &nbsp;기업 협업을 통해 실무 프로젝트에서 직접 참여하여 제품을
                 실제로 사용하는 고객을 경험했습니다.
               </S.Content>
-              {/* <S.Content>잔디, 개발블로그 => 성장가능성 & 스터디</S.Content> */}
+              <S.Content last>
+                • &nbsp;제품을 분석하고 제품의 가치를 파악하여 기능이 왜
+                필요하고 고객 니즈에 적합한지 판단할 수 있습니다.
+              </S.Content>
               {/* <a
                 href="https://dev.saedaron.com/"
                 target="_blank"

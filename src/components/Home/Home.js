@@ -24,6 +24,7 @@ const Home = ({ home, onMoveAbout }) => {
   const AskToAdmit = () => {
     alert('이력서를 다운받으시겠습니까?');
   };
+
   return (
     <S.Home ref={home}>
       <Width>
