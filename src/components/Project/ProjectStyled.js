@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Project = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f5fbff;
 `;
 
 export const ProjectWrap = styled.div`
@@ -29,18 +29,18 @@ export const Projects = styled.div`
 
 export const ProjectBox = styled.div`
   width: 300px;
-  height: 420px;
+  height: 400px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 0.5rem;
   flex-direction: column;
   margin: 2rem;
   padding: 1rem;
-  /* transition: all 0.3s ease; */
   transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 
   &:hover {
+    cursor: pointer;
     transform: translateY(-5px);
   }
 `;
@@ -127,6 +127,7 @@ export const ProjectLanguage = styled.div`
   color: #a4a4a4;
 `;
 export const ProjectContent = styled.div`
+  height: 130px;
   h4 {
     font-weight: bold;
     font-family: fontBold;
@@ -139,6 +140,16 @@ export const ProjectContent = styled.div`
       /* text-decoration: underline;
       text-decoration-thickness: 0.1px; */
       /* border-bottom: 0.5px solid; */
+    }
+  }
+  span {
+    color: #b9b9b9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    img {
+      width: 20px;
     }
   }
 `;

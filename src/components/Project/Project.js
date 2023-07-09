@@ -15,7 +15,7 @@ const Project = ({ project }) => {
         <S.ProjectWrap>
           <S.Title>Project</S.Title>
           <S.Projects>
-            <S.ProjectBox>
+            <S.ProjectBox onClick={goToDetail}>
               <S.ProjectImg>
                 <img src="/images/jun/dabisu.png" alt="project-img" />
                 <span class="overlay" />
@@ -40,12 +40,13 @@ const Project = ({ project }) => {
                     홍보 목적의 원페이지 반응형 UI 구현 및 위치 기반 정보 매칭
                     서비스 모듈 개발
                     <br />
-                    <span> 🚀 실제 서비스 운영중 🚀</span>
+                    🚀 실제 서비스 운영중 🚀
                   </div>
+                  {/* <span>View More</span> */}
                 </S.ProjectContent>
               </S.ProjectDescription>
             </S.ProjectBox>
-            <S.ProjectBox>
+            <S.ProjectBox onClick={goToDetail}>
               <S.ProjectImg>
                 <img src="/images/jun/maehwa.png" alt="project-img" />
                 <span class="overlay" />
@@ -71,10 +72,11 @@ const Project = ({ project }) => {
                     발견하고 필터링이나 리뷰를 통해 나에게 맞는 화장실을 찾는
                     모바일 기반의 웹 서비스
                   </div>
+                  {/* <span>View More</span> */}
                 </S.ProjectContent>
               </S.ProjectDescription>
             </S.ProjectBox>
-            <S.ProjectBox>
+            <S.ProjectBox onClick={goToDetail}>
               <S.ProjectImg>
                 <img src="/images/jun/200ok.png" alt="project-img" />
                 <span class="overlay" />
@@ -100,6 +102,9 @@ const Project = ({ project }) => {
                     시각적인 형태로 제공하고, 그로 인해 사용자가 더 편리하게
                     이용할 수 있도록 제작
                   </div>
+                  {/* <span>
+                    View More <img src="images/icon/view.png" alt="more" />
+                  </span> */}
                 </S.ProjectContent>
               </S.ProjectDescription>
             </S.ProjectBox>
