@@ -69,8 +69,8 @@ export const Mail = styled.li`
     color: #000000;
   }
   &:hover {
-    color: #f35626;
-    background-image: -webkit-linear-gradient(90deg, #ff6596, #d88cff);
+    color: #000000;
+    background-image: -webkit-linear-gradient(90deg, #e02863, #e63c82);
     @-webkit-keyframes hue {
       from {
         -webkit-filter: hue-rotate(0deg);
@@ -175,6 +175,64 @@ export const Content = styled.div`
   border-bottom: ${({ last }) => (last ? 'solid 1px #ccc' : '0')};
   padding-bottom: ${({ last }) => (last ? '25px' : '0')};
 `;
+
+export const PotentWrap = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 1000px;
+  padding: ${({ one }) => (one ? '30px 20px 0 20px' : '25px 20px 0 20px')};
+  border-bottom: ${({ three }) => (three ? 'solid 1px #ccc' : '0')};
+  padding-bottom: ${({ three }) => (three ? '30px' : '0')};
+`;
+
+export const PotentTitle = styled.div`
+  width: 150px;
+  font-size: 25px;
+  font-family: fontEng;
+`;
+
+export const PotentBox = styled(EduBox)``;
+
+export const Potent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-family: fontBold;
+  font-size: 18px;
+  margin-bottom: 5px;
+`;
+
+export const CommitBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  line-height: 27px;
+  img {
+    width: 300px;
+  }
+  div {
+    /* font-size: 15px; */
+    a {
+      color: #4caf50;
+      text-decoration: none;
+      &:hover {
+        color: #f35626;
+        background-image: -webkit-linear-gradient(90deg, #4caf50, #d88cff);
+        @-webkit-keyframes hue {
+          from {
+            -webkit-filter: hue-rotate(0deg);
+          }
+          to {
+            -webkit-filter: hue-rotate(-360deg);
+          }
+        }
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 3s infinite linear;
+      }
+    }
+  }
+`;
+// export const EduBox = styled.div``;
 
 // export const ExpWeb = styled.div`
 //   display: flex;

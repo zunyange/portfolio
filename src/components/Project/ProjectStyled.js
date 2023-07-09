@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Project = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #fafafa;
 `;
 
 export const ProjectWrap = styled.div`
@@ -19,7 +19,7 @@ export const ProjectWrap = styled.div`
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 `;
 
 export const Projects = styled.div`
@@ -39,7 +39,7 @@ export const ProjectBox = styled.div`
   /* transition: all 0.3s ease; */
   transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-  cursor: pointer;
+
   &:hover {
     transform: translateY(-5px);
   }
@@ -52,13 +52,26 @@ export const ProjectImg = styled.div`
   height: 230px;
   position: relative;
   width: 100%;
+  cursor: pointer;
   img {
     border-radius: 0.5rem;
     height: 100%;
     object-fit: cover;
     width: 100%;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    transition: opacity 0.5s ease;
     ${ProjectBox}:hover & {
-      filter: brightness(0.7);
+      opacity: 1;
       transition: all 0.5s ease;
     }
   }
@@ -121,7 +134,12 @@ export const ProjectContent = styled.div`
   }
   div {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 22px;
+    span {
+      /* text-decoration: underline;
+      text-decoration-thickness: 0.1px; */
+      /* border-bottom: 0.5px solid; */
+    }
   }
 `;
 // export const ProjectContent = styled.div``;

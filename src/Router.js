@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from './pages/Main';
-import Detail from './pages/Detail';
+import Main from './pages/Main.js';
+import Detail from './pages/Detail.js';
 
 const Router = () => {
   return (

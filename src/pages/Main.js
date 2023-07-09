@@ -3,6 +3,7 @@ import Nav from '../components/Nav/Nav';
 import Home from '../components/Home/Home.js';
 import About from '../components/About/About.js';
 import Project from '../components/Project/Project.js';
+import Resume from '../components/Resume/Resume.js';
 import Footer from '../components/Footer/Footer';
 import { Star } from '../styles/common.js';
 
@@ -11,7 +12,7 @@ const Main = () => {
   const home = React.useRef(null);
   const about = React.useRef(null);
   const project = React.useRef(null);
-  const findFranchisee = React.useRef(null);
+  const resume = React.useRef(null);
   const business = React.useRef(null);
 
   const onMoveHome = () => {
@@ -24,7 +25,7 @@ const Main = () => {
     project.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const onMoveResume = () => {
-    findFranchisee.current?.scrollIntoView({ behavior: 'smooth' });
+    resume.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const onMoveContact = () => {
     business.current?.scrollIntoView({ behavior: 'smooth' });
@@ -45,7 +46,8 @@ const Main = () => {
       <Home home={home} onMoveAbout={onMoveAbout} />
       <About about={about} />
       <Project project={project} />
-      {/* <Footer /> */}
+      <Resume resume={resume} />
+      <Footer />
     </div>
   );
 };
