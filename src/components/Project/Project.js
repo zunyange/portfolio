@@ -39,10 +39,16 @@ const Project = ({ project }) => {
                   <div>
                     홍보 목적의 원페이지 반응형 UI 구현 및 위치 기반 정보 매칭
                     서비스 모듈 개발
-                    <br />
-                    🚀 실제 서비스 운영중 🚀
                   </div>
-                  {/* <span>View More</span> */}
+                  <div>
+                    <a
+                      href="https://dev.saedaron.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      🚀 실제 서비스 운영중 🚀
+                    </a>
+                  </div>
                 </S.ProjectContent>
               </S.ProjectDescription>
             </S.ProjectBox>
@@ -72,7 +78,6 @@ const Project = ({ project }) => {
                     발견하고 필터링이나 리뷰를 통해 나에게 맞는 화장실을 찾는
                     모바일 기반의 웹 서비스
                   </div>
-                  {/* <span>View More</span> */}
                 </S.ProjectContent>
               </S.ProjectDescription>
             </S.ProjectBox>
@@ -96,14 +101,15 @@ const Project = ({ project }) => {
               <S.ProjectDescription>
                 <S.ProjectLanguage>React Js</S.ProjectLanguage>
                 <S.ProjectContent>
-                  <h4>10~20대를 위한 가성비 e-커머스</h4>
+                  <h4>1020을 위한 트렌디한 e-커머스</h4>
                   <div>
                     소비자에게 한눈에 보고 이해할 수 있는 최소한의 정보를
                     시각적인 형태로 제공하고, 그로 인해 사용자가 더 편리하게
                     이용할 수 있도록 제작
                   </div>
                   {/* <span>
-                    View More <img src="images/icon/view.png" alt="more" />
+                    <img src="images/icon/link.png" alt="more" />
+                    View More
                   </span> */}
                 </S.ProjectContent>
               </S.ProjectDescription>

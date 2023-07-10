@@ -136,6 +136,17 @@ export const ProjectContent = styled.div`
   div {
     font-size: 15px;
     line-height: 22px;
+    margin-bottom: 13px;
+    a {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #000000;
+      text-decoration: none;
+      &:hover {
+        border-bottom: 0.5px solid;
+        /* text-decoration: wavy underline; */
+      }
+    }
     span {
       /* text-decoration: underline;
       text-decoration-thickness: 0.1px; */
