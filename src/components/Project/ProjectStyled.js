@@ -19,7 +19,7 @@ export const ProjectWrap = styled.div`
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 `;
 
 export const Projects = styled.div`

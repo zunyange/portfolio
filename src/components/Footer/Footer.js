@@ -24,6 +24,7 @@ const Footertext = styled.div`
   flex-direction: column;
   padding: 3% 0;
   font-size: 13px;
+  color: #a4a4a4;
 `;
 // const Footer = styled.div``;
 

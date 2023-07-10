@@ -18,7 +18,7 @@ export const ResumeWrap = styled.div`
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 35px;
-  margin: 80px 0 40px 0;
+  margin: 80px 0 80px 0;
 `;
 
 export const ResumeBox = styled.div`
@@ -52,12 +52,12 @@ export const Content = styled.div`
   border-bottom: ${({ last }) => (last ? '0' : 'solid 1px #ccc')};
   padding-bottom: ${({ last }) => (last ? '0' : '25px')};
   a {
-    color: #369139;
+    color: #e29999;
     text-decoration: none;
     font-weight: bold;
     &:hover {
-      color: #f35626;
-      background-image: -webkit-linear-gradient(90deg, #e05151, #3333cc);
+      color: #e29999;
+      background-image: -webkit-linear-gradient(90deg, #e29999, #8b00ff);
       border-bottom: 0.5px solid;
       @-webkit-keyframes hue {
         from {

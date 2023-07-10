@@ -19,7 +19,7 @@ const Resume = ({ resume }) => {
           <S.ResumeBox one>
             <S.ContentTitle>Why Frontend?</S.ContentTitle>
             <S.ContentBox>
-              <S.Subtitle>소비자 중심 사고</S.Subtitle>
+              <S.Subtitle>사용자 = 0순위</S.Subtitle>
               <S.Content>
                 관광개발학을 전공하여 고객 중심의 다양한 니즈를 파악하고
                 서비스의 질을 높여 사용자에게 더 나은 환경을 제공하기 위한
@@ -107,9 +107,8 @@ const Resume = ({ resume }) => {
                   <div>
                     매일 조금씩이라도 코딩하고 꾸준히 커밋하는 습관을 기르고
                     있습니다. 이를 통해 코딩에 대한 자신감은 물론 성장하는 저의
-                    모습을 보며 성취감을 느끼고 있습니다. 매일 커밋하고 블로그를
-                    작성하면서, 개발자로서 성장하기 위해 끊임없이 생각하고
-                    실천하기 위한 동기부여를 얻고 있습니다.
+                    모습을 보며 성취감을 느끼고, 개발자로서 성장하기 위해
+                    끊임없이 생각하고 실천하기 위한 동기부여를 얻고 있습니다.
                   </div>
                 </div>
               </S.CommitBox>
