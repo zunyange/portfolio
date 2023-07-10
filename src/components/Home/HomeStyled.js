@@ -48,6 +48,10 @@ export const SubIntroduce = styled.div`
   display: flex;
   padding-top: 20px;
   display: inline-block;
+  span {
+    font-size: 13px;
+    line-height: 5px;
+  }
 `;
 
 export const GoTo = styled.div`

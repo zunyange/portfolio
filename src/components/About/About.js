@@ -37,8 +37,7 @@ const About = ({ about }) => {
               </S.School>
               <S.Appeal>
                 <img src="images/icon/smile.png" alt="smile" />
-                &nbsp; 어디에서나 긍정적인 태도로! 끊임없이 도전하며 변화를
-                즐기자!
+                &nbsp; 어디에서나 긍정적인 태도로!
               </S.Appeal>
             </S.ProfileBox>
           </S.ProfileWrap>
@@ -144,31 +143,6 @@ const About = ({ about }) => {
               </a> */}
             </S.EduBox>
           </S.EduWrap>
-          <S.PotentWrap>
-            <S.PotentTitle>Potential</S.PotentTitle>
-            <S.PotentBox>
-              <S.Potent>성장 가능성</S.Potent>
-              <S.CommitBox>
-                <img src="images/jun/commit.png" alt="git-commit" />
-                <div>
-                  <div>
-                    개발 공부 이후, 매일 조금씩이라도 코딩하고 꾸준히 커밋하는
-                    습관을 기르고 있습니다. 이를 통해 코딩에 대한 자신감은 물론
-                    성장하는 저의 모습을 보며 성취감을 느끼고 있으며, 지속적인
-                    성장의 원동력인?{' '}
-                    <a
-                      href="https://velog.io/@zunyange"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      개발 블로그
-                    </a>{' '}
-                    또한 꾸준히 작성하고 있습니다.
-                  </div>
-                </div>
-              </S.CommitBox>
-            </S.PotentBox>
-          </S.PotentWrap>
         </S.Aboutme>
       </Width>
     </S.About>

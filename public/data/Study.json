@@ -1,0 +1,51 @@
+[
+  { "id": 1, "title": "사이트", "content": "교육내용", "degree": "진도" },
+  {
+    "id": 2,
+    "title": "도서",
+    "content": "생활코딩! HTML + CSS + 자바스크립트",
+    "degree": "완료"
+  },
+  {
+    "id": 3,
+    "title": "도서",
+    "content": "자바스크립트 프로젝트북",
+    "degree": "완료"
+  },
+  {
+    "id": 4,
+    "title": "도서",
+    "content": "면접을 위한 CS 전공지식 노트",
+    "degree": "완료"
+  },
+  {
+    "id": 5,
+    "title": "도서",
+    "content": "비전공자를 위한 이해할 수 있는 IT지식",
+    "degree": "완료"
+  },
+  {
+    "id": 6,
+    "title": "도서",
+    "content": "코어 자바스크립트",
+    "degree": "진행중"
+  },
+  {
+    "id": 7,
+    "title": "도서",
+    "content": "모던 자바스크립트 Deep Dive",
+    "degree": "진행중"
+  },
+  {
+    "id": 8,
+    "title": "강의",
+    "content": "프론트엔드 웹 개발의 모든 것 초격차 패키지",
+    "degree": "진행중"
+  },
+  {
+    "id": 9,
+    "title": "강의",
+    "content": "타입스크립트로 블록체인 만들기",
+    "degree": "진행중"
+  }
+]
