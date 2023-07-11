@@ -80,7 +80,7 @@ const About = ({ about }) => {
             <S.EduBox>
               <S.Education>
                 <span>실무 중심의 코딩 전문 교육기관</span>
-                <div>2023.01 ~ 2023.04</div>
+                <div>2023.01 ~ 2023.05</div>
               </S.Education>
               <S.Content title>Wecode</S.Content>
               <S.Content>
@@ -88,8 +88,12 @@ const About = ({ about }) => {
                 커뮤니케이션하는 소프트 스킬을 훈련했습니다.
               </S.Content>
               <S.Content>
-                • &nbsp;기업 협업을 통해 실무 프로젝트에서 직접 참여하여 제품을
+                • &nbsp;기업 협업을 통해 실무 프로젝트에 직접 참여하여 제품을
                 실제로 사용하는 고객을 경험했습니다.
+              </S.Content>
+              <S.Content>
+                • &nbsp;제품의 생산, 유지 보수 주기를 익히고, 결과로 증명하는
+                개발자로 성장합니다.
               </S.Content>
               <S.Content last>
                 • &nbsp;제품을 분석하고 제품의 가치를 파악하여 기능이 왜
@@ -114,24 +118,24 @@ const About = ({ about }) => {
               <S.Content title>경기대학교</S.Content>
               <S.Content>
                 • &nbsp;고객 중심의 다양한 니즈를 파악하고 불편함을 해소시키는
-                것부터 서비스의 질을 높여 그들에게 더 나은 환경을 제공하기 위한
-                솔루션을 배웠습니다.
+                것부터 서비스의 질을 높여 더 나은 환경을 제공하기 위한 솔루션을
+                배웠습니다.
               </S.Content>
-              <S.Content>
+              {/* <S.Content>
                 • &nbsp;이를 통해 어떠한 아이디어를 직접 그려내고 구현해내며
                 유저에게 빠르게 피드백을 받고 소통할 수 있다는 점에서 프론트엔드
                 개발자로 결정하게 됐습니다.
-              </S.Content>
+              </S.Content> */}
               {/* <S.Content>
                 • &nbsp;빅데이터 분석 및 디지털 융합역량을 겸비한 글로벌 관광
-              </S.Content>
-              <S.Content>
-                • &nbsp;변화하는 산업에 탄력적으로 대처할 수 있으며, 다각적으로
-                탐구할 수 있다.
               </S.Content> */}
               <S.Content>
-                • &nbsp;소프트웨어 교양 수업에서 프로그래밍 언어, 알고리즘,
-                데이터 구조 및 문제 해결 기술의 기초를 학습했습니다.
+                • &nbsp;변화하는 산업에 탄력적으로 대처하고 다각적으로 탐구할 수
+                있습니다.
+              </S.Content>
+              <S.Content>
+                • &nbsp;소프트웨어 수업에서 프로그래밍 언어, 알고리즘, 데이터
+                구조 및 문제 해결 기술의 기초를 학습했습니다.
               </S.Content>
               {/* <S.Content>잔디, 개발블로그 => 성장가능성 & 스터디</S.Content> */}
               {/* <a

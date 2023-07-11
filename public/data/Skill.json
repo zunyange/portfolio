@@ -5,18 +5,15 @@
     "name": "JavaScript"
   },
   { "id": 2, "src": "/images/skill/React-Dark.svg", "name": "React" },
+
   {
     "id": 3,
-    "src": "/images/skill/Sass.svg",
-    "name": "Sass"
-  },
-  {
-    "id": 4,
     "src": "/images/skill/StyledComponents.svg",
     "name": "Styled-Component"
   },
-  { "id": 5, "src": "/images/skill/TypeScript.svg", "name": "TypeScript" },
-  { "id": 6, "src": "/images/skill/Figma-Light.svg", "name": "Figma" },
-  { "id": 7, "src": "/images/skill/Netlify-Dark.svg", "name": "Netlify" },
+  { "id": 4, "src": "/images/skill/TypeScript.svg", "name": "TypeScript" },
+  { "id": 5, "src": "/images/skill/Figma-Light.svg", "name": "Figma" },
+  { "id": 6, "src": "/images/skill/Jira.svg", "name": "Jira" },
+  { "id": 7, "src": "/images/skill/VSCode-Dark.svg", "name": "VSCode" },
   { "id": 8, "src": "/images/skill/AWS-Light.svg", "name": "AWS" }
 ]

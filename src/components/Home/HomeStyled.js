@@ -29,35 +29,38 @@ export const IntroduceWrap = styled.div`
   text-align: center;
   width: 100%;
   min-height: 100vh;
-
   p {
     font-size: 50px;
     font-weight: bold;
+  }
+  span {
+    font-size: 13px;
+    margin-top: 50px;
   }
 `;
 export const Introduce = styled.div`
   font-size: 40px;
   line-height: 55px;
   font-family: 'fontEng';
+  margin-top: 10px;
 `;
 
 export const SubIntroduce = styled.div`
   font-size: 20px;
-  width: 650px;
+  width: 850px;
   line-height: 30px;
   display: flex;
-  padding-top: 20px;
+  padding-top: 40px;
   display: inline-block;
-  span {
-    font-size: 13px;
-    line-height: 5px;
+  div {
+    margin-top: 10px;
   }
 `;
 
 export const GoTo = styled.div`
   display: flex;
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
 `;
 
 export const GoToGithub = styled.img`
@@ -108,7 +111,7 @@ export const MoreAbout = styled.div`
   border: 1px solid;
   border-radius: 0.5rem;
   padding: 0.8rem;
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 20px;
   cursor: pointer;
   &:hover {
