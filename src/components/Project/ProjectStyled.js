@@ -32,10 +32,10 @@ export const ProjectBox = styled.div`
   height: 400px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   flex-direction: column;
-  margin: 2rem;
-  padding: 1rem;
+  margin: 32px;
+  padding: 16px;
   transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 
@@ -54,7 +54,7 @@ export const ProjectImg = styled.div`
   width: 100%;
   cursor: pointer;
   img {
-    border-radius: 0.5rem;
+    border-radius: 8px;
     height: 100%;
     object-fit: cover;
     width: 100%;
@@ -68,7 +68,7 @@ export const ProjectImg = styled.div`
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     border: 1px solid #ffffff;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     transition: opacity 0.5s ease;
     ${ProjectBox}:hover & {
       opacity: 1;
@@ -93,7 +93,7 @@ export const ShowProject = styled.div`
     border: 1px solid #000000;
     border-radius: 50%;
     background-color: #000000;
-    margin: 1rem;
+    margin: 16px;
     height: 40px;
     width: 40px;
     align-items: center;
@@ -112,14 +112,14 @@ export const ProjectDescription = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 8px;
   position: relative;
   width: 100%;
 `;
 export const ProjectLanguage = styled.div`
   background-color: #fff;
   border-radius: 10px;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   position: absolute;
   top: -25px;
   font-size: 14px;

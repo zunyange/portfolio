@@ -109,8 +109,8 @@ export const GoToResume = styled.img`
 export const MoreWrap = styled.div``;
 export const MoreAbout = styled.div`
   border: 1px solid;
-  border-radius: 0.5rem;
-  padding: 0.8rem;
+  border-radius: 8px;
+  padding: 13px;
   margin-top: 50px;
   font-size: 20px;
   cursor: pointer;
