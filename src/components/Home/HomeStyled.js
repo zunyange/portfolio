@@ -67,12 +67,12 @@ export const GoToGithub = styled.img`
   width: 50px;
   cursor: pointer;
   transition: 0.7s;
-  /* &:hover {
+  &:hover {
     filter: invert(100%);
-  } */
-  ${GoTo} :hover & {
-    display: none;
   }
+  /* ${GoTo} :hover & {
+    display: none;
+  } */
 `;
 
 export const GoToBlack = styled.img`
@@ -83,32 +83,30 @@ export const GoToBlack = styled.img`
   }
 `;
 
-export const GoToVelog = styled.a`
-  display: inline-block;
+export const GoToVelog = styled.img`
   width: 50px;
   height: 50px;
   cursor: pointer;
-  transition: 1s;
-  background-image: url('/images/icon/velog.png');
-  background-size: cover;
-
+  transition: 0.7s;
   &:hover {
-    filter: hue-rotate(160deg);
+    filter: invert(100%);
   }
 `;
+
 export const GoToLinkedin = styled.img`
   width: 50px;
   cursor: pointer;
+  transition: 0.7s;
   &:hover {
-    content: url('images/icon/linkedin-bk.png');
+    filter: invert(100%);
+    /* content: url('images/icon/linkedin-bk.png'); */
   }
 `;
 
 export const GoToMail = styled.img`
-  width: 50px;
+  width: 55px;
   cursor: pointer;
   transition: 0.7s;
-
   &:hover {
     filter: invert(100%);
   }
@@ -131,11 +129,13 @@ export const MoreAbout = styled.div`
   padding: 13px;
   margin-top: 50px;
   font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
+  transition: 0.7s;
   &:hover {
     border: 1px solid #ffffff;
     background-color: #ffffff;
-    opacity: 0.9;
+    opacity: 1;
     color: #000000;
   }
 `;

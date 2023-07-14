@@ -59,13 +59,15 @@ const Home = ({ home, onMoveAbout }) => {
               rel="noreferrer noopener"
             >
               <S.GoToGithub src="/images/icon/github.png" alt="Github" />
-              <S.GoToBlack src="/images/icon/github-bk.png" alt="Github" />
+              {/* <S.GoToBlack src="/images/icon/github-bk.png" alt="Github" /> */}
             </a>
-            <S.GoToVelog
+            <a
               href="https://velog.io/@zunyange"
               target="_blank"
               rel="noreferrer noopener"
-            />
+            >
+              <S.GoToVelog src="/images/icon/velog.png" alt="Velog" />
+            </a>
             <a
               href="https://www.linkedin.com/in/junyoung-kim-067765281/"
               target="_blank"
@@ -73,11 +75,13 @@ const Home = ({ home, onMoveAbout }) => {
             >
               <S.GoToLinkedin src="/images/icon/linkedin.png" alt="Linkedin" />
             </a>
-            <S.GoToResume
-              onClick={AskToAdmit}
-              src="/images/icon/resume.png"
-              alt="Resume"
-            />
+            <a>
+              <S.GoToResume
+                onClick={AskToAdmit}
+                src="/images/icon/resume.png"
+                alt="Resume"
+              />
+            </a>
             <a href="mailto:giveyoung530@gmail.com">
               <S.GoToMail src="/images/icon/mail.png" alt="Gmail" />
             </a>
