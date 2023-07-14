@@ -117,8 +117,6 @@ export const CommitBox = styled.div`
 
 export const StudyWrap = styled(CommitBox)`
   border-bottom: ${({ last }) => (last ? '0' : 'solid 1px #ccc')};
-  /* display: flex;
-  justify-content: center; */
 `;
 
 export const StudyBox = styled.div`
@@ -140,7 +138,6 @@ export const StyledTr = styled.tr`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-wrap: wrap; */
   font-weight: 400;
   font-size: 14px;
   border-bottom: 1px solid #ccc;
@@ -151,7 +148,7 @@ export const StyledTh = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  width: 75px;
   font-weight: 600;
   padding: 4px;
   border-right: 1px solid #ccc;
@@ -163,7 +160,6 @@ export const StyledTd = styled.div`
   justify-content: center;
   padding: 0 5px;
   width: 70px;
-  /* word-break: keep-all; */
 `;
 export const StyledTdOne = styled.div`
   display: flex;
@@ -172,5 +168,4 @@ export const StyledTdOne = styled.div`
   padding: 0 5px;
   width: 300px;
   border-right: 1px solid #ccc;
-  /* word-break: keep-all; */
 `;

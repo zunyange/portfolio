@@ -95,13 +95,6 @@ const About = ({ about }) => {
                 • &nbsp;제품을 분석하고 제품의 가치를 파악하여 기능이 왜
                 필요하고 고객 니즈에 적합한지 판단할 수 있습니다.
               </S.Content>
-              {/* <a
-                href="https://dev.saedaron.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                https://dev.saedaron.com
-              </a> */}
             </S.EduBox>
           </S.EduWrap>
           <S.EduWrap three>
@@ -133,14 +126,6 @@ const About = ({ about }) => {
                 • &nbsp;소프트웨어 수업에서 프로그래밍 언어, 알고리즘, 데이터
                 구조 및 문제 해결 기술의 기초를 학습했습니다.
               </S.Content>
-              {/* <S.Content>잔디, 개발블로그 => 성장가능성 & 스터디</S.Content> */}
-              {/* <a
-                href="https://dev.saedaron.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                https://dev.saedaron.com
-              </a> */}
             </S.EduBox>
           </S.EduWrap>
         </S.Aboutme>

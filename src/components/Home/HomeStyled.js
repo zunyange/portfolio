@@ -66,22 +66,36 @@ export const GoTo = styled.div`
 export const GoToGithub = styled.img`
   width: 50px;
   cursor: pointer;
-  transition: all 0.8s;
-  //왜 안될까 ㅜㅜㅜㅜ
-  &:hover {
-    content: url('images/icon/github-bk.png');
-    transition: all 0.8s;
+  transition: 0.7s;
+  /* &:hover {
+    filter: invert(100%);
+  } */
+  ${GoTo} :hover & {
+    display: none;
   }
 `;
 
-export const GoToVelog = styled.img`
+export const GoToBlack = styled.img`
   width: 50px;
-  cursor: pointer;
-  &:hover {
-    content: url('images/icon/velog-green.png');
+  display: none;
+  ${GoTo} :hover & {
+    display: block;
   }
 `;
 
+export const GoToVelog = styled.a`
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 1s;
+  background-image: url('/images/icon/velog.png');
+  background-size: cover;
+
+  &:hover {
+    filter: hue-rotate(160deg);
+  }
+`;
 export const GoToLinkedin = styled.img`
   width: 50px;
   cursor: pointer;
@@ -90,19 +104,23 @@ export const GoToLinkedin = styled.img`
   }
 `;
 
-// export const GoToMail = styled.img`
-//   width: 50px;
-//   cursor: pointer;
-//   &:hover {
-//     content: url('images/icon/mail-bk.png');
-//   }
-// `;
+export const GoToMail = styled.img`
+  width: 50px;
+  cursor: pointer;
+  transition: 0.7s;
+
+  &:hover {
+    filter: invert(100%);
+  }
+`;
 
 export const GoToResume = styled.img`
   width: 50px;
   cursor: pointer;
+  transition: 0.7s;
+
   &:hover {
-    content: url('images/icon/resume-bk.png');
+    filter: invert(100%);
   }
 `;
 

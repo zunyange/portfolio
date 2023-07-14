@@ -1,5 +1,5 @@
 [
-  { "id": 1, "title": "사이트", "content": "교육내용", "degree": "진도" },
+  { "id": 1, "title": "카테고리", "content": "교육 내용", "degree": "진도" },
   {
     "id": 2,
     "title": "도서",
@@ -26,9 +26,9 @@
   },
   {
     "id": 6,
-    "title": "도서",
-    "content": "코어 자바스크립트",
-    "degree": "진행중"
+    "title": "강의",
+    "content": "AWS Builders Online Series",
+    "degree": "완료"
   },
   {
     "id": 7,
@@ -38,12 +38,18 @@
   },
   {
     "id": 8,
+    "title": "도서",
+    "content": "코어 자바스크립트",
+    "degree": "진행중"
+  },
+  {
+    "id": 9,
     "title": "강의",
     "content": "프론트엔드 웹 개발의 모든 것 초격차 패키지",
     "degree": "진행중"
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "강의",
     "content": "타입스크립트로 블록체인 만들기",
     "degree": "진행중"

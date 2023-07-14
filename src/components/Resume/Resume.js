@@ -33,7 +33,7 @@ const Resume = ({ resume }) => {
                 것에서 그치지 않고, 더 나은 방향으로 그 이상의 가치를 추구할 줄
                 아는 것도 중요함을 느꼈습니다. 이러한 저의 소비자 중심 사고와
                 개발자 기술을 접목하여 소비자에게 편의를 주고 소비자들의 삶의
-                가치를 높히는 것에 자신 있습니다.
+                가치를 높이는 것에 자신 있습니다.
               </S.Content>
             </S.ContentBox>
           </S.ResumeBox>
@@ -57,8 +57,8 @@ const Resume = ({ resume }) => {
                 진행 중 입니다. 그 외에도 제가 학습하고 싶은 요소를 이용한
                 프로젝트를 직접 기획해 개발해보기도 합니다. 또한 도전하는 환경을
                 만들기 위해 제가 참여할 수 있는 일을 찾아 적극적으로 제안하고
-                현재는 AWS 클라우드 서비스 활용을 위해 AWS Builders 온라인
-                시리즈 교육 중입니다.
+                현재는 AWS 클라우드 역량 강화/서비스 활용를 위해 AWS Builders
+                온라인 시리즈 교육 중입니다.
               </S.Content>
             </S.ContentBox>
           </S.ResumeBox>
@@ -124,20 +124,38 @@ const Resume = ({ resume }) => {
                     <S.Table key={id}>
                       <S.Thead>
                         <S.StyledTh
-                          style={id === 1 ? { backgroundColor: '#eeeeee' } : {}}
+                          style={
+                            id === 1
+                              ? {
+                                  backgroundColor: '#eeeeee',
+                                  fontFamily: 'fontBold',
+                                }
+                              : {}
+                          }
                         >
                           {title}
                         </S.StyledTh>
                       </S.Thead>
                       {id === 1 ? (
-                        <S.StyledTr style={{ backgroundColor: '#eeeeee' }}>
+                        <S.StyledTr
+                          style={{
+                            backgroundColor: '#eeeeee',
+                            fontFamily: 'fontBold',
+                          }}
+                        >
                           <S.StyledTdOne>{content}</S.StyledTdOne>
                           <S.StyledTd>{degree}</S.StyledTd>
                         </S.StyledTr>
                       ) : (
                         <S.StyledTr>
                           <S.StyledTdOne>{content}</S.StyledTdOne>
-                          <S.StyledTd>{degree}</S.StyledTd>
+                          <S.StyledTd
+                            style={
+                              id >= 7 && id <= 10 ? { fontWeight: 'Bold' } : {}
+                            }
+                          >
+                            {degree}
+                          </S.StyledTd>
                         </S.StyledTr>
                       )}
                     </S.Table>
