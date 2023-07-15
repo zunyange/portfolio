@@ -59,7 +59,7 @@ export const SubIntroduce = styled.div`
 
 export const GoTo = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 35px;
   margin-top: 50px;
 `;
 

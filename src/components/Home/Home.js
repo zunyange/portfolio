@@ -82,7 +82,7 @@ const Home = ({ home, onMoveAbout }) => {
               />
             </a>
             <a href="mailto:giveyoung530@gmail.com">
-              <S.GoToMail src="/images/icon/mail.png" alt="Gmail" />
+              <S.GoToMail src="/images/icon/send.png" alt="Gmail" />
             </a>
           </S.GoTo>
           <S.MoreWrap>

@@ -27,6 +27,7 @@ const Project = ({ project }) => {
                     href="https://dev.saedaron.com/"
                     target="_blank"
                     rel="noreferrer"
+                    onClick={event => event.stopPropagation()}
                   >
                     <img src="images/icon/page.png" alt="showWeb" />
                   </a>
@@ -45,6 +46,7 @@ const Project = ({ project }) => {
                       href="https://dev.saedaron.com/"
                       target="_blank"
                       rel="noreferrer"
+                      onClick={event => event.stopPropagation()}
                     >
                       🚀 실제 서비스 운영중 🚀
                     </a>
@@ -64,6 +66,7 @@ const Project = ({ project }) => {
                     href="https://github.com/zunyange/finding-maehwa-frontend"
                     target="_blank"
                     rel="noreferrer"
+                    onClick={event => event.stopPropagation()}
                   >
                     <img src="images/icon/github.png" alt="github" />
                   </a>
@@ -93,6 +96,7 @@ const Project = ({ project }) => {
                     href="https://github.com/zunyange/200OK-frontend"
                     target="_blank"
                     rel="noreferrer"
+                    onClick={event => event.stopPropagation()}
                   >
                     <img src="images/icon/github.png" alt="github" />
                   </a>

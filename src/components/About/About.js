@@ -27,7 +27,7 @@ const About = ({ about }) => {
               </S.Number>
               <S.Mail>
                 <a href="mailto:giveyoung530@gmail.com">
-                  <img src="images/icon/mail1.png" alt="num" />
+                  <img src="images/icon/mail.png" alt="num" />
                   &nbsp; giveyoung530@gmail.com
                 </a>
               </S.Mail>
