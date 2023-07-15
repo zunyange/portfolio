@@ -59,7 +59,6 @@ const Home = ({ home, onMoveAbout }) => {
               rel="noreferrer noopener"
             >
               <S.GoToGithub src="/images/icon/github.png" alt="Github" />
-              {/* <S.GoToBlack src="/images/icon/github-bk.png" alt="Github" /> */}
             </a>
             <a
               href="https://velog.io/@zunyange"
