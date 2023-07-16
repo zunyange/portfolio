@@ -74,13 +74,13 @@ const Home = ({ home, onMoveAbout }) => {
             >
               <S.GoToLinkedin src="/images/icon/linkedin.png" alt="Linkedin" />
             </a>
-            <a>
-              <S.GoToResume
-                onClick={AskToAdmit}
-                src="/images/icon/resume.png"
-                alt="Resume"
-              />
-            </a>
+
+            <S.GoToResume
+              onClick={AskToAdmit}
+              src="/images/icon/resume.png"
+              alt="Resume"
+            />
+
             <a href="mailto:giveyoung530@gmail.com">
               <S.GoToMail src="/images/icon/send.png" alt="Gmail" />
             </a>
