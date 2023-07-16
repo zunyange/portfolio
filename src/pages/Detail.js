@@ -1,7 +1,7 @@
 import React from 'react';
 // import { useNavigate } from 'react-router-dom';
 // import Nav from '../components/Nav/Nav';
-import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
+import ProjectDetail from './ProjectDetail/ProjectOne';
 
 const Detail = () => {
   // const [isShowMenu, setIsShowMenu] = useState(false);

@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <div className="container">
-        <span style={{ color: darkMode ? 'grey' : 'yellow' }}>☀︎</span>
+        <span {{ color: darkMode ? 'grey' : 'yellow' }}>☀︎</span>
         <div className="switch-checkbox">
           <label className="switch">
             <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />

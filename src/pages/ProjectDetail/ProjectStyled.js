@@ -60,8 +60,9 @@ export const SubTitle = styled.div`
 
 export const Term = styled.div`
   font-family: fontLight;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 10px;
+  line-height: 22px;
 `;
 
 export const ProjectSkill = styled.div`

@@ -6,8 +6,16 @@ import { Width } from '../../styles/common.js';
 const Project = ({ project }) => {
   const navigate = useNavigate();
 
-  const goToDetail = () => {
-    navigate('/project');
+  const goToDabisu = () => {
+    navigate('/project/dabisu');
+  };
+
+  const goToMaehwa = () => {
+    navigate('/project/maehwa');
+  };
+
+  const goTo200ok = () => {
+    navigate('/project/200ok');
   };
   return (
     <S.Project ref={project}>
@@ -15,12 +23,12 @@ const Project = ({ project }) => {
         <S.ProjectWrap>
           <S.Title>Project</S.Title>
           <S.Projects>
-            <S.ProjectBox onClick={goToDetail}>
+            <S.ProjectBox onClick={goToDabisu}>
               <S.ProjectImg>
                 <img src="/images/jun/dabisu.png" alt="project-img" />
                 <span class="overlay" />
                 <S.ShowProject>
-                  <div onClick={goToDetail}>
+                  <div onClick={goToDabisu}>
                     <img src="images/icon/more.png" alt="more" />
                   </div>
                   <a
@@ -54,12 +62,12 @@ const Project = ({ project }) => {
                 </S.ProjectContent>
               </S.ProjectDescription>
             </S.ProjectBox>
-            <S.ProjectBox onClick={goToDetail}>
+            <S.ProjectBox onClick={goToMaehwa}>
               <S.ProjectImg>
                 <img src="/images/jun/maehwa.png" alt="project-img" />
                 <span class="overlay" />
                 <S.ShowProject>
-                  <div onClick={goToDetail}>
+                  <div onClick={goToMaehwa}>
                     <img src="images/icon/more.png" alt="more" />
                   </div>
                   <a
@@ -84,12 +92,12 @@ const Project = ({ project }) => {
                 </S.ProjectContent>
               </S.ProjectDescription>
             </S.ProjectBox>
-            <S.ProjectBox onClick={goToDetail}>
+            <S.ProjectBox onClick={goTo200ok}>
               <S.ProjectImg>
                 <img src="/images/jun/200ok.png" alt="project-img" />
                 <span class="overlay" />
                 <S.ShowProject>
-                  <div onClick={goToDetail}>
+                  <div onClick={goTo200ok}>
                     <img src="images/icon/more.png" alt="more" />
                   </div>
                   <a
