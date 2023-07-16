@@ -13,7 +13,15 @@ export const Title = styled.div`
 `;
 
 export const DetailWrap = styled.div`
-  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  overflow-y: auto;
+
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -22,8 +30,65 @@ export const DetailWrap = styled.div`
   min-height: 100vh;
   video {
     width: 600px;
+  } */
+`;
+export const Detail = styled.div`
+  width: 900px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 3rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px;
+  margin: 2rem auto;
+  /* animation: 0.6s ease 0s 1 normal none running lnvfdh; */
+`;
+export const ProjectTitle = styled.div`
+  font-family: fontBold;
+  font-size: 50px;
+`;
+export const ProjectSubTitle = styled.div`
+  margin: 10px 0;
+`;
+
+export const SubTitle = styled.div`
+  margin-bottom: 10px;
+  a {
+    text-decoration-line: none;
+    color: #bc231b;
   }
 `;
 
-// export const DetailWrap = styled.div``;
-// export const DetailWrap = styled.div``;
+export const Term = styled.div`
+  font-family: fontLight;
+  font-size: 13px;
+  margin-bottom: 10px;
+`;
+
+export const ProjectSkill = styled.div`
+  span {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    margin: 0px 7px 5px 0;
+    font-size: 13px;
+  }
+`;
+
+export const ProjectImg = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  img {
+    width: 830px;
+  }
+`;
+
+export const Description = styled.div`
+  /* margin: 35px 0; */
+  line-height: 24px;
+`;
+// export const ProjectImg = styled.div``;
+// export const ProjectImg = styled.div``;
+// export const ProjectImg = styled.div``;
+// export const ProjectImg = styled.div``;

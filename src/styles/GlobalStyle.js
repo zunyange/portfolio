@@ -5,6 +5,7 @@ import FontBend from '../fonts/Cafe24Oneprettynight.ttf';
 import FontEng from '../fonts/Belanosima-Regular.ttf';
 import FontBold from '../fonts/IBMPlexSansKR-Medium.ttf';
 import FontBase from '../fonts/IBMPlexSansKR-Light.ttf';
+import FontLight from '../fonts/IBMPlexSansKR-Thin.ttf';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}  
@@ -38,7 +39,12 @@ ${reset}
   font-family: 'fontBold';
   src: url(${FontBold})
 } 
-  
+
+@font-face {
+  font-family: 'fontLight';
+  src: url(${FontLight})
+} 
+
 @font-face {
   font-family: 'fontBase';
   src: url(${FontBase})
