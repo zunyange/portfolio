@@ -86,7 +86,6 @@ export const ProjectImg = styled.div`
 `;
 
 export const Description = styled.div`
-  /* margin: 35px 0; */
   line-height: 24px;
 `;
 // export const ProjectImg = styled.div``;
