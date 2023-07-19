@@ -5,9 +5,8 @@ import { Width } from '../../styles/common.js';
 const ProjectThree = () => {
   const [isVisible, setIsVisible] = useState(false);
   const imgRef = useRef();
-  const observerRef = useRef(null); // Use useRef to store the observer
+  const observerRef = useRef(null);
 
-  // IntersectionObserver callback function
   const handleIntersection = entries => {
     const [entry] = entries;
     if (entry.isIntersecting) {
@@ -24,12 +23,12 @@ const ProjectThree = () => {
     });
 
     if (imgRef.current) {
-      observerRef.current.observe(imgRef.current); // Start observing the image element
+      observerRef.current.observe(imgRef.current);
     }
 
     return () => {
       if (observerRef.current) {
-        observerRef.current.disconnect(); // Clean up the observer on component unmount
+        observerRef.current.disconnect();
       }
     };
   }, []);
@@ -68,14 +67,14 @@ const ProjectThree = () => {
             <div ref={imgRef}>
               {isVisible ? (
                 <S.ProjectImg>
-                  <img src="/images/jun/200okmain.png" alt="Web first img" />
+                  <img src="/images/jun/DabisuMain.png" alt="Main-img" />
                 </S.ProjectImg>
               ) : (
                 <S.ProjectImg>
                   <div
                     style={{
                       width: '800px',
-                      height: '500px',
+                      height: '310px',
                       backgroundColor: '#97bbeb',
                     }}
                   >
@@ -91,7 +90,7 @@ const ProjectThree = () => {
               것을 목적으로 기획했습니다.
             </S.Description>
             <S.ProjectImg>
-              <img src="/images/jun/200oksignup.png" alt="Signup img" />
+              <img src="/images/jun/Dabisu2.png" alt="Responsive-img" />
             </S.ProjectImg>
             <S.Description>
               • 회원가입 페이지 •<br />
@@ -110,7 +109,7 @@ const ProjectThree = () => {
               이동
             </S.Description>
             <S.ProjectImg>
-              <img src="/images/jun/200okcart.png" alt="Cart img" />
+              <img src="/images/jun/DabisuMap.png" alt="Map-img" />
             </S.ProjectImg>
             <S.Description>
               • 장바구니 페이지 •<br />

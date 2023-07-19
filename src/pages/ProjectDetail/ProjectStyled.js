@@ -80,9 +80,10 @@ export const ProjectImg = styled.div`
   display: flex;
   justify-content: center;
   margin: 50px 0;
-  font-size: 20px;
+  font-family: fontBold;
+  font-size: 25px;
   img {
-    width: 830px;
+    width: 820px;
   }
 `;
 
