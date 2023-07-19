@@ -1,8 +1,39 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import * as S from './ProjectStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectTwo = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const imgRef = useRef();
+  const observerRef = useRef(null); // Use useRef to store the observer
+
+  // IntersectionObserver callback function
+  const handleIntersection = entries => {
+    const [entry] = entries;
+    if (entry.isIntersecting) {
+      setIsVisible(true);
+      observerRef.current.disconnect(); // Disconnect the observer once the image is visible
+    }
+  };
+
+  useEffect(() => {
+    // Create an IntersectionObserver instance
+    observerRef.current = new IntersectionObserver(handleIntersection, {
+      root: null, // Use the viewport as the root
+      threshold: 0.1, // Define the threshold at which the callback should be triggered
+    });
+
+    if (imgRef.current) {
+      observerRef.current.observe(imgRef.current); // Start observing the image element
+    }
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect(); // Clean up the observer on component unmount
+      }
+    };
+  }, []);
+
   return (
     <S.ProjectDetail style={{ backgroundColor: '#b9b9b9' }}>
       <Width>
@@ -10,28 +41,43 @@ const ProjectTwo = () => {
           <S.Detail>
             <S.ProjectTitle>Maehwa</S.ProjectTitle>
             <S.ProjectSubTitle>
-              <S.SubTitle>~~ 클론 프로젝트</S.SubTitle>
+              <S.SubTitle>나에게 맞는 화장실을 찾는 서비스</S.SubTitle>
               <S.Term>
-                구현 항목 : 회원가입, 장바구니 &nbsp;|&nbsp; 2023.03.03 ~ 03.17
-                (12일)
+                구현 항목 : 장소 리스트, 리뷰 페이지 &nbsp;|&nbsp; 2023.03.24 ~
+                04.06 (2주)
               </S.Term>
               <S.ProjectSkill>
                 <span>React</span>
-                <span>Sass</span>
-                <span>Postman</span>
-                <span>Trello</span>
-                <span>Notion</span>
-                <span>Slack</span>
+                <span>Styled-components</span>
+                <span>Recoil</span>
+                <span>Ant Design</span>
+                <span>Jira</span>
+                <span>Figma</span>
               </S.ProjectSkill>
             </S.ProjectSubTitle>
-            <S.ProjectImg>
-              <img src="/images/jun/200okmain.png" alt="Web first img" />
-            </S.ProjectImg>
+            <div ref={imgRef}>
+              {isVisible ? (
+                <S.ProjectImg>
+                  <img src="/images/jun/200okmain.png" alt="Web first img" />
+                </S.ProjectImg>
+              ) : (
+                <S.ProjectImg>
+                  <div
+                    style={{
+                      width: '800px',
+                      height: '500px',
+                      backgroundColor: '#eeeeee',
+                    }}
+                  >
+                    Loading...
+                  </div>
+                </S.ProjectImg>
+              )}
+            </div>
             <S.Description>
-              Product 분석을 통해 고객층에 맞는 화려한 시각적인 형태를 제공하고,
-              개성을 중시하고 트렌디함을 쫓는 10대, 20대를 위한 추천 및 맞춤
-              서비스와 다양한 이벤트를 진행하여 온라인 구매에 흥미를 제공하는
-              것을 목적으로 기획했습니다.
+              '매화를 찾아서' 실생활에서의 불편함에 착안하여 지도로 내 주변
+              화장실을 발견하고, 실사용자들이 제공한 리뷰와 필터링을 통해 나에게
+              맞는 화장실을 찾을 수 있는 프리미엄 서비스입니다.
             </S.Description>
             <S.ProjectImg>
               <img src="/images/jun/200oksignup.png" alt="Signup img" />

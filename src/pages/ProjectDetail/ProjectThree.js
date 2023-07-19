@@ -1,8 +1,39 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import * as S from './ProjectStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectThree = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const imgRef = useRef();
+  const observerRef = useRef(null); // Use useRef to store the observer
+
+  // IntersectionObserver callback function
+  const handleIntersection = entries => {
+    const [entry] = entries;
+    if (entry.isIntersecting) {
+      setIsVisible(true);
+      observerRef.current.disconnect(); // Disconnect the observer once the image is visible
+    }
+  };
+
+  useEffect(() => {
+    // Create an IntersectionObserver instance
+    observerRef.current = new IntersectionObserver(handleIntersection, {
+      root: null, // Use the viewport as the root
+      threshold: 0.1, // Define the threshold at which the callback should be triggered
+    });
+
+    if (imgRef.current) {
+      observerRef.current.observe(imgRef.current); // Start observing the image element
+    }
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect(); // Clean up the observer on component unmount
+      }
+    };
+  }, []);
+
   return (
     <S.ProjectDetail style={{ backgroundColor: '#97bbeb' }}>
       <Width>
@@ -34,9 +65,25 @@ const ProjectThree = () => {
                 <span>Slack</span>
               </S.ProjectSkill>
             </S.ProjectSubTitle>
-            <S.ProjectImg>
-              <img src="/images/jun/200okmain.png" alt="Web first img" />
-            </S.ProjectImg>
+            <div ref={imgRef}>
+              {isVisible ? (
+                <S.ProjectImg>
+                  <img src="/images/jun/200okmain.png" alt="Web first img" />
+                </S.ProjectImg>
+              ) : (
+                <S.ProjectImg>
+                  <div
+                    style={{
+                      width: '800px',
+                      height: '500px',
+                      backgroundColor: '#97bbeb',
+                    }}
+                  >
+                    Loading...
+                  </div>
+                </S.ProjectImg>
+              )}
+            </div>
             <S.Description>
               Product 분석을 통해 고객층에 맞는 화려한 시각적인 형태를 제공하고,
               개성을 중시하고 트렌디함을 쫓는 10대, 20대를 위한 추천 및 맞춤

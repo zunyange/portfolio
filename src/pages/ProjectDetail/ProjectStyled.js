@@ -80,13 +80,18 @@ export const ProjectImg = styled.div`
   display: flex;
   justify-content: center;
   margin: 50px 0;
+  font-size: 20px;
   img {
     width: 830px;
   }
 `;
 
 export const Description = styled.div`
-  line-height: 24px;
+  line-height: 27px;
+  span {
+    font-size: 18px;
+    font-family: fontBold;
+  }
 `;
 // export const ProjectImg = styled.div``;
 // export const ProjectImg = styled.div``;
