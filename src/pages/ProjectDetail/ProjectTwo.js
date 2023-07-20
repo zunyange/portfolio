@@ -34,7 +34,7 @@ const ProjectTwo = () => {
   }, []);
 
   return (
-    <S.ProjectDetail style={{ backgroundColor: '#b9b9b9' }}>
+    <S.ProjectDetail style={{ backgroundColor: '#cdcdcd' }}>
       <Width>
         <S.DetailWrap>
           <S.Detail>
@@ -76,51 +76,47 @@ const ProjectTwo = () => {
             <S.Description>
               '매화를 찾아서'는 실생활에서의 불편함에 착안하여 지도로 내 주변
               화장실을 발견하고, 실사용자들이 제공한 리뷰와 필터링을 통해 나에게
-              더 맞는 장소를 찾을 수 있는 서비스이다. 화장실을 찾는 유저 특성상
-              이동하면서 서비스를 이용할 것임을 감안하여 모바일 레이아웃으로
-              구성하였다.
+              더 맞는 장소를 찾을 수 있는 서비스입니다. 화장실을 찾는 유저
+              특성상 이동하면서 서비스를 이용할 것임을 감안하여 모바일
+              레이아웃으로 구성했습니다.
             </S.Description>
             <S.ProjectImg>
               <img src="/images/jun/MaehwaFilter.png" alt="Filter-img" />
             </S.ProjectImg>
             <S.Description>
-              • 회원가입 페이지 •<br />
+              <span>장소리스트(PlaceList)</span> <br />- useSearchParams Hook을
+              사용하여 해당 queryParameter 의 value를 불러오고, queryString을
+              통한 상품 필터 기능 구현
               <div>
-                - 정규표현식을 활용한 유효성 검사, 필수입력 여부에 의한 실시간
-                레이아웃의 변화로 사용자의 편의를 위해 UI 구성
+                - 사용자의 궁금증을 불러일으키기 위해 모든 데이터를 가시화하지
+                않았고, 사용자의 편의성과 집중도를 높이기 위해 모달창을 사용하여
+                정보를 빠르게 제공
               </div>
-              <div>
-                - 이메일 중복확인으로 사용자의 토큰이 백엔드 데이터에
-                저장돼있는지 확인하는 과정 구현
-              </div>
-              <div>
-                - 필수 사항 오류 및 미입력시 버튼을 가시적으로 비활성화{' '}
-              </div>
-              - checkbox를 통해 사용자의 선택을 관리하여 데이터화하고, 서버에
-              이동
             </S.Description>
             <S.ProjectImg>
               <img src="/images/jun/MaehwaReview.png" alt="Review-img" />
             </S.ProjectImg>
             <S.Description>
-              • 장바구니 페이지 •<br />
+              <span>리뷰 페이지</span> <br />- 데이터 재사용 및 모든 id 의 함수
+              작동 방지를 위해 컴포넌트 분리 : Tag / Comment Component
               <div>
-                - 사용자에 따라 장바구니의 상품이 유지되도록 Local Storage에
-                토큰을 저장하는 방식 적용
+                - 별점 라이브러리 사용 : onChange 이벤트로 값이 정해지면
+                콜백함수를 일으킴
               </div>
-              <div>
-                - 체크박스 : 선택 제품에 의해 수량변경, 삭제가 가능하며 선택한
-                제품의 총금액을 보여줌
-              </div>
-              <div>
-                - 사용자의 편의를 위해 개별삭제, 선택삭제 전체삭제가 가능하도록
-                구현
-              </div>
-              <div>
-                - 삭제 버튼 클릭 시 서버 및 클라이언트에서 해당 데이터 삭제
-              </div>
-              - 최종 버튼은 쇼핑하기와 결제하기로 구분하여 해당 페이지에서
-              결제를 보류할 수 있도록 편의화
+              - 선택한 태그의 값을 전달하기 위해 태그 별 id 를 할당하고, onClick
+              함수에서 선택된 id들의 정보를 새 배열에 업데이트하여 관리
+            </S.Description>
+            <S.Description>
+              <a
+                href="https://bit.ly/44B5uqh"
+                target="_blank"
+                rel="noreferrer noopener"
+                style={{
+                  color: '#a4a4a4',
+                }}
+              >
+                🔗 프로젝트에 대한 회고가 블로그에 담겨있습니다.
+              </a>
             </S.Description>
           </S.Detail>
         </S.DetailWrap>

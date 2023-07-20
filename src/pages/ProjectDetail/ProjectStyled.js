@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProjectDetail = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #e2cfcf;
+  background-color: #e6bebe;
 `;
 
 export const Title = styled.div`
@@ -89,9 +89,15 @@ export const ProjectImg = styled.div`
 
 export const Description = styled.div`
   line-height: 27px;
+  padding: 0 10px;
   span {
     font-size: 18px;
     font-family: fontBold;
+  }
+  a {
+    display: flex;
+    text-decoration-line: none;
+    margin-top: 40px;
   }
 `;
 // export const ProjectImg = styled.div``;

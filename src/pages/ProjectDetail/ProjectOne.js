@@ -133,6 +133,18 @@ const ProjectOne = () => {
               - 최종 버튼은 쇼핑하기와 결제하기로 구분하여 해당 페이지에서
               결제를 보류할 수 있도록 편의화
             </S.Description>
+            <S.Description>
+              <a
+                href="https://bit.ly/3XLT7Vq"
+                target="_blank"
+                rel="noreferrer noopener"
+                style={{
+                  color: '#e0a4a4',
+                }}
+              >
+                🔗 프로젝트에 대한 회고가 블로그에 담겨있습니다.
+              </a>
+            </S.Description>
           </S.Detail>
         </S.DetailWrap>
       </Width>
