@@ -92,6 +92,7 @@ const ProjectTwo = () => {
                 않았고, 사용자의 편의성과 집중도를 높이기 위해 모달창을 사용하여
                 정보를 빠르게 제공
               </div>
+              <div>- (미완)</div>
             </S.Description>
             <S.ProjectImg>
               <img src="/images/jun/MaehwaReview.png" alt="Review-img" />
@@ -103,8 +104,12 @@ const ProjectTwo = () => {
                 - 별점 라이브러리 사용 : onChange 이벤트로 값이 정해지면
                 콜백함수를 일으킴
               </div>
-              - 선택한 태그의 값을 전달하기 위해 태그 별 id 를 할당하고, onClick
-              함수에서 선택된 id들의 정보를 새 배열에 업데이트하여 관리
+              <div>
+                - 선택한 태그의 값을 전달하기 위해 태그 별 id 를 할당하고,
+                onClick 함수에서 선택된 id들의 정보를 새 배열에 업데이트하여
+                관리
+              </div>
+              <div>- (미완)</div>
             </S.Description>
             <S.Description>
               <a
