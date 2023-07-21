@@ -32,24 +32,30 @@
   },
   {
     "id": 7,
+    "title": "강의",
+    "content": "Nomad Coders - 실전형 리액트 Hooks 10개",
+    "degree": "완료"
+  },
+  {
+    "id": 8,
     "title": "도서",
     "content": "모던 자바스크립트 Deep Dive",
     "degree": "진행중"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "도서",
     "content": "코어 자바스크립트",
     "degree": "진행중"
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "강의",
     "content": "프론트엔드 웹 개발의 모든 것 초격차 패키지",
     "degree": "진행중"
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "강의",
     "content": "타입스크립트로 블록체인 만들기",
     "degree": "진행중"
