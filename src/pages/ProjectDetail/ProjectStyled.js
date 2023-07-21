@@ -33,19 +33,38 @@ export const DetailWrap = styled.div`
   } */
 `;
 export const Detail = styled.div`
+  position: relative;
   width: 900px;
   max-width: 100%;
   box-sizing: border-box;
-  padding: 3rem;
-  background-color: rgb(255, 255, 255);
+  padding: 48px;
+  background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px;
-  margin: 2rem auto;
+  margin: 32px auto;
   /* animation: 0.6s ease 0s 1 normal none running lnvfdh; */
 `;
 export const ProjectTitle = styled.div`
   font-family: fontBold;
   font-size: 50px;
 `;
+
+export const CloseBtn = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-family: fontBase;
+  color: #8a8a8a;
+  right: 27px;
+  top: 27px;
+  cursor: pointer;
+  img {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+  }
+`;
+
 export const ProjectSubTitle = styled.div`
   margin: 10px 0;
 `;

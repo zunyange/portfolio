@@ -1,9 +1,9 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import * as S from './ProjectStyled.js';
 import { Width } from '../../styles/common.js';
 
-const Project = ({ project }) => {
+const Project = ({ project, history }) => {
   const navigate = useNavigate();
 
   const goToDabisu = () => {
@@ -17,6 +17,21 @@ const Project = ({ project }) => {
   const goTo200ok = () => {
     navigate('/project/200ok');
   };
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <S.Project ref={project}>
       <Width>
@@ -92,40 +107,47 @@ const Project = ({ project }) => {
                 </S.ProjectContent>
               </S.ProjectDescription>
             </S.ProjectBox>
-            <S.ProjectBox onClick={goTo200ok}>
-              <S.ProjectImg>
-                <img src="/images/jun/200ok.png" alt="project-img" />
-                <span class="overlay" />
-                <S.ShowProject>
-                  <div onClick={goTo200ok}>
-                    <img src="images/icon/more.png" alt="more" />
-                  </div>
-                  <a
-                    href="https://github.com/zunyange/200OK-frontend"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={event => event.stopPropagation()}
-                  >
-                    <img src="images/icon/github.png" alt="github" />
-                  </a>
-                </S.ShowProject>
-              </S.ProjectImg>
-              <S.ProjectDescription>
-                <S.ProjectLanguage>React Js</S.ProjectLanguage>
-                <S.ProjectContent>
-                  <h4>1020을 위한 트렌디한 e-커머스</h4>
-                  <div>
-                    소비자에게 한눈에 보고 이해할 수 있는 최소한의 정보를
-                    시각적인 형태로 제공하고, 그로 인해 사용자가 더 편리하게
-                    이용할 수 있도록 제작
-                  </div>
-                  {/* <span>
+            <Link
+              to={{
+                pathname: '/project/200ok',
+                state: { scrollPosition },
+              }}
+            >
+              <S.ProjectBox onClick={goTo200ok}>
+                <S.ProjectImg>
+                  <img src="/images/jun/200ok.png" alt="project-img" />
+                  <span class="overlay" />
+                  <S.ShowProject>
+                    <div onClick={goTo200ok}>
+                      <img src="images/icon/more.png" alt="more" />
+                    </div>
+                    <a
+                      href="https://github.com/zunyange/200OK-frontend"
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={event => event.stopPropagation()}
+                    >
+                      <img src="images/icon/github.png" alt="github" />
+                    </a>
+                  </S.ShowProject>
+                </S.ProjectImg>
+                <S.ProjectDescription>
+                  <S.ProjectLanguage>React Js</S.ProjectLanguage>
+                  <S.ProjectContent>
+                    <h4>1020을 위한 트렌디한 e-커머스</h4>
+                    <div>
+                      소비자에게 한눈에 보고 이해할 수 있는 최소한의 정보를
+                      시각적인 형태로 제공하고, 그로 인해 사용자가 더 편리하게
+                      이용할 수 있도록 제작
+                    </div>
+                    {/* <span>
                     <img src="images/icon/link.png" alt="more" />
                     View More
                   </span> */}
-                </S.ProjectContent>
-              </S.ProjectDescription>
-            </S.ProjectBox>
+                  </S.ProjectContent>
+                </S.ProjectDescription>
+              </S.ProjectBox>
+            </Link>
           </S.Projects>
         </S.ProjectWrap>
       </Width>

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import * as S from './ProjectStyled.js';
 import { Width } from '../../styles/common.js';
 
@@ -32,12 +33,23 @@ const ProjectOne = () => {
       }
     };
   }, []);
+  //Scroll 위치 기억
+  const location = useLocation();
+  const { scrollPosition } = location.state || { scrollPosition: 0 };
+
+  useEffect(() => {
+    window.scrollTo(0, scrollPosition);
+  }, [scrollPosition]);
 
   return (
     <S.ProjectDetail>
       <Width>
         <S.DetailWrap>
           <S.Detail>
+            <S.CloseBtn onClick={() => window.history.back()}>
+              <img src="/images/icon/close.png" alt="CloseBtn" />
+              CLOSE
+            </S.CloseBtn>
             <S.ProjectTitle>200OK</S.ProjectTitle>
             <S.ProjectSubTitle>
               <S.SubTitle>
