@@ -93,13 +93,34 @@ const ProjectTwo = () => {
               특성상 이동하면서 서비스를 이용할 것임을 감안하여 모바일
               레이아웃으로 구성했습니다.
             </S.Description>
+            <S.Description point>
+              <div>
+                <span>Point 1. </span>역방향으로 상태를 전달하고 업데이트하기
+                위해 전역 상태관리 라이브러리인 <strong>Recoil</strong>을
+                사용하였고, 상호의존성을 가진 특성으로 데이터의 흐름에 따라서
+                여러 상태들의 연관된 컴포넌트들을 유기적으로 관리할 수
+                있었습니다.
+              </div>
+              <div>
+                <span>Point 2. </span>
+                <strong>디자인 라이브러리</strong>를 사용하여 다양한 디자인
+                옵션을 탐색하고 사용자 인터페이스를 다양하게 구성할 수 있었고,
+                새로운 시각과 기술적 지식을 습득하여 보다 효율적이고 일관된
+                디자인을 구현했습니다.
+              </div>
+              <div>
+                <span>Point 3. </span>단기간에 새로운 프로덕트를 기획하고 새로운
+                툴, 디자인, 기술들을 도입하며 <strong>러닝커브</strong>를
+                겪었지만, 잘 극복하여 더욱 성장할 수 있었던 프로젝트입니다.
+              </div>
+            </S.Description>
             <S.ProjectImg>
               <img src="/images/jun/MaehwaFilter.png" alt="Filter-img" />
             </S.ProjectImg>
             <S.Description>
-              <span>장소리스트(PlaceList)</span> <br />- useSearchParams Hook을
-              사용하여 해당 queryParameter 의 value를 불러오고, queryString을
-              통한 상품 필터 기능 구현
+              <span>필터링</span> <br />- useSearchParams Hook을 사용하여 해당
+              queryParameter 의 value를 불러오고, queryString을 통한 상품 필터
+              기능 구현
               <div>
                 - 사용자의 궁금증을 불러일으키기 위해 모든 데이터를 가시화하지
                 않았고, 사용자의 편의성과 집중도를 높이기 위해 모달창을 사용하여
@@ -111,18 +132,22 @@ const ProjectTwo = () => {
               <img src="/images/jun/MaehwaReview.png" alt="Review-img" />
             </S.ProjectImg>
             <S.Description>
-              <span>리뷰 페이지</span> <br />- 데이터 재사용 및 모든 id 의 함수
-              작동 방지를 위해 컴포넌트 분리 : Tag / Comment Component
+              <span>리뷰 페이지</span> <br />- 데이터 재사용 및 모든 댓글 id 의
+              함수 작동 방지를 위해 컴포넌트 분리
               <div>
-                - 별점 라이브러리 사용 : onChange 이벤트로 값이 정해지면
+                - 별점 라이브러리 사용 : onChange 이벤트로 값을 받고, 선택되면
                 콜백함수를 일으킴
               </div>
               <div>
-                - 선택한 태그의 값을 전달하기 위해 태그 별 id 를 할당하고,
-                onClick 함수에서 선택된 id들의 정보를 새 배열에 업데이트하여
-                관리
+                - 리뷰 데이터는 useState를 사용하여 상태 변수에 저장하고
+                사용자가 리뷰를 제출하면 콜백 함수를 트리거하여 리뷰 데이터를
+                전달
               </div>
-              <div>- (미완)</div>
+              <div>- </div>
+              <div>
+                - 백엔드 쪽에서 리뷰 데이터를 받지 않고, 하드코딩으로 페이지 to
+                페이지로 리뷰작성이 가능케함
+              </div>
             </S.Description>
             <S.Description>
               <a

@@ -109,9 +109,13 @@ export const ProjectImg = styled.div`
 export const Description = styled.div`
   line-height: 27px;
   padding: 0 10px;
+  padding-top: ${({ point }) => (point ? '10px' : '0')};
   span {
     font-size: 18px;
     font-family: fontBold;
+  }
+  strong {
+    box-shadow: inset 0 -10px 0 #daf0e9;
   }
   a {
     display: flex;
