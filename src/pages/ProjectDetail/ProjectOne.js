@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import * as S from './ProjectStyled.js';
+import { useLocation, useNavigate } from 'react-router-dom';
+import * as S from './ProjectDetailStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectOne = () => {
@@ -36,6 +36,7 @@ const ProjectOne = () => {
   //Scroll 위치 기억
   const location = useLocation();
   const { scrollPosition } = location.state || { scrollPosition: 0 };
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, scrollPosition);
@@ -46,7 +47,7 @@ const ProjectOne = () => {
       <Width>
         <S.DetailWrap>
           <S.Detail>
-            <S.CloseBtn onClick={() => window.history.back()}>
+            <S.CloseBtn onClick={() => navigate(-2)}>
               <img src="/images/icon/close.png" alt="CloseBtn" />
               CLOSE
             </S.CloseBtn>
@@ -95,7 +96,6 @@ const ProjectOne = () => {
                 </S.ProjectImg>
               )}
             </div>
-
             <S.Description>
               Product 분석을 통해 고객층에 맞는 화려한 시각적인 형태를 제공하고,
               개성을 중시하고 트렌디함을 쫓는 10대, 20대를 위한 추천 및 맞춤

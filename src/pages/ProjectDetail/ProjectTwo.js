@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import * as S from './ProjectStyled.js';
+import { useLocation, useNavigate } from 'react-router-dom';
+import * as S from './ProjectDetailStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectTwo = () => {
@@ -32,12 +33,24 @@ const ProjectTwo = () => {
       }
     };
   }, []);
+  //Scroll 위치 기억
+  const location = useLocation();
+  const { scrollPosition } = location.state || { scrollPosition: 0 };
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, scrollPosition);
+  }, [scrollPosition]);
 
   return (
     <S.ProjectDetail style={{ backgroundColor: '#cdcdcd' }}>
       <Width>
         <S.DetailWrap>
           <S.Detail>
+            <S.CloseBtn onClick={() => navigate(-2)}>
+              <img src="/images/icon/close.png" alt="CloseBtn" />
+              CLOSE
+            </S.CloseBtn>
             <S.ProjectTitle>Maehwa</S.ProjectTitle>
             <S.ProjectSubTitle>
               <S.SubTitle>나에게 맞는 화장실을 찾는 서비스</S.SubTitle>

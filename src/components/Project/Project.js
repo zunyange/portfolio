@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import * as S from './ProjectStyled.js';
 import { Width } from '../../styles/common.js';
 
-const Project = ({ project, history }) => {
+const Project = ({ project }) => {
   const navigate = useNavigate();
 
   const goToDabisu = () => {
@@ -38,80 +38,97 @@ const Project = ({ project, history }) => {
         <S.ProjectWrap>
           <S.Title>Project</S.Title>
           <S.Projects>
-            <S.ProjectBox onClick={goToDabisu}>
-              <S.ProjectImg>
-                <img src="/images/jun/Dabisu.png" alt="project-img" />
-                <span class="overlay" />
-                <S.ShowProject>
-                  <div onClick={goToDabisu}>
-                    <img src="images/icon/more.png" alt="more" />
-                  </div>
-                  <a
-                    href="https://dev.saedaron.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={event => event.stopPropagation()}
-                  >
-                    <img src="images/icon/page.png" alt="showWeb" />
-                  </a>
-                </S.ShowProject>
-              </S.ProjectImg>
-              <S.ProjectDescription>
-                <S.ProjectLanguage>React Js</S.ProjectLanguage>
-                <S.ProjectContent>
-                  <h4>새다론 정보 서비스 구축 프로젝트</h4>
-                  <div>
-                    홍보 목적의 원페이지 반응형 UI 구현 및 위치 기반 정보 매칭
-                    서비스 모듈 개발
-                  </div>
-                  <div>
+            <Link
+              to={{
+                pathname: '/project/dabisu',
+                state: { scrollPosition },
+              }}
+              style={{ textDecoration: 'none', color: '#000000' }}
+            >
+              <S.ProjectBox onClick={goToDabisu}>
+                <S.ProjectImg>
+                  <img src="/images/jun/Dabisu.png" alt="project-img" />
+                  <span class="overlay" />
+                  <S.ShowProject>
+                    <div onClick={goToDabisu}>
+                      <img src="images/icon/more.png" alt="more" />
+                    </div>
                     <a
                       href="https://dev.saedaron.com/"
                       target="_blank"
                       rel="noreferrer"
                       onClick={event => event.stopPropagation()}
                     >
-                      🚀 실제 서비스 운영중 🚀
+                      <img src="images/icon/page.png" alt="showWeb" />
                     </a>
-                  </div>
-                </S.ProjectContent>
-              </S.ProjectDescription>
-            </S.ProjectBox>
-            <S.ProjectBox onClick={goToMaehwa}>
-              <S.ProjectImg>
-                <img src="/images/jun/Maehwa.png" alt="project-img" />
-                <span class="overlay" />
-                <S.ShowProject>
-                  <div onClick={goToMaehwa}>
-                    <img src="images/icon/more.png" alt="more" />
-                  </div>
-                  <a
-                    href="https://github.com/zunyange/finding-maehwa-frontend"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={event => event.stopPropagation()}
-                  >
-                    <img src="images/icon/github.png" alt="github" />
-                  </a>
-                </S.ShowProject>
-              </S.ProjectImg>
-              <S.ProjectDescription>
-                <S.ProjectLanguage>React Js</S.ProjectLanguage>
-                <S.ProjectContent>
-                  <h4>프리미엄 맞춤 화장실 서비스</h4>
-                  <div>
-                    실생활에서의 불편함에 착안하여 지도로 내 주변 화장실을
-                    발견하고 필터링이나 리뷰를 통해 나에게 맞는 화장실을 찾는
-                    모바일 기반의 웹 서비스
-                  </div>
-                </S.ProjectContent>
-              </S.ProjectDescription>
-            </S.ProjectBox>
+                  </S.ShowProject>
+                </S.ProjectImg>
+                <S.ProjectDescription>
+                  <S.ProjectLanguage>React Js</S.ProjectLanguage>
+                  <S.ProjectContent>
+                    <h4>새다론 정보 서비스 구축 프로젝트</h4>
+                    <div>
+                      홍보 목적의 원페이지 반응형 UI 구현 및 위치 기반 정보 매칭
+                      서비스 모듈 개발
+                    </div>
+                    <div>
+                      <a
+                        href="https://dev.saedaron.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={event => event.stopPropagation()}
+                      >
+                        🚀 실제 서비스 운영중 🚀
+                      </a>
+                    </div>
+                  </S.ProjectContent>
+                </S.ProjectDescription>
+              </S.ProjectBox>
+            </Link>
+            <Link
+              to={{
+                pathname: '/project/maehwa',
+                state: { scrollPosition },
+              }}
+              style={{ textDecoration: 'none', color: '#000000' }}
+            >
+              <S.ProjectBox onClick={goToMaehwa}>
+                <S.ProjectImg>
+                  <img src="/images/jun/Maehwa.png" alt="project-img" />
+                  <span class="overlay" />
+                  <S.ShowProject>
+                    <div onClick={goToMaehwa}>
+                      <img src="images/icon/more.png" alt="more" />
+                    </div>
+                    <a
+                      href="https://github.com/zunyange/finding-maehwa-frontend"
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={event => event.stopPropagation()}
+                    >
+                      <img src="images/icon/github.png" alt="github" />
+                    </a>
+                  </S.ShowProject>
+                </S.ProjectImg>
+                <S.ProjectDescription>
+                  <S.ProjectLanguage>React Js</S.ProjectLanguage>
+                  <S.ProjectContent>
+                    <h4>프리미엄 맞춤 화장실 서비스</h4>
+                    <div>
+                      실생활에서의 불편함에 착안하여 지도로 내 주변 화장실을
+                      발견하고 필터링이나 리뷰를 통해 나에게 맞는 화장실을 찾는
+                      모바일 기반의 웹 서비스
+                    </div>
+                  </S.ProjectContent>
+                </S.ProjectDescription>
+              </S.ProjectBox>
+            </Link>
             <Link
               to={{
                 pathname: '/project/200ok',
                 state: { scrollPosition },
               }}
+              style={{ textDecoration: 'none', color: '#000000' }}
             >
               <S.ProjectBox onClick={goTo200ok}>
                 <S.ProjectImg>
