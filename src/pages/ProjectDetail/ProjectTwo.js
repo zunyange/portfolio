@@ -70,7 +70,7 @@ const ProjectTwo = () => {
             <div ref={imgRef}>
               {isVisible ? (
                 <S.ProjectImg>
-                  <img src="/images/jun/MaehwaMain.png" alt="Main-img" />
+                  <img src="/images/project/MaehwaMain.png" alt="Main-img" />
                 </S.ProjectImg>
               ) : (
                 <S.ProjectImg>
@@ -115,38 +115,41 @@ const ProjectTwo = () => {
               </div>
             </S.Description>
             <S.ProjectImg>
-              <img src="/images/jun/MaehwaFilter.png" alt="Filter-img" />
+              <img src="/images/project/MaehwaFilter.png" alt="Filter-img" />
             </S.ProjectImg>
             <S.Description>
               <span>필터링</span> <br />- useSearchParams Hook을 사용하여 해당
-              queryParameter 의 value를 불러오고, queryString을 통한 상품 필터
-              기능 구현
+              queryParameter 의 value를 불러오고, queryString을 통한 필터 기능
+              구현
+              <div>
+                - searchParams는 URL의 queryParameter와 상호작용하는 인터페이스
+                역할을 하며, 사용자 작업에 따라 구성요소가 URL을 동적으로
+                업데이트하게 함
+              </div>
               <div>
                 - 사용자의 궁금증을 불러일으키기 위해 모든 데이터를 가시화하지
-                않았고, 사용자의 편의성과 집중도를 높이기 위해 모달창을 사용하여
-                정보를 빠르게 제공
+                않고, 편의성과 집중도를 높이기 위해 모달창을 사용하여 정보를
+                더욱 빠르게 제공
               </div>
-              <div>- (미완)</div>
             </S.Description>
             <S.ProjectImg>
-              <img src="/images/jun/MaehwaReview.png" alt="Review-img" />
+              <img src="/images/project/MaehwaReview.png" alt="Review-img" />
             </S.ProjectImg>
             <S.Description>
               <span>리뷰 페이지</span> <br />- 데이터 재사용 및 모든 댓글 id 의
-              함수 작동 방지를 위해 컴포넌트 분리
+              함수 작동 방지를 위해 여러 컴포넌트로 분리
               <div>
                 - 별점 라이브러리 사용 : onChange 이벤트로 값을 받고, 선택되면
                 콜백함수를 일으킴
               </div>
               <div>
-                - 리뷰 데이터는 useState를 사용하여 상태 변수에 저장하고
-                사용자가 리뷰를 제출하면 콜백 함수를 트리거하여 리뷰 데이터를
-                전달
+                - 컴포넌트로 분리된 리뷰 데이터는 useState를 사용하여 상태
+                변수에 저장하고 사용자가 리뷰를 제출하면 콜백 함수를 트리거하여
+                한번에 전달
               </div>
-              <div>- </div>
               <div>
-                - 백엔드 쪽에서 리뷰 데이터를 받지 않고, 하드코딩으로 페이지 to
-                페이지로 리뷰작성이 가능케함
+                - 백엔드 API와 연동하지 않고도 컴포넌트들로 이루어진 페이지 to
+                페이지 리뷰작성이 가능하도록 하드코딩
               </div>
             </S.Description>
             <S.Description>

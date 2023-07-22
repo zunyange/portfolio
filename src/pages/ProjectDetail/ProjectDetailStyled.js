@@ -123,7 +123,12 @@ export const Description = styled.div`
     margin-top: 40px;
   }
 `;
-// export const ProjectImg = styled.div``;
-// export const ProjectImg = styled.div``;
+
+export const ClickMore = styled.div``;
+export const VideoWrap = styled.div`
+  video {
+    width: 600px;
+  }
+`;
 // export const ProjectImg = styled.div``;
 // export const ProjectImg = styled.div``;

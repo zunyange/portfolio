@@ -80,7 +80,7 @@ const ProjectOne = () => {
             <div ref={imgRef}>
               {isVisible ? (
                 <S.ProjectImg>
-                  <img src="/images/jun/200okMain.png" alt="Main-img" />
+                  <img src="/images/project/200okMain.png" alt="Main-img" />
                 </S.ProjectImg>
               ) : (
                 <S.ProjectImg>
@@ -103,7 +103,7 @@ const ProjectOne = () => {
               것을 목적으로 기획했습니다.
             </S.Description>
             <S.ProjectImg>
-              <img src="/images/jun/200oksignup.png" alt="Signup img" />
+              <img src="/images/project/200oksignup.png" alt="Signup img" />
             </S.ProjectImg>
             <S.Description>
               <span>회원가입 페이지</span> <br />- 간단한 회원가입을 위해
@@ -125,7 +125,7 @@ const ProjectOne = () => {
               이동
             </S.Description>
             <S.ProjectImg>
-              <img src="/images/jun/200okcart.png" alt="Cart img" />
+              <img src="/images/project/200okcart.png" alt="Cart img" />
             </S.ProjectImg>
             <S.Description>
               <span>장바구니 페이지</span> <br />- 상세 페이지에서 담은 제품의
@@ -169,9 +169,3 @@ export default ProjectOne;
 // <S.Title>
 // 개성을 중시하는 1020을 위한 트렌디하고 합리적인 가격대의 의류 서비스
 // </S.Title>
-// <video alt="signup" controls>
-// <source
-//   src="https://github.com/wecode-bootcamp-korea/43-1st-200ok-frontend/assets/114667764/78d72fb3-c72d-4f6d-97f6-3af679b6db1e"
-//   type="video/mp4"
-// />
-// </video>

@@ -5,8 +5,13 @@ import { Width } from '../../styles/common.js';
 
 const ProjectThree = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const imgRef = useRef();
   const observerRef = useRef(null);
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  };
 
   const handleIntersection = entries => {
     const [entry] = entries;
@@ -69,7 +74,7 @@ const ProjectThree = () => {
             <div ref={imgRef}>
               {isVisible ? (
                 <S.ProjectImg>
-                  <img src="/images/jun/DabisuMain.png" alt="Main-img" />
+                  <img src="/images/project/DabisuMain.png" alt="Main-img" />
                 </S.ProjectImg>
               ) : (
                 <S.ProjectImg>
@@ -87,19 +92,30 @@ const ProjectThree = () => {
             </div>
             <S.Description>(설명)</S.Description>
             <S.ProjectImg>
-              <img src="/images/jun/Dabisu2.png" alt="Responsive-img" />
+              <img src="/images/project/Dabisu2.png" alt="Responsive-img" />
             </S.ProjectImg>
             <S.Description>
               <span>반응형</span> <br />- (설명)
               <div>- (설명)</div>
             </S.Description>
             <S.ProjectImg>
-              <img src="/images/jun/DabisuMap.png" alt="Map-img" />
+              <img src="/images/project/DabisuMap.png" alt="Map-img" />
             </S.ProjectImg>
             <S.Description>
               <span>반응형</span> <br />- (설명)
               <div>- (설명)</div>
             </S.Description>
+            <S.ClickMore onClick={handleOpen}>{isOpen ? '▲' : '▼'}</S.ClickMore>
+            {isOpen && (
+              <S.VideoWrap>
+                <video alt="signup" controls>
+                  <source
+                    src="https://github.com/zunyange/TIL/assets/114667764/c7f1b772-df11-4129-9138-47208560862d"
+                    type="video/mp4"
+                  />
+                </video>
+              </S.VideoWrap>
+            )}
             <S.Description>
               <a
                 href="https://dev.saedaron.com/"
