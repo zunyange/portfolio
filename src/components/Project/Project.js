@@ -47,7 +47,7 @@ const Project = ({ project }) => {
             >
               <S.ProjectBox onClick={goToDabisu}>
                 <S.ProjectImg>
-                  <img src="/images/jun/Dabisu.png" alt="project-img" />
+                  <img src="/images/project/Dabisu.png" alt="project-img" />
                   <span class="overlay" />
                   <S.ShowProject>
                     <div onClick={goToDabisu}>
@@ -94,7 +94,7 @@ const Project = ({ project }) => {
             >
               <S.ProjectBox onClick={goToMaehwa}>
                 <S.ProjectImg>
-                  <img src="/images/jun/Maehwa.png" alt="project-img" />
+                  <img src="/images/project/Maehwa.png" alt="project-img" />
                   <span class="overlay" />
                   <S.ShowProject>
                     <div onClick={goToMaehwa}>
@@ -132,7 +132,7 @@ const Project = ({ project }) => {
             >
               <S.ProjectBox onClick={goTo200ok}>
                 <S.ProjectImg>
-                  <img src="/images/jun/200ok.png" alt="project-img" />
+                  <img src="/images/project/200ok.png" alt="project-img" />
                   <span class="overlay" />
                   <S.ShowProject>
                     <div onClick={goTo200ok}>

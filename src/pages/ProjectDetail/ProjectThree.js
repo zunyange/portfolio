@@ -60,15 +60,16 @@ const ProjectThree = () => {
             <S.ProjectSubTitle>
               <S.SubTitle>새다론 정보 서비스 구축 프로젝트</S.SubTitle>
               <S.Term>
-                구현 항목 : 반응형 UI &nbsp;|&nbsp; 2023.04.10 ~ 05.04 (24일)
+                구현 항목 : 반응형 UI 구현, 위치 기반 정보 매칭 서비스 모듈
+                개발&nbsp;|&nbsp; 2023.04.10 ~ 05.04 (24일)
               </S.Term>
               <S.ProjectSkill>
                 <span>React</span>
-                <span>Sass</span>
-                <span>Postman</span>
-                <span>Trello</span>
+                <span>Styled-components</span>
+                <span>Next.js</span>
+                <span>axios</span>
+                <span>Figma</span>
                 <span>Notion</span>
-                <span>Slack</span>
               </S.ProjectSkill>
             </S.ProjectSubTitle>
             <div ref={imgRef}>
@@ -90,32 +91,69 @@ const ProjectThree = () => {
                 </S.ProjectImg>
               )}
             </div>
-            <S.Description>(설명)</S.Description>
+            <S.Description>
+              개발 부서의 모든 팀원과 지속적으로 소통 및 협업을 하였고, 현업
+              개발자분들의 코드 리뷰를 통한 지속적인 코드를 개선하여 제품
+              완성도와 품질을 높혔습니다. 또한, 현재 기업은 코드를 이어받아
+              제품의 연속성을 유지 및 향상시켜 사이트를 배포하였습니다.
+            </S.Description>
+            <S.Description point>
+              <div>
+                <span>Point 1. </span>유사한 서비스와 관련된 자료를 분석하고
+                장단점을 분류하여 디자인팀 없이 팀원분들과 디자인 및 기획을
+                진행했습니다. 그 후 디자인 시안을 제공받아 UI를 도맡아
+                진행하였고, Figma 및 Adobe 기술을 익히기도 했습니다.
+              </div>
+              <div>
+                <span>Point 2. </span>
+              </div>
+            </S.Description>
             <S.ProjectImg>
               <img src="/images/project/Dabisu2.png" alt="Responsive-img" />
             </S.ProjectImg>
             <S.Description>
-              <span>반응형</span> <br />- (설명)
-              <div>- (설명)</div>
+              <span>반응형</span> <br />- 콘텐츠 목적에 맞춰 동적인 움직임으로
+              사용자에게 시각적인 흥미를 제공하기 위한 최소한의 디자인
+              라이브러리만 사용하였습니다.
+              <div>
+                - 사용자 입장에서 사이트의 진행 플로우가 부드럽게 느껴지도록
+                최대한 라이브러리를 설치하지 않는데에 중점을 두었고,
+              </div>
             </S.Description>
             <S.ProjectImg>
               <img src="/images/project/DabisuMap.png" alt="Map-img" />
             </S.ProjectImg>
-            <S.Description>
-              <span>반응형</span> <br />- (설명)
-              <div>- (설명)</div>
-            </S.Description>
-            <S.ClickMore onClick={handleOpen}>{isOpen ? '▲' : '▼'}</S.ClickMore>
+            <S.ClickMore onClick={handleOpen}>
+              {isOpen ? (
+                <>
+                  <img src="/images/icon/arrow.png" alt="arrow" />
+                  Close me!
+                </>
+              ) : (
+                <>
+                  <img src="/images/icon/arrow.png" alt="arrow" /> 영상으로
+                  확인해보고 싶다면? Click me!
+                </>
+              )}
+            </S.ClickMore>
             {isOpen && (
               <S.VideoWrap>
                 <video alt="signup" controls>
                   <source
-                    src="https://github.com/zunyange/TIL/assets/114667764/c7f1b772-df11-4129-9138-47208560862d"
+                    src="https://github.com/zunyange/TIL/assets/114667764/da860e66-2fe3-4cd3-8503-2c10de65ca0e"
                     type="video/mp4"
                   />
                 </video>
               </S.VideoWrap>
             )}
+            <S.Description>
+              <span>네이버 맵 API 를 활용한 위치기반 서비스</span>
+              <br />- Cluster 라이브러리를 설치하지 않고
+              <div>
+                - 카테고리/키워드/페이지별 API 를 받아 페이지네이션 구현
+              </div>
+            </S.Description>
+
             <S.Description>
               <a
                 href="https://dev.saedaron.com/"

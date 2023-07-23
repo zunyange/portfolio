@@ -124,10 +124,36 @@ export const Description = styled.div`
   }
 `;
 
-export const ClickMore = styled.div``;
+export const ClickMore = styled.span`
+  display: flex;
+  padding: 0 0 5px 250px;
+  font-size: 15px;
+  font-family: fontLight;
+  cursor: pointer;
+  /* &:hover {
+    color: #e29999;
+    background-image: -webkit-linear-gradient(90deg, #e29999, #8b00ff);
+    @-webkit-keyframes hue {
+      from {
+        -webkit-filter: hue-rotate(0deg);
+      }
+      to {
+        -webkit-filter: hue-rotate(-360deg);
+      }
+    }
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 3s infinite linear;
+  } */
+  img {
+    width: 20px;
+    margin-right: 5px;
+  }
+`;
+
 export const VideoWrap = styled.div`
   video {
-    width: 600px;
+    width: 780px;
   }
 `;
 // export const ProjectImg = styled.div``;

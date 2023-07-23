@@ -72,6 +72,7 @@ const ProjectOne = () => {
                 <span>React</span>
                 <span>Sass</span>
                 <span>Postman</span>
+                <span>AWS</span>
                 <span>Trello</span>
                 <span>Notion</span>
                 <span>Slack</span>
