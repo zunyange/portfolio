@@ -152,6 +152,7 @@ export const ClickMore = styled.span`
 `;
 
 export const VideoWrap = styled.div`
+  margin-left: 13px;
   video {
     width: 780px;
   }
