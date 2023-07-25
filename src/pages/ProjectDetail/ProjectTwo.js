@@ -1,38 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import * as S from './ProjectDetailStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectTwo = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const imgRef = useRef();
-  const observerRef = useRef(null);
-
-  const handleIntersection = entries => {
-    const [entry] = entries;
-    if (entry.isIntersecting) {
-      setIsVisible(true);
-      observerRef.current.disconnect(); // Disconnect the observer once the image is visible
-    }
-  };
-
-  useEffect(() => {
-    // Create an IntersectionObserver instance
-    observerRef.current = new IntersectionObserver(handleIntersection, {
-      root: null, // Use the viewport as the root
-      threshold: 0.1, // Define the threshold at which the callback should be triggered
-    });
-
-    if (imgRef.current) {
-      observerRef.current.observe(imgRef.current);
-    }
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, []);
   //Scroll 위치 기억
   const location = useLocation();
   const { scrollPosition } = location.state || { scrollPosition: 0 };
@@ -55,7 +26,7 @@ const ProjectTwo = () => {
             <S.ProjectSubTitle>
               <S.SubTitle>나에게 맞는 화장실을 찾는 서비스</S.SubTitle>
               <S.Term>
-                구현 항목 : 장소 리스트, 리뷰 페이지 &nbsp;|&nbsp; 2023.03.24 ~
+                구현 항목 : 필터링 & 리뷰 페이지 &nbsp;|&nbsp; 2023.03.24 ~
                 04.06 (2주)
               </S.Term>
               <S.ProjectSkill>
@@ -67,25 +38,9 @@ const ProjectTwo = () => {
                 <span>Figma</span>
               </S.ProjectSkill>
             </S.ProjectSubTitle>
-            <div ref={imgRef}>
-              {isVisible ? (
-                <S.ProjectImg>
-                  <img src="/images/project/MaehwaMain.png" alt="Main-img" />
-                </S.ProjectImg>
-              ) : (
-                <S.ProjectImg>
-                  <div
-                    style={{
-                      width: '700px',
-                      height: '370px',
-                      backgroundColor: '#eeeeee',
-                    }}
-                  >
-                    Loading...
-                  </div>
-                </S.ProjectImg>
-              )}
-            </div>
+            <S.ProjectImg>
+              <img src="/images/project/MaehwaMain.png" alt="Main-img" />
+            </S.ProjectImg>
             <S.Description>
               '매화를 찾아서'는 실생활에서의 불편함에 착안하여 지도로 내 주변
               화장실을 발견하고, 실사용자들이 제공한 리뷰와 필터링을 통해 나에게

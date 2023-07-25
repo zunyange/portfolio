@@ -80,6 +80,7 @@ export const SubTitle = styled.div`
 export const Term = styled.div`
   font-family: fontLight;
   font-size: 14px;
+  font-weight: bold;
   margin-bottom: 10px;
   line-height: 22px;
 `;

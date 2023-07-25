@@ -1,43 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import * as S from './ProjectDetailStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectThree = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const imgRef = useRef();
-  const observerRef = useRef(null);
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleIntersection = entries => {
-    const [entry] = entries;
-    if (entry.isIntersecting) {
-      setIsVisible(true);
-      observerRef.current.disconnect(); // Disconnect the observer once the image is visible
-    }
-  };
-
-  useEffect(() => {
-    // Create an IntersectionObserver instance
-    observerRef.current = new IntersectionObserver(handleIntersection, {
-      root: null, // Use the viewport as the root
-      threshold: 0.1, // Define the threshold at which the callback should be triggered
-    });
-
-    if (imgRef.current) {
-      observerRef.current.observe(imgRef.current);
-    }
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, []);
   //Scroll 위치 기억
   const location = useLocation();
   const { scrollPosition } = location.state || { scrollPosition: 0 };
@@ -60,7 +32,7 @@ const ProjectThree = () => {
             <S.ProjectSubTitle>
               <S.SubTitle>새다론 정보 서비스 구축 프로젝트</S.SubTitle>
               <S.Term>
-                구현 항목 : 반응형 UI 구현, 위치 기반 정보 매칭 서비스 모듈
+                구현 항목 : 반응형 UI 구현 & 위치 기반 정보 매칭 서비스 모듈
                 개발&nbsp;|&nbsp; 2023.04.10 ~ 05.04 (24일)
               </S.Term>
               <S.ProjectSkill>
@@ -72,25 +44,9 @@ const ProjectThree = () => {
                 <span>Notion</span>
               </S.ProjectSkill>
             </S.ProjectSubTitle>
-            <div ref={imgRef}>
-              {isVisible ? (
-                <S.ProjectImg>
-                  <img src="/images/project/DabisuMain.png" alt="Main-img" />
-                </S.ProjectImg>
-              ) : (
-                <S.ProjectImg>
-                  <div
-                    style={{
-                      width: '800px',
-                      height: '310px',
-                      backgroundColor: '#97bbeb',
-                    }}
-                  >
-                    Loading...
-                  </div>
-                </S.ProjectImg>
-              )}
-            </div>
+            <S.ProjectImg>
+              <img src="/images/project/DabisuMain.png" alt="Main-img" />
+            </S.ProjectImg>
             <S.Description>
               개발 부서의 모든 팀원과 지속적으로 소통 및 협업을 하였고, 현업
               개발자분들의 코드 리뷰를 통한 지속적인 코드를 개선하여 제품

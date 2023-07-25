@@ -1,38 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import * as S from './ProjectDetailStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectOne = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const imgRef = useRef();
-  const observerRef = useRef(null);
-
-  const handleIntersection = entries => {
-    const [entry] = entries;
-    if (entry.isIntersecting) {
-      setIsVisible(true);
-      observerRef.current.disconnect(); // Disconnect the observer once the image is visible
-    }
-  };
-
-  useEffect(() => {
-    // Create an IntersectionObserver instance
-    observerRef.current = new IntersectionObserver(handleIntersection, {
-      root: null, // Use the viewport as the root
-      threshold: 0.1, // Define the threshold at which the callback should be triggered
-    });
-
-    if (imgRef.current) {
-      observerRef.current.observe(imgRef.current);
-    }
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, []);
   //Scroll 위치 기억
   const location = useLocation();
   const { scrollPosition } = location.state || { scrollPosition: 0 };
@@ -65,8 +36,8 @@ const ProjectOne = () => {
                 클론 프로젝트
               </S.SubTitle>
               <S.Term>
-                구현 항목 : 회원가입, 장바구니 &nbsp;|&nbsp; 2023.03.03 ~ 03.17
-                (12일)
+                구현 항목 : 회원가입 & 장바구니 페이지 &nbsp;|&nbsp; 2023.03.03
+                ~ 03.17 (12일)
               </S.Term>
               <S.ProjectSkill>
                 <span>React</span>
@@ -78,25 +49,9 @@ const ProjectOne = () => {
                 <span>Slack</span>
               </S.ProjectSkill>
             </S.ProjectSubTitle>
-            <div ref={imgRef}>
-              {isVisible ? (
-                <S.ProjectImg>
-                  <img src="/images/project/200okMain.png" alt="Main-img" />
-                </S.ProjectImg>
-              ) : (
-                <S.ProjectImg>
-                  <div
-                    style={{
-                      width: '820px',
-                      height: '450px',
-                      backgroundColor: '#e2cfcf',
-                    }}
-                  >
-                    Loading...
-                  </div>
-                </S.ProjectImg>
-              )}
-            </div>
+            <S.ProjectImg>
+              <img src="/images/project/200okMain.png" alt="Main-img" />
+            </S.ProjectImg>
             <S.Description>
               Product 분석을 통해 고객층에 맞는 화려한 시각적인 형태를 제공하고,
               개성을 중시하고 트렌디함을 쫓는 10대, 20대를 위한 추천 및 맞춤
