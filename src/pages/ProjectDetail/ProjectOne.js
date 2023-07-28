@@ -121,7 +121,3 @@ const ProjectOne = () => {
 };
 
 export default ProjectOne;
-
-// <S.Title>
-// 개성을 중시하는 1020을 위한 트렌디하고 합리적인 가격대의 의류 서비스
-// </S.Title>

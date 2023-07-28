@@ -71,7 +71,7 @@ const About = ({ about }) => {
                 토론하며 학습하고 있습니다.
               </S.Content>
               <S.Content last>
-                • &nbsp;TypeScript를 기반으로 한 사이드 프로젝트 진행 중입니다.
+                • &nbsp;TypeScript 기반 사이드 프로젝트 진행 중입니다.
               </S.Content>
             </S.EduBox>
           </S.EduWrap>
