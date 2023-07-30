@@ -61,19 +61,29 @@ const ProjectThree = () => {
                 진행하였고, Figma 및 Adobe 기술을 익히기도 했습니다.
               </div>
               <div>
-                <span>Point 2. </span>
+                <span>Point 2. </span>사용자 입장에서 사이트의 진행 플로우가
+                부드럽게 느껴지도록 최소한의 라이브러리를 사용하는데 중점을
+                두었습니다.
               </div>
             </S.Description>
             <S.ProjectImg>
               <img src="/images/project/Dabisu2.png" alt="Responsive-img" />
             </S.ProjectImg>
             <S.Description>
-              <span>반응형</span> <br />- 콘텐츠 목적에 맞춰 동적인 움직임으로
-              사용자에게 시각적인 흥미를 제공하기 위한 최소한의 디자인
-              라이브러리만 사용하였습니다.
+              <span>반응형 UI 구현</span> <br />- 콘텐츠 목적에 맞춰 동적인
+              움직임으로 사용자에게 시각적인 흥미를 제공하기 위해 스크롤
+              애니메이션 효과 및 CSS로 Animation 구현
               <div>
-                - 사용자 입장에서 사이트의 진행 플로우가 부드럽게 느껴지도록
-                최대한 라이브러리를 설치하지 않는데에 중점을 두었고,
+                - 브레이크 포인트 구간 내에 적용되는 콘텐츠 영역을 정리하며 웹
+                버전의 UI 시안을 기반으로 반응형 디자인을 직접 구상
+              </div>
+              <div>
+                - useRef를 사용하여 값의 변경을 감지하거나 DOM 요소에 접근하는
+                등의 여러 스크롤 이벤트 처리
+              </div>
+              <div>
+                - 네트워크 요청을 위해 axios로 파일 다운로드 기능 : 좀더 많은
+                브라우저에 지원이 되며 확장성을 염두하여 fetch 대신 axios를 사용
               </div>
             </S.Description>
             <S.ProjectImg>
@@ -104,7 +114,7 @@ const ProjectThree = () => {
             )}
             <S.Description>
               <span>네이버 맵 API 를 활용한 위치기반 서비스</span>
-              <br />- Cluster 라이브러리를 설치하지 않고
+              <br />- Cluster 및 페이지네이션 기능에 대해 라이브러리 미사용으로,
               <div>
                 - 카테고리/키워드/페이지별 API 를 받아 페이지네이션 구현
               </div>
