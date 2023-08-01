@@ -25,6 +25,9 @@ export const Title = styled.div`
 export const Projects = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @media ${({ theme }) => theme.device.tablet} {
+    grid-template-columns: 2fr 2fr;
+  }
 `;
 
 export const ProjectBox = styled.div`

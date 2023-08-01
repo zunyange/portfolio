@@ -79,7 +79,7 @@ export const Menubar = styled.img`
     align-items: center;
     justify-content: center;
     height: 30px;
-    margin-right: 3%;
+    margin-left: 3%;
     cursor: pointer;
   }
   @media only screen and (max-width: 310px) {

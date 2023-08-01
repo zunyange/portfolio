@@ -27,7 +27,12 @@ export const ResumeBox = styled.div`
   border-bottom: ${({ three }) => (three ? 'solid 1px #ccc' : '0')};
   padding-bottom: ${({ three }) => (three ? '30px' : '0')};
   border-top: ${({ one }) => (one ? 'solid 1px #ccc' : '0')};
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 700px;
+    grid-template-columns: 1fr 2fr;
+  }
 `;
+
 export const ContentTitle = styled.div`
   width: 150px;
   font-size: ${({ three }) => (three ? '20px' : '25px')};
@@ -79,6 +84,10 @@ export const PotentWrap = styled.div`
   padding: ${({ one }) => (one ? '30px 20px 0 20px' : '25px 20px 0 20px')};
   border-bottom: ${({ last }) => (last ? 'solid 1px #ccc' : '0')};
   padding-bottom: ${({ last }) => (last ? '5px' : '0')};
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 700px;
+    grid-template-columns: 1fr 2fr;
+  }
 `;
 
 export const PotentTitle = styled.div`
@@ -110,6 +119,12 @@ export const CommitBox = styled.div`
   }
   div {
     margin-left: ${({ one }) => (one ? '5px' : '0')};
+  }
+  @media ${({ theme }) => theme.device.tablet} {
+    flex-wrap: wrap;
+    div {
+      margin: 5px 0 0 0px;
+    }
   }
 `;
 

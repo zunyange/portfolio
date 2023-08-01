@@ -49,11 +49,15 @@ export const SubIntroduce = styled.div`
   font-size: 20px;
   width: 850px;
   line-height: 30px;
-  display: flex;
   padding-top: 40px;
   display: inline-block;
   div {
     margin-top: 10px;
+  }
+  display: ${({ responsive }) => (responsive ? 'none' : 'inline-block')};
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 600px;
+    display: ${({ responsive }) => (responsive ? 'inline-block' : 'none')};
   }
 `;
 

@@ -20,7 +20,6 @@ export const DetailWrap = styled.div`
   left: 0px;
   z-index: 100;
   overflow-y: auto;
-
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +30,11 @@ export const DetailWrap = styled.div`
   video {
     width: 600px;
   } */
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 80vw;
+  }
 `;
+
 export const Detail = styled.div`
   position: relative;
   width: 900px;
@@ -43,6 +46,7 @@ export const Detail = styled.div`
   margin: 32px auto;
   /* animation: 0.6s ease 0s 1 normal none running lnvfdh; */
 `;
+
 export const ProjectTitle = styled.div`
   font-family: fontBold;
   font-size: 50px;
@@ -104,6 +108,11 @@ export const ProjectImg = styled.div`
   font-size: 25px;
   img {
     width: 820px;
+  }
+  @media ${({ theme }) => theme.device.tablet} {
+    img {
+      width: 520px;
+    }
   }
 `;
 

@@ -6,6 +6,7 @@ export const About = styled.div`
   width: 100%;
   background-color: #ffffff;
 `;
+
 export const Star = styled.img`
   width: 100px;
 `;
@@ -37,7 +38,14 @@ export const ProfileWrap = styled.div`
   width: 1000px;
   padding: 20px;
   border-bottom: solid 1px #ccc;
+  @media only screen and (max-width: 600px) {
+  }
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 700px;
+    grid-template-columns: 1fr 2fr;
+  }
 `;
+
 export const Profile = styled.div`
   width: 150px;
   border-radius: 70%;
@@ -48,6 +56,7 @@ export const Profile = styled.div`
     object-fit: cover;
   }
 `;
+
 export const ProfileBox = styled.ul`
   display: flex;
   gap: 10px;
@@ -61,6 +70,7 @@ export const ProfileBox = styled.ul`
 export const Number = styled.li`
   display: flex;
 `;
+
 export const Mail = styled.li`
   display: flex;
   a {
@@ -92,13 +102,19 @@ export const School = styled.div`
 export const Appeal = styled.div`
   display: flex;
 `;
+
 export const SkillWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 1000px;
   padding: 30px 20px;
   border-bottom: solid 1px #ccc;
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 700px;
+    grid-template-columns: 1fr 2fr;
+  }
 `;
+
 export const SkillTitle = styled.div`
   width: 150px;
   font-size: 25px;
@@ -111,7 +127,13 @@ export const SkillBox = styled.div`
   overflow-wrap: normal;
   /* overflow: hidden;
   white-space: nowrap; */
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 430px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
+
 export const ImgWrap = styled.div`
   margin-right: 30px;
   /* animation: 20s slide infinite linear; */
@@ -135,6 +157,10 @@ export const ImgWrap = styled.div`
     /* color: #ccc; */
     font-size: 12px;
   }
+  @media ${({ theme }) => theme.device.tablet} {
+    margin-bottom: 10px;
+    width: 70px;
+  }
 `;
 
 export const EduWrap = styled.div`
@@ -144,6 +170,10 @@ export const EduWrap = styled.div`
   padding: ${({ one }) => (one ? '30px 20px 0 20px' : '25px 20px 0 20px')};
   border-bottom: ${({ three }) => (three ? 'solid 1px #ccc' : '0')};
   padding-bottom: ${({ three }) => (three ? '30px' : '0')};
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 700px;
+    grid-template-columns: 1fr 2fr;
+  }
 `;
 
 export const EduTitle = styled.div`

@@ -33,7 +33,7 @@ const Home = ({ home, onMoveAbout }) => {
             Web Frontend Developer
             <p>김준영</p>
           </S.Introduce>
-          <S.SubIntroduce>
+          <S.SubIntroduce labtop>
             {text}
             <br />
             {/* 다양한 삶과 문화에 대한 탐구심이 강하여 사용자의 다양한 니즈를
@@ -50,6 +50,17 @@ const Home = ({ home, onMoveAbout }) => {
               성장 가능성에 대해 더욱 고민하고 노력하며 능동적인 커뮤니케이션 및
               협업으로 <br />
               비즈니스 성장에 적극적으로 임하겠습니다.
+            </div>
+          </S.SubIntroduce>
+          <S.SubIntroduce responsive>
+            {text}
+            <br />
+            개발 커뮤니티 활동이나 프로젝트 등을 통해 다양한 개발 경험을 즐기고
+            있습니다. 공유하고 기록하는 것을 좋아하여 개발 블로그에는 80여 개의
+            기술 포스트를 작성했습니다. <br />{' '}
+            <div>
+              성장 가능성에 대해 더욱 고민하고 노력하며 능동적인 커뮤니케이션 및
+              협업으로 비즈니스 성장에 적극적으로 임하겠습니다.
             </div>
           </S.SubIntroduce>
           <S.GoTo>
