@@ -114,9 +114,11 @@ const ProjectThree = () => {
             )}
             <S.Description>
               <span>네이버 맵 API 를 활용한 위치기반 서비스</span>
-              <br />- Cluster 및 페이지네이션 기능에 대해 라이브러리 미사용으로,
+              <br />- 사용자의 현재 위치를 받아와 지도 중심을 설정하고, 지역
+              또는 가맹점 검색시 첫번째 데이터의 좌표를 중심으로 지도 이동
               <div>
-                - 카테고리/키워드/페이지별 API 를 받아 페이지네이션 구현
+                - 카테고리/키워드/페이지별 API 를 받아 해당 버튼 클릭시 data를
+                호출하여 패이지네이션 구현
               </div>
             </S.Description>
             <S.Description>
