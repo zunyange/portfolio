@@ -41,7 +41,6 @@ export const ProjectBox = styled.div`
   padding: 16px;
   transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-
   &:hover {
     cursor: pointer;
     transform: translateY(-5px);
@@ -119,6 +118,7 @@ export const ProjectDescription = styled.div`
   position: relative;
   width: 100%;
 `;
+
 export const ProjectLanguage = styled.div`
   background-color: #fff;
   border-radius: 10px;
@@ -129,6 +129,7 @@ export const ProjectLanguage = styled.div`
   font-family: fontBold;
   color: #a4a4a4;
 `;
+
 export const ProjectContent = styled.div`
   height: 130px;
   h4 {
@@ -167,5 +168,3 @@ export const ProjectContent = styled.div`
     }
   }
 `;
-// export const ProjectContent = styled.div``;
-// export const ProjectContent = styled.div``;
