@@ -32,10 +32,15 @@ export const IntroduceWrap = styled.div`
   p {
     font-size: 50px;
     font-weight: bold;
+    @media ${({ theme }) => theme.device.mobile} {
+      font-size: 2.2rem;
+    }
   }
   span {
     font-size: 13px;
     margin-top: 50px;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
   }
 `;
 export const Introduce = styled.div`
@@ -43,6 +48,9 @@ export const Introduce = styled.div`
   line-height: 55px;
   font-family: 'fontEng';
   margin-top: 10px;
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 2.2rem;
+  }
 `;
 
 export const SubIntroduce = styled.div`
@@ -59,12 +67,20 @@ export const SubIntroduce = styled.div`
     width: 600px;
     display: ${({ responsive }) => (responsive ? 'inline-block' : 'none')};
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 400px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 `;
 
 export const GoTo = styled.div`
   display: flex;
   gap: 35px;
   margin-top: 50px;
+  @media ${({ theme }) => theme.device.mobile} {
+    gap: 20px;
+  }
 `;
 
 export const GoToGithub = styled.img`
@@ -74,9 +90,9 @@ export const GoToGithub = styled.img`
   &:hover {
     filter: invert(100%);
   }
-  /* ${GoTo} :hover & {
-    display: none;
-  } */
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 40px;
+  }
 `;
 
 export const GoToBlack = styled.img`
@@ -84,6 +100,9 @@ export const GoToBlack = styled.img`
   display: none;
   ${GoTo} :hover & {
     display: block;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 40px;
   }
 `;
 
@@ -95,6 +114,10 @@ export const GoToVelog = styled.img`
   &:hover {
     filter: invert(100%);
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const GoToLinkedin = styled.img`
@@ -105,6 +128,22 @@ export const GoToLinkedin = styled.img`
     filter: invert(100%);
     /* content: url('images/icon/linkedin-bk.png'); */
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 40px;
+  }
+`;
+
+export const GoToResume = styled.img`
+  width: 50px;
+  cursor: pointer;
+  transition: 0.7s;
+  &:hover {
+    filter: invert(100%);
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const GoToMail = styled.img`
@@ -114,19 +153,13 @@ export const GoToMail = styled.img`
   &:hover {
     filter: invert(100%);
   }
-`;
-
-export const GoToResume = styled.img`
-  width: 50px;
-  cursor: pointer;
-  transition: 0.7s;
-
-  &:hover {
-    filter: invert(100%);
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 40px;
   }
 `;
 
 export const MoreWrap = styled.div``;
+
 export const MoreAbout = styled.div`
   border: 1px solid;
   border-radius: 8px;

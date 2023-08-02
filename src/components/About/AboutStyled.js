@@ -38,11 +38,14 @@ export const ProfileWrap = styled.div`
   width: 1000px;
   padding: 20px;
   border-bottom: solid 1px #ccc;
-  @media only screen and (max-width: 600px) {
-  }
+
   @media ${({ theme }) => theme.device.tablet} {
     width: 700px;
     grid-template-columns: 1fr 2fr;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 400px;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -112,6 +115,10 @@ export const SkillWrap = styled.div`
   @media ${({ theme }) => theme.device.tablet} {
     width: 700px;
     grid-template-columns: 1fr 2fr;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 120px;
+    /* grid-template-columns: 1fr 3fr; */
   }
 `;
 
