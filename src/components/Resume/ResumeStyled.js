@@ -31,6 +31,13 @@ export const ResumeBox = styled.div`
     width: 700px;
     grid-template-columns: 1fr 2fr;
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 360px;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const ContentTitle = styled.div`
@@ -39,13 +46,20 @@ export const ContentTitle = styled.div`
   font-family: ${({ three }) => (three ? 'fontCafe' : 'fontEng')};
 `;
 
-export const ContentBox = styled.div``;
+export const ContentBox = styled.div`
+  @media ${({ theme }) => theme.device.mobile} {
+    padding-top: 25px;
+  }
+`;
 
 export const Subtitle = styled.div`
   display: flex;
   font-family: fontBold;
   font-size: 18px;
   margin-bottom: 8px;
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 15px;
+  }
 `;
 
 export const Content = styled.div`
@@ -75,6 +89,10 @@ export const Content = styled.div`
       -webkit-animation: hue 3s infinite linear;
     }
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 14px;
+    line-height: 23px;
+  }
 `;
 
 export const PotentWrap = styled.div`
@@ -87,6 +105,13 @@ export const PotentWrap = styled.div`
   @media ${({ theme }) => theme.device.tablet} {
     width: 700px;
     grid-template-columns: 1fr 2fr;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 360px;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `;
 
@@ -105,6 +130,9 @@ export const Potent = styled.div`
   font-family: fontBold;
   font-size: 18px;
   margin-bottom: 5px;
+  @media ${({ theme }) => theme.device.tablet} {
+    font-size: 15px;
+  }
 `;
 
 export const CommitBox = styled.div`
@@ -124,27 +152,45 @@ export const CommitBox = styled.div`
     flex-wrap: wrap;
     div {
       margin: 5px 0 0 0px;
+      @media ${({ theme }) => theme.device.mobile} {
+        margin: 0;
+        font-size: ${({ last }) => (last ? '12px' : '14px')};
+        line-height: 23px;
+      }
     }
   }
 `;
 
 export const StudyWrap = styled(CommitBox)`
   border-bottom: ${({ last }) => (last ? '0' : 'solid 1px #ccc')};
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const StudyBox = styled.div`
   width: 400px;
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 300px;
+  }
 `;
 
 export const Table = styled.table`
   display: flex;
 `;
+
 export const Thead = styled.thead`
   display: flex;
   font-weight: 400;
   font-size: 14px;
   border-bottom: 1px solid #ccc;
   width: 100px;
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 80px;
+    font-size: 12px;
+  }
 `;
 
 export const StyledTr = styled.tr`
@@ -155,6 +201,10 @@ export const StyledTr = styled.tr`
   font-size: 14px;
   border-bottom: 1px solid #ccc;
   width: 380px;
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 300px;
+    font-size: 12px;
+  }
 `;
 
 export const StyledTh = styled.div`
@@ -165,6 +215,10 @@ export const StyledTh = styled.div`
   font-weight: 600;
   padding: 4px;
   border-right: 1px solid #ccc;
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 60px;
+    font-size: 12px;
+  }
 `;
 
 export const StyledTd = styled.div`
@@ -173,7 +227,11 @@ export const StyledTd = styled.div`
   justify-content: center;
   padding: 0 5px;
   width: 70px;
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 50px;
+  }
 `;
+
 export const StyledTdOne = styled.div`
   display: flex;
   justify-content: center;
@@ -181,4 +239,7 @@ export const StyledTdOne = styled.div`
   padding: 0 5px;
   width: 300px;
   border-right: 1px solid #ccc;
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 230px;
+  }
 `;

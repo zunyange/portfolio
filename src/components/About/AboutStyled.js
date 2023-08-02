@@ -15,6 +15,9 @@ export const Title = styled.div`
   font-family: fontEng;
   font-size: 35px;
   margin: 80px 0 40px 0;
+  @media ${({ theme }) => theme.device.mobile} {
+    margin: 60px 0 40px 0;
+  }
 `;
 
 export const Aboutme = styled.div`
@@ -31,9 +34,6 @@ export const Aboutme = styled.div`
 export const ProfileWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
-  /* display: flex;
-  justify-content: center;
-  gap: 40px; */
   font-weight: bold;
   width: 1000px;
   padding: 20px;
@@ -44,8 +44,11 @@ export const ProfileWrap = styled.div`
     grid-template-columns: 1fr 2fr;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    width: 400px;
+    width: 360px;
     grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `;
 
@@ -67,6 +70,10 @@ export const ProfileBox = styled.ul`
   justify-content: center;
   img {
     width: 20px;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    margin-top: 20px;
+    font-size: 14px;
   }
 `;
 
@@ -117,8 +124,11 @@ export const SkillWrap = styled.div`
     grid-template-columns: 1fr 2fr;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    width: 120px;
-    /* grid-template-columns: 1fr 3fr; */
+    width: 350px;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `;
 
@@ -126,6 +136,9 @@ export const SkillTitle = styled.div`
   width: 150px;
   font-size: 25px;
   font-family: fontEng;
+  @media ${({ theme }) => theme.device.mobile} {
+    padding-bottom: 30px;
+  }
 `;
 
 export const SkillBox = styled.div`
@@ -138,6 +151,9 @@ export const SkillBox = styled.div`
     width: 430px;
     display: flex;
     flex-wrap: wrap;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    justify-content: center;
   }
 `;
 
@@ -154,19 +170,26 @@ export const ImgWrap = styled.div`
         transform: translateX(-2300%);
       }
     }
-
     &:hover {
       transform: translateZ(10px);
     } */
+    @media ${({ theme }) => theme.device.mobile} {
+      width: 55px;
+    }
   }
   span {
     font-family: fontEng;
-    /* color: #ccc; */
     font-size: 12px;
+    @media ${({ theme }) => theme.device.mobile} {
+      font-size: 11px;
+    }
   }
   @media ${({ theme }) => theme.device.tablet} {
     margin-bottom: 10px;
     width: 70px;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    margin-right: 0px;
   }
 `;
 
@@ -181,12 +204,22 @@ export const EduWrap = styled.div`
     width: 700px;
     grid-template-columns: 1fr 2fr;
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 350px;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const EduTitle = styled.div`
   width: 150px;
   font-size: 25px;
   font-family: fontEng;
+  @media ${({ theme }) => theme.device.mobile} {
+    padding-bottom: 30px;
+  }
 `;
 
 export const EduBox = styled.div``;
@@ -201,6 +234,12 @@ export const Education = styled.div`
     font-family: fontBold;
     font-size: 18px;
     color: #000000;
+    @media ${({ theme }) => theme.device.mobile} {
+      font-size: 15px;
+    }
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 11px;
   }
 `;
 
@@ -211,4 +250,8 @@ export const Content = styled.div`
   margin: ${({ title }) => (title ? '0 0 10px 0' : '0')};
   border-bottom: ${({ last }) => (last ? 'solid 1px #ccc' : '0')};
   padding-bottom: ${({ last }) => (last ? '25px' : '0')};
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 14px;
+    line-height: 23px;
+  }
 `;

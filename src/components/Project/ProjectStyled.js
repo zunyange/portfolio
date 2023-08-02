@@ -4,6 +4,9 @@ export const Project = styled.div`
   height: 100vh;
   width: 100%;
   background-color: #f5fbff;
+  @media ${({ theme }) => theme.device.mobile} {
+    height: auto; /* Reset height for mobile */
+  }
 `;
 
 export const ProjectWrap = styled.div`
@@ -14,12 +17,21 @@ export const ProjectWrap = styled.div`
   text-align: center;
   width: 100%;
   min-height: 100vh;
+  @media ${({ theme }) => theme.device.mobile} {
+    min-height: auto; /* Reset min-height for mobile */
+    ${Project} {
+      height: auto; /* Reset height for the nested Project component on mobile */
+    }
+  }
 `;
 
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
   margin-bottom: 50px;
+  @media ${({ theme }) => theme.device.tablet} {
+    margin-top: 70px;
+  }
 `;
 
 export const Projects = styled.div`
@@ -27,6 +39,9 @@ export const Projects = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   @media ${({ theme }) => theme.device.tablet} {
     grid-template-columns: 2fr 2fr;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    grid-template-columns: 1fr;
   }
 `;
 
