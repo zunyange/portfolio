@@ -153,7 +153,7 @@ export const SkillBox = styled.div`
     flex-wrap: wrap;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    justify-content: center;
+    justify-content: space-evenly;
   }
 `;
 
@@ -189,7 +189,7 @@ export const ImgWrap = styled.div`
     width: 70px;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    margin-right: 0px;
+    margin-right: 0;
   }
 `;
 

@@ -37,6 +37,7 @@ export const ResumeBox = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 40px;
   }
 `;
 
@@ -48,7 +49,7 @@ export const ContentTitle = styled.div`
 
 export const ContentBox = styled.div`
   @media ${({ theme }) => theme.device.mobile} {
-    padding-top: 25px;
+    padding-top: 40px;
   }
 `;
 
@@ -72,7 +73,6 @@ export const Content = styled.div`
     color: #e29999;
     text-decoration: none;
     font-weight: bold;
-    &:hover {
       color: #e29999;
       background-image: -webkit-linear-gradient(90deg, #e29999, #8b00ff);
       border-bottom: 0.5px solid;
@@ -92,6 +92,11 @@ export const Content = styled.div`
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 14px;
     line-height: 23px;
+    word-break: normal;
+    div {
+      padding-bottom: 20px;
+    }
+    padding-bottom: ${({ last }) => (last ? '0px' : '0')};
   }
 `;
 
@@ -112,6 +117,8 @@ export const PotentWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 40px;
+    padding: ${({ last }) => (last ? '0px' : '')};
   }
 `;
 
@@ -154,7 +161,7 @@ export const CommitBox = styled.div`
       margin: 5px 0 0 0px;
       @media ${({ theme }) => theme.device.mobile} {
         margin: 0;
-        font-size: ${({ last }) => (last ? '12px' : '14px')};
+        font-size: 14px;
         line-height: 23px;
       }
     }
@@ -188,8 +195,8 @@ export const Thead = styled.thead`
   border-bottom: 1px solid #ccc;
   width: 100px;
   @media ${({ theme }) => theme.device.mobile} {
-    width: 80px;
-    font-size: 12px;
+    width: 75px;
+    font-size: 11px;
   }
 `;
 
@@ -202,8 +209,8 @@ export const StyledTr = styled.tr`
   border-bottom: 1px solid #ccc;
   width: 380px;
   @media ${({ theme }) => theme.device.mobile} {
-    width: 300px;
-    font-size: 12px;
+    width: 290px;
+    font-size: 11px;
   }
 `;
 
@@ -216,8 +223,8 @@ export const StyledTh = styled.div`
   padding: 4px;
   border-right: 1px solid #ccc;
   @media ${({ theme }) => theme.device.mobile} {
-    width: 60px;
-    font-size: 12px;
+    width: 55px;
+    font-size: 11px;
   }
 `;
 
@@ -228,7 +235,7 @@ export const StyledTd = styled.div`
   padding: 0 5px;
   width: 70px;
   @media ${({ theme }) => theme.device.mobile} {
-    width: 50px;
+    width: 45px;
   }
 `;
 
@@ -240,6 +247,6 @@ export const StyledTdOne = styled.div`
   width: 300px;
   border-right: 1px solid #ccc;
   @media ${({ theme }) => theme.device.mobile} {
-    width: 230px;
+    width: 210px;
   }
 `;
