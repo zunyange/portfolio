@@ -69,6 +69,7 @@ export const SubIntroduce = styled.div`
   }
   @media ${({ theme }) => theme.device.mobile} {
     width: 400px;
+    font-weight: bold;
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -174,6 +175,9 @@ export const MoreAbout = styled.div`
     background-color: #ffffff;
     opacity: 1;
     color: #000000;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 18px;
   }
 `;
 export const Span = styled.span`

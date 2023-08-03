@@ -73,22 +73,22 @@ export const Content = styled.div`
     color: #e29999;
     text-decoration: none;
     font-weight: bold;
-      color: #e29999;
-      background-image: -webkit-linear-gradient(90deg, #e29999, #8b00ff);
-      border-bottom: 0.5px solid;
-      @-webkit-keyframes hue {
-        from {
-          -webkit-filter: hue-rotate(0deg);
-        }
-        to {
-          -webkit-filter: hue-rotate(-360deg);
-        }
+    color: #e29999;
+    background-image: -webkit-linear-gradient(90deg, #e29999, #8b00ff);
+    border-bottom: 0.5px solid;
+    @-webkit-keyframes hue {
+      from {
+        -webkit-filter: hue-rotate(0deg);
       }
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-animation: hue 3s infinite linear;
+      to {
+        -webkit-filter: hue-rotate(-360deg);
+      }
     }
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 3s infinite linear;
   }
+
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 14px;
     line-height: 23px;
@@ -128,7 +128,11 @@ export const PotentTitle = styled.div`
   font-family: fontEng;
 `;
 
-export const PotentBox = styled(ContentBox)``;
+export const PotentBox = styled.div`
+  @media ${({ theme }) => theme.device.mobile} {
+    padding-top: ${({ last }) => (last ? '0px' : '40px')};
+  }
+`;
 
 export const Potent = styled.div`
   display: flex;
@@ -161,7 +165,7 @@ export const CommitBox = styled.div`
       margin: 5px 0 0 0px;
       @media ${({ theme }) => theme.device.mobile} {
         margin: 0;
-        font-size: 14px;
+        font-size: ${({ last }) => (last ? '12px' : '14px')};
         line-height: 23px;
       }
     }

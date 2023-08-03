@@ -127,7 +127,7 @@ const Resume = ({ resume }) => {
           </S.PotentWrap>
           <S.PotentWrap last>
             <S.PotentTitle> </S.PotentTitle>
-            <S.PotentBox>
+            <S.PotentBox last>
               <S.Potent> </S.Potent>
               <S.StudyWrap last>
                 <S.StudyBox>
