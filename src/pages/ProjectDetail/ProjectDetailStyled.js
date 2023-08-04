@@ -31,7 +31,7 @@ export const DetailWrap = styled.div`
     width: 600px;
   } */
   @media ${({ theme }) => theme.device.tablet} {
-    width: 80vw;
+    width: 100vw;
   }
 `;
 
@@ -45,11 +45,18 @@ export const Detail = styled.div`
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px;
   margin: 32px auto;
   /* animation: 0.6s ease 0s 1 normal none running lnvfdh; */
+  @media ${({ theme }) => theme.device.mobile} {
+    padding: 2rem;
+    border-radius: 12px;
+  }
 `;
 
 export const ProjectTitle = styled.div`
   font-family: fontBold;
   font-size: 50px;
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 40px;
+  }
 `;
 
 export const CloseBtn = styled.div`
@@ -79,6 +86,9 @@ export const SubTitle = styled.div`
     text-decoration-line: none;
     color: #bc231b;
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 15px;
+  }
 `;
 
 export const Term = styled.div`
@@ -87,6 +97,9 @@ export const Term = styled.div`
   font-weight: bold;
   margin-bottom: 10px;
   line-height: 22px;
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 13px;
+  }
 `;
 
 export const ProjectSkill = styled.div`
@@ -97,6 +110,9 @@ export const ProjectSkill = styled.div`
     border-radius: 5px;
     margin: 0px 7px 5px 0;
     font-size: 13px;
+    @media ${({ theme }) => theme.device.mobile} {
+      font-size: 12px;
+    }
   }
 `;
 
@@ -108,10 +124,11 @@ export const ProjectImg = styled.div`
   font-size: 25px;
   img {
     width: 820px;
-  }
-  @media ${({ theme }) => theme.device.tablet} {
-    img {
+    @media ${({ theme }) => theme.device.tablet} {
       width: 520px;
+    }
+    @media ${({ theme }) => theme.device.tablet} {
+      width: 400px;
     }
   }
 `;
@@ -123,6 +140,9 @@ export const Description = styled.div`
   span {
     font-size: 18px;
     font-family: fontBold;
+    @media ${({ theme }) => theme.device.mobile} {
+      font-size: 15px;
+    }
   }
   strong {
     box-shadow: inset 0 -10px 0 #daf0e9;
@@ -132,6 +152,11 @@ export const Description = styled.div`
     text-decoration-line: none;
     margin-top: 40px;
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    padding: 0;
+    line-height: 23px;
+    font-size: 15px;
+  }
 `;
 
 export const ClickMore = styled.span`
@@ -140,24 +165,13 @@ export const ClickMore = styled.span`
   font-size: 15px;
   font-family: fontLight;
   cursor: pointer;
-  /* &:hover {
-    color: #e29999;
-    background-image: -webkit-linear-gradient(90deg, #e29999, #8b00ff);
-    @-webkit-keyframes hue {
-      from {
-        -webkit-filter: hue-rotate(0deg);
-      }
-      to {
-        -webkit-filter: hue-rotate(-360deg);
-      }
-    }
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 3s infinite linear;
-  } */
   img {
     width: 20px;
     margin-right: 5px;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    padding: 0 0 5px 80px;
+    font-size: 13px;
   }
 `;
 
@@ -167,5 +181,3 @@ export const VideoWrap = styled.div`
     width: 780px;
   }
 `;
-// export const ProjectImg = styled.div``;
-// export const ProjectImg = styled.div``;
