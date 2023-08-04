@@ -178,6 +178,7 @@ export const ImgWrap = styled.div`
     }
   }
   span {
+    width: 55px;
     font-family: fontEng;
     font-size: 12px;
     @media ${({ theme }) => theme.device.mobile} {

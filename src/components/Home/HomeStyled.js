@@ -68,7 +68,7 @@ export const SubIntroduce = styled.div`
     display: ${({ responsive }) => (responsive ? 'inline-block' : 'none')};
   }
   @media ${({ theme }) => theme.device.mobile} {
-    width: 400px;
+    width: 360px;
     font-weight: bold;
     font-size: 1rem;
     line-height: 1.5rem;

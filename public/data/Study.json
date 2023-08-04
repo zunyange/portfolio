@@ -30,16 +30,17 @@
     "content": "코어 자바스크립트",
     "degree": "완료"
   },
+
   {
     "id": 7,
-    "title": "강의",
-    "content": "AWS Builders Online Series",
-    "degree": "완료"
+    "title": "도서",
+    "content": "모던 자바스크립트 Deep Dive",
+    "degree": "진행중"
   },
   {
     "id": 8,
-    "title": "도서",
-    "content": "모던 자바스크립트 Deep Dive",
+    "title": "강의",
+    "content": "AWS Builders Online Series",
     "degree": "진행중"
   },
   {

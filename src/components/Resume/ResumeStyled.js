@@ -251,6 +251,6 @@ export const StyledTdOne = styled.div`
   width: 300px;
   border-right: 1px solid #ccc;
   @media ${({ theme }) => theme.device.mobile} {
-    width: 210px;
+    width: 225px;
   }
 `;
