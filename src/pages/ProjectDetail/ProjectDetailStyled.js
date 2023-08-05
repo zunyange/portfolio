@@ -30,9 +30,6 @@ export const DetailWrap = styled.div`
   video {
     width: 600px;
   } */
-  @media ${({ theme }) => theme.device.tablet} {
-    width: 100vw;
-  }
 `;
 
 export const Detail = styled.div`
@@ -44,7 +41,13 @@ export const Detail = styled.div`
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px;
   margin: 32px auto;
-  /* animation: 0.6s ease 0s 1 normal none running lnvfdh; */
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 700px;
+  }
+  @media only screen and (max-width: 700px) {
+    width: 600px;
+  }
+
   @media ${({ theme }) => theme.device.mobile} {
     padding: 2rem;
     border-radius: 12px;
@@ -186,7 +189,21 @@ export const ClickMore = styled.span`
 
 export const VideoWrap = styled.div`
   margin-left: 13px;
+  display: flex;
+  justify-content: center;
   video {
     width: 780px;
+    @media ${({ theme }) => theme.device.tablet} {
+      width: 560px;
+    }
+    @media only screen and (max-width: 620px) {
+      width: 460px;
+    }
+    @media ${({ theme }) => theme.device.mobile} {
+      width: 360px;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 320px;
+    }
   }
 `;
