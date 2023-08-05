@@ -125,10 +125,16 @@ export const ProjectImg = styled.div`
   img {
     width: 820px;
     @media ${({ theme }) => theme.device.tablet} {
-      width: 520px;
+      width: 600px;
     }
-    @media ${({ theme }) => theme.device.tablet} {
+    @media only screen and (max-width: 620px) {
+      width: 500px;
+    }
+    @media ${({ theme }) => theme.device.mobile} {
       width: 400px;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 360px;
     }
   }
 `;
@@ -146,6 +152,9 @@ export const Description = styled.div`
   }
   strong {
     box-shadow: inset 0 -10px 0 #daf0e9;
+  }
+  b {
+    box-shadow: inset 0 -10px 0 #e4ecf7;
   }
   a {
     display: flex;
