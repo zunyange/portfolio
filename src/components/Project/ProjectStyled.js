@@ -5,7 +5,7 @@ export const Project = styled.div`
   width: 100%;
   background-color: #f5fbff;
   @media ${({ theme }) => theme.device.mobile} {
-    height: auto; /* Reset height for mobile */
+    height: auto;
   }
 `;
 
@@ -18,9 +18,9 @@ export const ProjectWrap = styled.div`
   width: 100%;
   min-height: 100vh;
   @media ${({ theme }) => theme.device.mobile} {
-    min-height: auto; /* Reset min-height for mobile */
+    min-height: auto;
     ${Project} {
-      height: auto; /* Reset height for the nested Project component on mobile */
+      height: auto;
     }
   }
 `;
@@ -59,6 +59,9 @@ export const ProjectBox = styled.div`
   &:hover {
     cursor: pointer;
     transform: translateY(-5px);
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    margin-bottom: ${({ last }) => (last ? '60px' : '32px')};
   }
 `;
 
@@ -165,11 +168,6 @@ export const ProjectContent = styled.div`
         border-bottom: 0.5px solid;
         /* text-decoration: wavy underline; */
       }
-    }
-    span {
-      /* text-decoration: underline;
-      text-decoration-thickness: 0.1px; */
-      /* border-bottom: 0.5px solid; */
     }
   }
   span {

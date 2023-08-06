@@ -43,6 +43,7 @@ export const IntroduceWrap = styled.div`
   @media ${({ theme }) => theme.device.mobile} {
   }
 `;
+
 export const Introduce = styled.div`
   font-size: 40px;
   line-height: 55px;
@@ -127,7 +128,6 @@ export const GoToLinkedin = styled.img`
   transition: 0.7s;
   &:hover {
     filter: invert(100%);
-    /* content: url('images/icon/linkedin-bk.png'); */
   }
   @media ${({ theme }) => theme.device.mobile} {
     width: 40px;
@@ -180,13 +180,9 @@ export const MoreAbout = styled.div`
     font-size: 18px;
   }
 `;
+
 export const Span = styled.span`
   font-weight: bold;
   font-size: ${({ first }) => (first ? '20px' : '22px')};
   color: ${({ first }) => (first ? '#db7680' : '#3178c6')};
 `;
-
-// background-image: url('images/Kim/Maintop.png');
-// background-repeat: no-repeat;
-// background-size: cover;
-// background-color: #e8f9ff;

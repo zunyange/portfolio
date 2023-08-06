@@ -17,7 +17,11 @@ const Footer = () => {
 const FooterWrap = styled.div`
   height: 100px;
   width: 100%;
+  @media ${({ theme }) => theme.device.mobile} {
+    height: 50px;
+  }
 `;
+
 const Footertext = styled.div`
   display: flex;
   text-align: center;
@@ -26,6 +30,5 @@ const Footertext = styled.div`
   font-size: 13px;
   color: #a4a4a4;
 `;
-// const Footer = styled.div``;
 
 export default Footer;

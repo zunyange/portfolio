@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const About = styled.div`
-  /* background-color: #e1efff; */
-  /* height: 100vh; */
   width: 100%;
   background-color: #ffffff;
 `;
@@ -28,7 +26,6 @@ export const Aboutme = styled.div`
   text-align: center;
   width: 100%;
   margin-bottom: 80px;
-  /* min-height: 100vh; */
 `;
 
 export const ProfileWrap = styled.div`
@@ -145,8 +142,6 @@ export const SkillBox = styled.div`
   display: flex;
   width: 500px;
   overflow-wrap: normal;
-  /* overflow: hidden;
-  white-space: nowrap; */
   @media ${({ theme }) => theme.device.tablet} {
     width: 430px;
     display: flex;

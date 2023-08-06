@@ -88,6 +88,9 @@ export const Menubar = styled.img`
 `;
 
 export const NavToggle = styled.div`
+  @media only screen and (max-width: 850px) {
+    padding: 1.5% 0;
+  }
   @media only screen and (max-width: 768px) {
     position: absolute;
     right: 0;
@@ -98,9 +101,6 @@ export const NavToggle = styled.div`
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1000;
-  }
-  @media only screen and (max-width: 850px) {
-    padding: 1.5% 0;
   }
   @media only screen and (max-width: 480px) {
     background-color: rgba(0, 0, 0, 0.5);

@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const Resume = styled.div`
   width: 100%;
+  background-color: #ffffff;
 `;
+
 export const ResumeWrap = styled.div`
   display: flex;
   flex-direction: column;
@@ -88,7 +90,6 @@ export const Content = styled.div`
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 3s infinite linear;
   }
-
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 14px;
     line-height: 23px;

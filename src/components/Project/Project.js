@@ -130,7 +130,7 @@ const Project = ({ project }) => {
               }}
               style={{ textDecoration: 'none', color: '#000000' }}
             >
-              <S.ProjectBox onClick={goTo200ok}>
+              <S.ProjectBox onClick={goTo200ok} last>
                 <S.ProjectImg>
                   <img src="/images/project/200ok.png" alt="project-img" />
                   <span class="overlay" />
@@ -157,10 +157,6 @@ const Project = ({ project }) => {
                       시각적인 형태로 제공하고, 그로 인해 사용자가 더 편리하게
                       이용할 수 있도록 제작
                     </div>
-                    {/* <span>
-                    <img src="images/icon/link.png" alt="more" />
-                    View More
-                  </span> */}
                   </S.ProjectContent>
                 </S.ProjectDescription>
               </S.ProjectBox>

@@ -20,16 +20,6 @@ export const DetailWrap = styled.div`
   left: 0px;
   z-index: 100;
   overflow-y: auto;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
-  video {
-    width: 600px;
-  } */
 `;
 
 export const Detail = styled.div`
