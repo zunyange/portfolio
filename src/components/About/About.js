@@ -55,7 +55,7 @@ const About = ({ about }) => {
             </S.SkillBox>
           </S.SkillWrap>
           <S.EduWrap one>
-            <S.EduTitle>Education</S.EduTitle>
+            <S.EduTitle one>Education</S.EduTitle>
             <S.EduBox>
               <S.Education>
                 <span>개발자를 위한 스터디 그룹</span>

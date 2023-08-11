@@ -162,7 +162,7 @@ const Resume = ({ resume }) => {
                           <S.StyledTdOne>{content}</S.StyledTdOne>
                           <S.StyledTd
                             style={
-                              id >= 8 && id <= 11 ? { fontWeight: 'Bold' } : {}
+                              id >= 7 && id <= 11 ? { fontWeight: 'Bold' } : {}
                             }
                           >
                             {degree}

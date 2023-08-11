@@ -207,6 +207,8 @@ export const EduWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: ${({ two }) => (two ? '0px 20px' : '')};
+    padding: ${({ three }) => (three ? '0px 20px 25px 20px' : '')};
   }
 `;
 
@@ -215,7 +217,7 @@ export const EduTitle = styled.div`
   font-size: 25px;
   font-family: fontEng;
   @media ${({ theme }) => theme.device.mobile} {
-    padding-bottom: 30px;
+    padding-bottom: ${({ one }) => (one ? '30px' : '')};
   }
 `;
 
