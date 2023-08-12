@@ -72,12 +72,11 @@ export const Content = styled.div`
   border-bottom: ${({ last }) => (last ? '0' : 'solid 1px #ccc')};
   padding-bottom: ${({ last }) => (last ? '0' : '25px')};
   a {
-    color: #e29999;
+    color: #e99999;
     text-decoration: none;
     font-weight: bold;
-    color: #e29999;
-    background-image: -webkit-linear-gradient(90deg, #e29999, #8b00ff);
-    border-bottom: 0.5px solid;
+    /* background-image: -webkit-linear-gradient(90deg, #e29999, #8b00ff); */
+
     @-webkit-keyframes hue {
       from {
         -webkit-filter: hue-rotate(0deg);
@@ -86,9 +85,22 @@ export const Content = styled.div`
         -webkit-filter: hue-rotate(-360deg);
       }
     }
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 3s infinite linear;
+    &:hover {
+      color: #000000;
+      border-bottom: 0.5px solid;
+      background-image: -webkit-linear-gradient(90deg, #369139, #e63c82);
+      @-webkit-keyframes hue {
+        from {
+          -webkit-filter: hue-rotate(0deg);
+        }
+        to {
+          -webkit-filter: hue-rotate(-360deg);
+        }
+      }
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: hue 3s infinite linear;
+    }
   }
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 14px;
