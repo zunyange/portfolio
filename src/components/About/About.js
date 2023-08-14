@@ -59,7 +59,7 @@ const About = ({ about }) => {
             <S.EduBox>
               <S.Education>
                 <span>개발자를 위한 스터디 그룹</span>
-                <div>2023.05 ~ 현재</div>
+                <div>2023.05 ~ </div>
               </S.Education>
               <S.Content title>AfterWe</S.Content>
               <S.Content>
