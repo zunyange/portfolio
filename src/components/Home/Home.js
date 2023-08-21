@@ -28,7 +28,7 @@ const Home = ({ home, onMoveAbout }) => {
       const link = document.createElement('a');
       link.href = '/images/jun/JunyoungKim_resume.pdf';
       link.target = '_blank';
-      link.download = 'JunyoungKim_resume.pdf';
+      link.download = '김준영_이력서.pdf';
 
       document.body.appendChild(link);
       link.click();
