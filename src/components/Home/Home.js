@@ -22,7 +22,22 @@ const Home = ({ home, onMoveAbout }) => {
   });
 
   const AskToAdmit = () => {
-    alert('이력서를 다운받으시겠습니까?');
+    const confirmed = window.confirm('이력서를 다운받으시겠습니까?');
+
+    if (confirmed) {
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = '/images/jun/JunyoungKim_resume.pdf';
+      link.target = '_blank';
+      link.download = 'JunyoungKim_resume.pdf'; // Change the filename if needed
+
+      // Append the link to the body and trigger a click event
+      document.body.appendChild(link);
+      link.click();
+
+      // Clean up: remove the link element
+      document.body.removeChild(link);
+    }
   };
 
   return (
