@@ -178,7 +178,7 @@ export const ImgWrap = styled.div`
     font-size: 12px;
     @media ${({ theme }) => theme.device.mobile} {
       font-size: 11px;
-      width: 40px;
+      width: 35px;
     }
   }
   @media ${({ theme }) => theme.device.tablet} {
