@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectDetail from './ProjectDetail/ProjectOne';
+import ProjectDetail from './ProjectOne';
 
 const Detail = () => {
   return (
