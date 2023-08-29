@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Nav from '../components/Nav/Nav';
 import Home from '../components/Home/Home.js';
 import About from '../components/About/About.js';
@@ -30,6 +30,17 @@ const Main = () => {
   const onMoveContact = () => {
     business.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+
+    if (
+      userAgent.indexOf('chrome') === -1 &&
+      userAgent.indexOf('mobile') !== -1
+    ) {
+      alert('본 페이지는 Google Chrome에 최적화되어 있습니다.');
+    }
+  }, []);
 
   return (
     <div>

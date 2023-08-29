@@ -4,7 +4,7 @@ export const Project = styled.div`
   height: 100vh;
   width: 100%;
   background-color: #f5fbff;
-  @media ${({ theme }) => theme.device.mobile} {
+  @media ${({ theme }) => theme.device.tablet} {
     height: auto;
   }
 `;
