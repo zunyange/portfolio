@@ -22,7 +22,21 @@ const Nav = ({
 
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
-  });
+
+    const handleResize = () => {
+      const viewportWidth = window.innerWidth;
+
+      if (viewportWidth > 768) {
+        setIsShowMenu(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('scroll', updateScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleClickOutside = event => {
     if (navRef.current && !navRef.current.contains(event.target)) {
