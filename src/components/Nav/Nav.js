@@ -36,7 +36,7 @@ const Nav = ({
       window.removeEventListener('scroll', updateScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [setIsShowMenu]);
 
   const handleClickOutside = event => {
     if (navRef.current && !navRef.current.contains(event.target)) {
