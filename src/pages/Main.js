@@ -38,7 +38,7 @@ const Main = () => {
       userAgent.indexOf('chrome') === -1 &&
       userAgent.indexOf('mobile') !== -1
     ) {
-      alert('본 페이지는 Google Chrome에 최적화되어 있습니다.');
+      alert('본 페이지는 Chrome PC버전에 최적화되어 있습니다.');
     }
   }, []);
 
