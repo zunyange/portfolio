@@ -34,11 +34,15 @@ const Main = () => {
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
 
+    const hasAlertBeenShown = localStorage.getItem('hasAlertBeenShown');
+
     if (
       userAgent.indexOf('chrome') === -1 &&
-      userAgent.indexOf('mobile') !== -1
+      userAgent.indexOf('mobile') !== -1 &&
+      !hasAlertBeenShown
     ) {
       alert('본 페이지는 Chrome PC버전에 최적화되어 있습니다.');
+      localStorage.setItem('hasAlertBeenShown', 'true');
     }
   }, []);
 
