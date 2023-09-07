@@ -8,7 +8,7 @@ export const Contact = styled.div`
     height: 39vh;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    height: 29vh;
+    height: 34vh;
   }
 `;
 
@@ -40,7 +40,7 @@ export const ContactWrap = styled.div`
   flex-direction: column;
   align-items: center;
   @media ${({ theme }) => theme.device.mobile} {
-    font-size: 12px;
+    font-size: 15px;
   }
 `;
 
@@ -56,8 +56,8 @@ export const GoTo = styled.div`
     gap: 15px;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    width: 330px;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    width: 165px;
   }
 `;
 
@@ -115,7 +115,7 @@ export const GoToGithub = styled.div`
     width: 17px;
     margin-right: 10px;
     @media ${({ theme }) => theme.device.mobile} {
-      width: 12px;
+      width: 15px;
     }
   }
 `;
