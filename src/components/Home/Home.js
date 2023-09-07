@@ -85,7 +85,7 @@ const Home = ({ home, onMoveAbout }) => {
               <S.GoToVelog src="/images/icon/velog.png" alt="Velog" />
             </a>
             <a
-              href="https://www.linkedin.com/in/junyoung-kim-067765281/"
+              href="https://www.linkedin.com/in/giveyoung530/"
               target="_blank"
               rel="noreferrer noopener"
             >

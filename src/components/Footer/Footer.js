@@ -17,7 +17,7 @@ const Footer = () => {
 const FooterWrap = styled.div`
   height: 100px;
   width: 100%;
-  background-color: rgba(246, 246, 246, 0.4);
+  background-color: rgba(245, 251, 255, 0.4);
   @media ${({ theme }) => theme.device.mobile} {
     height: 50px;
   }
