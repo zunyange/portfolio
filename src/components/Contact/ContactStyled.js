@@ -8,7 +8,7 @@ export const Contact = styled.div`
     height: 39vh;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    height: 34vh;
+    height: 42vh;
   }
 `;
 
@@ -57,7 +57,7 @@ export const GoTo = styled.div`
   }
   @media ${({ theme }) => theme.device.mobile} {
     grid-template-columns: 1fr;
-    width: 165px;
+    width: 175px;
   }
 `;
 
@@ -116,6 +116,7 @@ export const GoToGithub = styled.div`
     margin-right: 10px;
     @media ${({ theme }) => theme.device.mobile} {
       width: 15px;
+      margin-right: 12px;
     }
   }
 `;
