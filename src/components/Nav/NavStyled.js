@@ -28,19 +28,6 @@ export const NavWrap = styled.nav`
   }
 `;
 
-export const NavLogo = styled.img`
-  height: 40px;
-  @media only screen and (max-width: 1280px) {
-    height: 34px;
-  }
-  @media only screen and (max-width: 530px) {
-    height: 30px;
-  }
-  @media only screen and (max-width: 310px) {
-    height: 25px;
-  }
-`;
-
 export const NavContainer = styled.div`
   margin: 0 auto;
   width: 700px;
@@ -81,6 +68,9 @@ export const Menubar = styled.img`
     height: 30px;
     margin-left: 3%;
     cursor: pointer;
+  }
+  @media only screen and (max-width: 400px) {
+    margin-left: 4%;
   }
   @media only screen and (max-width: 310px) {
     height: 25px;

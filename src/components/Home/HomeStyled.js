@@ -50,7 +50,7 @@ export const Introduce = styled.div`
   font-family: 'fontEng';
   margin-top: 10px;
   @media ${({ theme }) => theme.device.mobile} {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 `;
 
