@@ -56,7 +56,7 @@ export const GoTo = styled.div`
     gap: 15px;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    width: 300px;
+    width: 330px;
     gap: 20px;
   }
 `;

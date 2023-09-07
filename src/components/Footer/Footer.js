@@ -7,7 +7,7 @@ const Footer = () => {
     <FooterWrap>
       <Width>
         <Footertext>
-          Copyright © 2023 KimJunyoung. All right reserved...
+          Copyright © 2023 KimJunyoung. All right reserved.
         </Footertext>
       </Width>
     </FooterWrap>
