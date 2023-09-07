@@ -57,7 +57,7 @@ export const GoTo = styled.div`
   }
   @media ${({ theme }) => theme.device.mobile} {
     grid-template-columns: 1fr;
-    width: 175px;
+    width: 200px;
   }
 `;
 
