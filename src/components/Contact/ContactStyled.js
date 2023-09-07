@@ -7,6 +7,9 @@ export const Contact = styled.div`
   @media ${({ theme }) => theme.device.tablet} {
     height: auto;
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    height: 29vh;
+  }
 `;
 
 export const ContactContainer = styled.div`
@@ -25,6 +28,10 @@ export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
   margin: 70px 0 40px 0;
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 35px;
+    margin: 50px 0 30px 0;
+  }
 `;
 
 export const ContactWrap = styled.div``;
