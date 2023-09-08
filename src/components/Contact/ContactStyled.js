@@ -10,18 +10,15 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   text-align: center;
   padding: 7% 0 4% 0;
-  @media ${({ theme }) => theme.device.mobile} {
-    padding: 9% 0 5% 0;
-    ${Contact} {
-      height: auto;
-    }
+  @media only screen and (max-width: 700px) {
+    padding: 13% 0 9% 0;
   }
 `;
 
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 35px;
   }
@@ -121,6 +118,9 @@ export const SendMail = styled(GoToGithub)`
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  @media ${({ theme }) => theme.device.mobile} {
+    padding-top: 14px;
+  }
   img {
     width: 20px;
   }

@@ -121,7 +121,7 @@ export const SkillWrap = styled.div`
     grid-template-columns: 1fr 2fr;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    width: 350px;
+    width: 380px;
     grid-template-columns: 1fr;
     display: flex;
     flex-wrap: wrap;
@@ -140,10 +140,8 @@ export const SkillTitle = styled.div`
 
 export const SkillBox = styled.div`
   display: flex;
-  width: 500px;
   overflow-wrap: normal;
   @media ${({ theme }) => theme.device.tablet} {
-    width: 430px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -178,11 +176,11 @@ export const ImgWrap = styled.div`
     font-size: 12px;
     @media ${({ theme }) => theme.device.mobile} {
       font-size: 11px;
-      width: 35px;
+      width: 25px;
     }
   }
   @media ${({ theme }) => theme.device.tablet} {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 70px;
   }
   @media ${({ theme }) => theme.device.mobile} {
