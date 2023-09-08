@@ -13,6 +13,9 @@ export const ResumeWrap = styled.div`
   text-align: center;
   width: 100%;
   margin-bottom: 80px;
+  @media ${({ theme }) => theme.device.mobile} {
+    margin-bottom: 50px;
+  }
 `;
 
 export const Title = styled.div`

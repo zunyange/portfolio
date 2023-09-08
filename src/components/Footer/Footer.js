@@ -15,12 +15,8 @@ const Footer = () => {
 };
 
 const FooterWrap = styled.div`
-  height: 100px;
   width: 100%;
-  background-color: rgba(245, 251, 255, 0.4);
-  @media ${({ theme }) => theme.device.mobile} {
-    height: 60px;
-  }
+  background-color: #f5fbff;
 `;
 
 const Footertext = styled.div`
@@ -30,6 +26,9 @@ const Footertext = styled.div`
   padding: 3% 0;
   font-size: 13px;
   color: #a4a4a4;
+  @media ${({ theme }) => theme.device.mobile} {
+    padding: 5% 0;
+  }
 `;
 
 export default Footer;

@@ -1,21 +1,17 @@
 import styled from 'styled-components';
 
 export const Contact = styled.div`
-  height: 30vh;
   width: 100%;
-  background-color: rgba(245, 251, 255, 0.4);
-
-  @media ${({ theme }) => theme.device.mobile} {
-    height: 44vh;
-  }
+  background-color: #f5fbff;
 `;
 
 export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 7% 0 4% 0;
   @media ${({ theme }) => theme.device.mobile} {
-    min-height: auto;
+    padding: 9% 0 5% 0;
     ${Contact} {
       height: auto;
     }
@@ -25,11 +21,9 @@ export const ContactContainer = styled.div`
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
-  margin: 70px 0 40px 0;
-
+  margin-bottom: 40px;
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 35px;
-    margin: 50px 0 40px 0;
   }
 `;
 
