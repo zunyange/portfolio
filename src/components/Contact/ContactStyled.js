@@ -4,11 +4,9 @@ export const Contact = styled.div`
   height: 30vh;
   width: 100%;
   background-color: rgba(245, 251, 255, 0.4);
-  @media ${({ theme }) => theme.device.tablet} {
-    height: 39vh;
-  }
+
   @media ${({ theme }) => theme.device.mobile} {
-    height: 42vh;
+    height: 44vh;
   }
 `;
 
@@ -31,7 +29,7 @@ export const Title = styled.div`
 
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 35px;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 40px 0;
   }
 `;
 
@@ -57,7 +55,7 @@ export const GoTo = styled.div`
   }
   @media ${({ theme }) => theme.device.mobile} {
     grid-template-columns: 1fr;
-    width: 200px;
+    width: 185px;
   }
 `;
 
