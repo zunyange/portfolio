@@ -32,32 +32,31 @@ const Main = () => {
     contact.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // useEffect(() => {
-  //   const userAgent = navigator.userAgent.toLowerCase();
-
-  //   const hasAlertBeenShown = localStorage.getItem('hasAlertBeenShown');
-
-  //   if (
-  //     userAgent.indexOf('chrome') === -1 &&
-  //     userAgent.indexOf('mobile') !== -1 &&
-  //     !hasAlertBeenShown
-  //   ) {
-  //     alert('본 페이지는 Chrome PC버전에 최적화되어 있습니다.');
-  //     localStorage.setItem('hasAlertBeenShown', 'true');
-  //   }
-  // }, []);
-
   useEffect(() => {
-    const isMobile = window.innerWidth <= 1024;
+    const userAgent = navigator.userAgent.toLowerCase();
 
     const hasAlertBeenShown = localStorage.getItem('hasAlertBeenShown');
 
-    if (isMobile && !hasAlertBeenShown) {
+    if (
+      userAgent.indexOf('chrome') === -1 &&
+      userAgent.indexOf('mobile') !== -1 &&
+      !hasAlertBeenShown
+    ) {
       alert('본 페이지는 Chrome PC버전에 최적화되어 있습니다.');
-
       localStorage.setItem('hasAlertBeenShown', 'true');
     }
   }, []);
+
+  // useEffect(() => {
+  //   console.log('Inside useEffect');
+  //   const isMobile = window.innerWidth <= 1024;
+  //   const hasAlertBeenShown = localStorage.getItem('hasAlertBeenShown');
+
+  //   if (isMobile && !hasAlertBeenShown) {
+  //     alert('This page is optimized for Chrome PC version.');
+  //     localStorage.setItem('hasAlertBeenShown', 'true');
+  //   }
+  // }, []);
 
   return (
     <div>
