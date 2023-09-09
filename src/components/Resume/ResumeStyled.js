@@ -180,7 +180,7 @@ export const CommitBox = styled.div`
     div {
       margin: 5px 0 0 0px;
       @media ${({ theme }) => theme.device.mobile} {
-        margin: 0;
+        margin-top: 5px;
         font-size: ${({ last }) => (last ? '12px' : '14px')};
         line-height: 23px;
       }
@@ -200,7 +200,7 @@ export const StudyWrap = styled(CommitBox)`
 export const StudyBox = styled.div`
   width: 400px;
   @media ${({ theme }) => theme.device.mobile} {
-    width: 300px;
+    width: 320px;
   }
 `;
 

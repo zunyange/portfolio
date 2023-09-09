@@ -126,6 +126,7 @@ export const SkillWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 30px 20px 20px 20px;
   }
 `;
 
@@ -176,7 +177,6 @@ export const ImgWrap = styled.div`
     font-size: 12px;
     @media ${({ theme }) => theme.device.mobile} {
       font-size: 11px;
-      width: 25px;
     }
   }
   @media ${({ theme }) => theme.device.tablet} {
