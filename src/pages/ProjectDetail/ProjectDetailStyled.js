@@ -37,6 +37,9 @@ export const Detail = styled.div`
   @media only screen and (max-width: 700px) {
     width: 600px;
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    margin: 32px 0 100px 0;
+  }
 
   @media ${({ theme }) => theme.device.mobile} {
     padding: 2rem;
