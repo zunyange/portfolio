@@ -28,7 +28,7 @@ export const ProjectWrap = styled.div`
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   @media ${({ theme }) => theme.device.tablet} {
     margin-top: 70px;
   }

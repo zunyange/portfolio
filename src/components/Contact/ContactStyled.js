@@ -9,7 +9,7 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 7% 0 4% 0;
+  padding: 6% 0 4% 0;
   @media only screen and (max-width: 700px) {
     padding: 13% 0 9% 0;
   }
@@ -18,9 +18,10 @@ export const ContactContainer = styled.div`
 export const Title = styled.div`
   font-family: fontEng;
   font-size: 40px;
-  margin-bottom: 55px;
+  margin-bottom: 70px;
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 35px;
+    margin-bottom: 55px;
   }
 `;
 
