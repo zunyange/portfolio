@@ -174,6 +174,9 @@ export const CommitBox = styled.div`
   }
   div {
     margin-left: ${({ one }) => (one ? '5px' : '0')};
+    strong {
+      font-family: fontBold;
+    }
   }
   @media ${({ theme }) => theme.device.tablet} {
     flex-wrap: wrap;
