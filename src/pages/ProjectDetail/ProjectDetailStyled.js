@@ -38,12 +38,9 @@ export const Detail = styled.div`
     width: 600px;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    margin: 32px 0 100px 0;
-  }
-
-  @media ${({ theme }) => theme.device.mobile} {
     padding: 2rem;
     border-radius: 12px;
+    margin: 32px 0 100px 0;
   }
 `;
 

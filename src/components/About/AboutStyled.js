@@ -114,7 +114,7 @@ export const SkillWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 1000px;
-  padding: 30px 20px;
+  padding: 30px 0px 30px 20px;
   border-bottom: solid 1px #ccc;
   @media ${({ theme }) => theme.device.tablet} {
     width: 700px;
@@ -141,6 +141,7 @@ export const SkillTitle = styled.div`
 
 export const SkillBox = styled.div`
   display: flex;
+  gap: 20px;
   overflow-wrap: normal;
   @media ${({ theme }) => theme.device.tablet} {
     display: flex;
@@ -148,14 +149,16 @@ export const SkillBox = styled.div`
   }
   @media ${({ theme }) => theme.device.mobile} {
     justify-content: space-evenly;
+    gap: 0px;
   }
 `;
 
 export const ImgWrap = styled.div`
-  margin-right: 30px;
+  margin-right: 10px;
   /* animation: 20s slide infinite linear; */
   img {
-    width: 60px;
+    width: 65px;
+    padding-bottom: 10px;
     /* @keyframes slide {
       from {
         transform: translateX(0);
@@ -169,12 +172,14 @@ export const ImgWrap = styled.div`
     } */
     @media ${({ theme }) => theme.device.mobile} {
       width: 55px;
+      padding-bottom: 0px;
     }
   }
   span {
     width: 55px;
     font-family: fontEng;
-    font-size: 12px;
+    font-size: 14px;
+
     @media ${({ theme }) => theme.device.mobile} {
       font-size: 11px;
     }

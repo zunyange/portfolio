@@ -55,9 +55,9 @@ export const Introduce = styled.div`
 `;
 
 export const SubIntroduce = styled.div`
-  font-size: 20px;
+  font-size: 22px;
   width: 850px;
-  line-height: 30px;
+  line-height: 38px;
   padding-top: 40px;
   display: inline-block;
   div {
@@ -67,6 +67,10 @@ export const SubIntroduce = styled.div`
   @media ${({ theme }) => theme.device.tablet} {
     width: 600px;
     display: ${({ responsive }) => (responsive ? 'inline-block' : 'none')};
+  }
+  @media only screen and (max-width: 640px) {
+    font-size: 20px;
+    line-height: 35px;
   }
   @media ${({ theme }) => theme.device.mobile} {
     width: 360px;
