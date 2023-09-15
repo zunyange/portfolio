@@ -82,8 +82,9 @@ const ProjectThree = () => {
                 등의 여러 스크롤 이벤트 처리
               </div>
               <div>
-                - 네트워크 요청을 위해 axios로 파일 다운로드 기능 : 좀더 많은
-                브라우저에 지원이 되며 확장성을 염두하여 fetch 대신 axios를 사용
+                - 네트워크 요청을 위해 axios로 파일 다운로드 기능 : 좀 더 많은
+                브라우저에 지원이 되고 보완성이 높으며 확장성을 염두하여 fetch
+                대신 axios를 사용
               </div>
             </S.Description>
             <S.ProjectImg>
