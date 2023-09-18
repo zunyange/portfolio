@@ -63,15 +63,16 @@ const About = ({ about }) => {
               </S.Education>
               <S.Content title>AfterWe</S.Content>
               <S.Content>
-                • &nbsp;Frontend 6명, Backend 3명으로 이루어진 스터디
-                그룹입니다.
+                • &nbsp;FE 6명, BE 3명으로 구성되어 상호보완적으로 문제를
+                접근하고 해결하는 능력을 함양하고 있습니다.
               </S.Content>
               <S.Content>
-                • &nbsp;CS 지식, JavaScript, React 등 기술적 질문에 대해
-                토론하며 학습하고 있습니다.
+                • &nbsp;지식을 배우는 것이 목표가 아닌 배우는 방법을 학습하는
+                과정을 연습합니다.
               </S.Content>
               <S.Content last>
-                • &nbsp;TypeScript 기반 사이드 프로젝트 진행 중입니다.
+                • &nbsp;스터디에서 얻은 지식 공유 및 토론으로 다시각 학습을 통한
+                개발 스킬을 향상시켰습니다.
               </S.Content>
             </S.EduBox>
           </S.EduWrap>
