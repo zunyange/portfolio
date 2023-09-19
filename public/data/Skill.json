@@ -12,8 +12,8 @@
     "name": "Styled-Component"
   },
   { "id": 4, "src": "/images/skill/TypeScript.svg", "name": "TypeScript" },
-  { "id": 5, "src": "/images/skill/Figma-Light.svg", "name": "Figma" },
-  { "id": 6, "src": "/images/skill/Jira.svg", "name": "Jira" },
-  { "id": 7, "src": "/images/skill/VSCode-Dark.svg", "name": "VSCode" },
-  { "id": 8, "src": "/images/skill/AWS-Light.svg", "name": "AWS" }
+  { "id": 5, "src": "/images/skill/Python.svg", "name": "Python" },
+  { "id": 6, "src": "/images/skill/AWS-Light.svg", "name": "AWS" },
+  { "id": 7, "src": "/images/skill/Jira.svg", "name": "Jira" },
+  { "id": 8, "src": "/images/skill/Figma-Light.svg", "name": "Figma" }
 ]
