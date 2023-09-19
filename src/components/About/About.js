@@ -116,12 +116,12 @@ const About = ({ about }) => {
                 있습니다.
               </S.Content>
               <S.Content>
-                • &nbsp;R 프로그래밍 언어를 사용하여 빅데이터 분석을
-                경험했습니다.
-              </S.Content>
-              <S.Content>
                 • &nbsp;소프트웨어 수업에서 프로그래밍 언어, 알고리즘, 데이터
                 구조 및 문제 해결 기술의 기초를 학습했습니다.
+              </S.Content>
+              <S.Content>
+                • &nbsp;R 프로그래밍 언어를 사용한 빅데이터 분석을 경험하여
+                데이터 이해 및 분석 역량을 다소 갖추었습니다.
               </S.Content>
             </S.EduBox>
           </S.EduWrap>
