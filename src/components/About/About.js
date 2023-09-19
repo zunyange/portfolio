@@ -72,7 +72,7 @@ const About = ({ about }) => {
               </S.Content>
               <S.Content last>
                 • &nbsp;스터디에서 얻은 지식 공유 및 토론으로 다시각 학습을 통한
-                개발 스킬을 향상시켰습니다.
+                개발 스킬을 향상시키고 있습니다.
               </S.Content>
             </S.EduBox>
           </S.EduWrap>
@@ -111,17 +111,13 @@ const About = ({ about }) => {
                 것부터 서비스의 질을 높여 더 나은 환경을 제공하기 위한 솔루션을
                 배웠습니다.
               </S.Content>
-              {/* <S.Content>
-                • &nbsp;이를 통해 어떠한 아이디어를 직접 그려내고 구현해내며
-                유저에게 빠르게 피드백을 받고 소통할 수 있다는 점에서 프론트엔드
-                개발자로 결정하게 됐습니다.
-              </S.Content> */}
-              {/* <S.Content>
-                • &nbsp;빅데이터 분석 및 디지털 융합역량을 겸비한 글로벌 관광
-              </S.Content> */}
               <S.Content>
                 • &nbsp;변화하는 산업에 탄력적으로 대처하고 다각적으로 탐구할 수
                 있습니다.
+              </S.Content>
+              <S.Content>
+                • &nbsp;R 프로그래밍 언어를 사용하여 빅데이터 분석을
+                경험했습니다.
               </S.Content>
               <S.Content>
                 • &nbsp;소프트웨어 수업에서 프로그래밍 언어, 알고리즘, 데이터
