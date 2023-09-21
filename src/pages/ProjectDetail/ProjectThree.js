@@ -70,9 +70,13 @@ const ProjectThree = () => {
               <img src="/images/project/Dabisu2.png" alt="Responsive-img" />
             </S.ProjectImg>
             <S.Description>
-              <span>반응형 UI 구현</span> <br />- 콘텐츠 목적에 맞춰 동적인
-              움직임으로 사용자에게 시각적인 흥미를 제공하기 위해 스크롤
-              애니메이션 효과 및 CSS로 Animation 구현
+              <span>반응형 UI 구현</span> <br /> - 웹사이트의 활력을 불어넣고
+              상호작용을 이끌어내기 위해 react-reveal 라이브러리를 사용하여
+              스크롤 애니메이션 구현
+              <div>
+                - 아동 콘텐츠에 맞춰 동적인 움직임으로 사용자에게 시각적인
+                흥미를 제공하기 위해 CSS Animation 사용
+              </div>
               <div>
                 - 브레이크 포인트 구간 내에 적용되는 콘텐츠 영역을 정리하며 웹
                 버전의 UI 시안을 기반으로 반응형 디자인을 직접 구상
@@ -120,6 +124,10 @@ const ProjectThree = () => {
               <div>
                 - 카테고리/키워드/페이지별 API 를 받아 해당 버튼 클릭시 data를
                 호출하여 패이지네이션 구현
+              </div>
+              <div>
+                - NAVER Maps JavaScript API 를 사용하여 지도 상에 여러 개의
+                마커를 클러스터링
               </div>
             </S.Description>
             <S.Description>

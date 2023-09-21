@@ -105,6 +105,9 @@ export const Content = styled.div`
       -webkit-animation: hue 3s infinite linear;
     }
   }
+  strong {
+    font-family: fontBold;
+  }
   @media ${({ theme }) => theme.device.mobile} {
     font-size: 14px;
     line-height: 23px;

@@ -76,11 +76,7 @@ const ProjectTwo = () => {
               <span>필터링</span> <br />- useSearchParams Hook을 사용하여 해당
               queryParameter 의 value를 불러오고, queryString을 통한 필터 기능
               구현
-              <div>
-                - searchParams는 URL의 queryParameter와 상호작용하는 인터페이스
-                역할을 하며, 사용자 작업에 따라 구성요소가 URL을 동적으로
-                업데이트하게 함
-              </div>
+              <div>- 추가</div>
               <div>
                 - 사용자의 궁금증을 불러일으키기 위해 모든 데이터를 가시화하지
                 않고, 편의성과 집중도를 높이기 위해 모달창을 사용하여 정보를
