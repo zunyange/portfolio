@@ -109,11 +109,8 @@ const ProjectThree = () => {
             </S.ClickMore>
             {isOpen && (
               <S.VideoWrap>
-                <video alt="signup" controls>
-                  <source
-                    src="https://github.com/zunyange/TIL/assets/114667764/da860e66-2fe3-4cd3-8503-2c10de65ca0e"
-                    type="video/mp4"
-                  />
+                <video alt="map function" controls>
+                  <source src="/images/jun/map.mov" type="video/mp4" />
                 </video>
               </S.VideoWrap>
             )}
@@ -122,12 +119,14 @@ const ProjectThree = () => {
               <br />- 사용자의 현재 위치를 받아와 지도 중심을 설정하고, 지역
               또는 가맹점 검색시 첫번째 데이터의 좌표를 중심으로 지도 이동
               <div>
-                - 카테고리/키워드/페이지별 API 를 받아 해당 버튼 클릭시 data를
-                호출하여 패이지네이션 구현
+                - 카테고리/키워드/페이지 별 API 를 받아 해당 버튼 클릭에 따라
+                data를 호출하여 페이지네이션 구현
               </div>
               <div>
-                - NAVER Maps JavaScript API 를 사용하여 지도 상에 여러 개의
-                마커를 클러스터링
+                - NAVER Maps JavaScript API 를 사용하여 마커 클러스터링 구현 :
+                마커 클러스터링은 여러 개의 마커를 하나의 클러스터로 표현하는
+                것으로, 지사의 총 갯수를 고려하여 간격 · 크기 · 마커 수 등을
+                개별적으로 정의함
               </div>
             </S.Description>
             <S.Description>
@@ -150,13 +149,3 @@ const ProjectThree = () => {
 };
 
 export default ProjectThree;
-
-// <S.Title>
-// 개성을 중시하는 1020을 위한 트렌디하고 합리적인 가격대의 의류 서비스
-// </S.Title>
-// <video alt="signup" controls>
-// <source
-//   src="https://github.com/wecode-bootcamp-korea/43-1st-200ok-frontend/assets/114667764/78d72fb3-c72d-4f6d-97f6-3af679b6db1e"
-//   type="video/mp4"
-// />
-// </video>
