@@ -74,9 +74,13 @@ const ProjectTwo = () => {
             </S.ProjectImg>
             <S.Description>
               <span>필터링</span> <br />- useSearchParams Hook을 사용하여 해당
-              queryParameter 의 value를 불러오고, queryString을 통한 필터 기능
-              구현
-              <div>- 추가</div>
+              query parameter 의 value를 불러오고, queryString을 통한 필터 기능
+              구현 : 사용자가 태그를 선택하거나 해제할 때 query parameter를
+              조작하여 선택한 태그를 URL에 반영하고 시각적으로 표시하는 데 사용
+              <div>
+                - 선택한 태그를 추적하고 필터링하는 데 선택한 태그의 속성을
+                반전시키고, 선택된 태그 목록을 업데이트하여 전달
+              </div>
               <div>
                 - 사용자의 궁금증을 불러일으키기 위해 모든 데이터를 가시화하지
                 않고, 편의성과 집중도를 높이기 위해 모달창을 사용하여 정보를
