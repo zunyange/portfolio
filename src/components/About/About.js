@@ -107,9 +107,8 @@ const About = ({ about }) => {
               </S.Education>
               <S.Content title>경기대학교</S.Content>
               <S.Content>
-                • &nbsp;고객 중심의 다양한 니즈를 파악하고 불편함을 해소시키는
-                것부터 서비스의 질을 높여 더 나은 환경을 제공하기 위한 솔루션을
-                배웠습니다.
+                • &nbsp;고객 중심의 니즈를 파악하고 문제를 해결하면서 서비스의
+                질을 높이기 위한 솔루션을 배웠습니다.
               </S.Content>
               <S.Content>
                 • &nbsp;변화하는 산업에 탄력적으로 대처하고 다각적으로 탐구할 수
