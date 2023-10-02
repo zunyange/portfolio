@@ -9,7 +9,7 @@
   {
     "id": 3,
     "src": "/images/skill/StyledComponents.svg",
-    "name": "Styled-Components"
+    "name": "Styled-components"
   },
   { "id": 4, "src": "/images/skill/TypeScript.svg", "name": "TypeScript" },
   { "id": 5, "src": "/images/skill/Python.svg", "name": "Python" },
