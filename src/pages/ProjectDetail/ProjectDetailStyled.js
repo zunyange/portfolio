@@ -178,17 +178,16 @@ export const Description = styled.div`
 `;
 
 export const ClickMore = styled.span`
-  display: flex;
-  padding: 0 0 5px 250px;
   font-size: 15px;
   font-family: fontLight;
+  padding-left: 275px;
+  line-height: 20px;
   cursor: pointer;
-  img {
-    width: 20px;
-    margin-right: 5px;
+  @media only screen and (max-width: 700px) {
+    padding-left: 110px;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    padding: 0 0 5px 80px;
+    padding-left: 100px;
     font-size: 13px;
   }
 `;

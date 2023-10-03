@@ -143,7 +143,7 @@ const ProjectTwo = () => {
               </div>
               <div>
                 - 백엔드 API와 연동하지 않고도 컴포넌트들로 이루어진 페이지 to
-                페이지 리뷰작성이 가능하도록 하드코딩
+                페이지 리뷰작성이 가능하도록 하드코딩 경험
               </div>
             </S.Description>
             <S.Description link>

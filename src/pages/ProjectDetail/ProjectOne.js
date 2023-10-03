@@ -66,7 +66,7 @@ const ProjectOne = () => {
               <img src="/images/project/200oksignup.png" alt="Signup img" />
             </S.ProjectImg>
             <S.Description>
-              <span>회원가입 페이지</span> <br />- 간단한 회원가입을 위해
+              <span>회원가입 페이지</span> <br />- 고객층에 맞춘 회원가입을 위해
               기혼여부와 같은 불필요한 추가 정보는 제외하는 등 회원가입 과정을
               간소화
               <div>
