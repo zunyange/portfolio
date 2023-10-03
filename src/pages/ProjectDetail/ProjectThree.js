@@ -26,7 +26,6 @@ const ProjectThree = () => {
           <S.Detail>
             <S.CloseBtn onClick={() => navigate(-2)}>
               <img src="/images/icon/close.png" alt="CloseBtn" />
-              CLOSE
             </S.CloseBtn>
             <S.ProjectTitle>Saedaron</S.ProjectTitle>
             <S.ProjectSubTitle>
@@ -129,7 +128,7 @@ const ProjectThree = () => {
                 개별적으로 정의함
               </div>
             </S.Description>
-            <S.Description>
+            <S.Description link>
               <a
                 href="https://dev.saedaron.com/"
                 target="_blank"
@@ -140,6 +139,10 @@ const ProjectThree = () => {
               >
                 🔗 실제 서비스가 운영중입니다.
               </a>
+              <S.CloseBtn2 onClick={() => navigate(-2)}>
+                <img src="/images/icon/close.png" alt="CloseBtn" />
+                CLOSE
+              </S.CloseBtn2>
             </S.Description>
           </S.Detail>
         </S.DetailWrap>

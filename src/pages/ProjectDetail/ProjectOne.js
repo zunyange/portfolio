@@ -25,7 +25,6 @@ const ProjectOne = () => {
           <S.Detail>
             <S.CloseBtn onClick={() => navigate(-2)}>
               <img src="/images/icon/close.png" alt="CloseBtn" />
-              CLOSE
             </S.CloseBtn>
             <S.ProjectTitle>200OK</S.ProjectTitle>
             <S.ProjectSubTitle>
@@ -107,9 +106,9 @@ const ProjectOne = () => {
               결제를 보류할 수 있도록 편의화
               <S.ShowCode onClick={handleOpen}>
                 {isOpen ? (
-                  <>▼ Close me</>
+                  <>🔻 Close me</>
                 ) : (
-                  <>▲ 체크박스 구현 과정 보고 싶다면? Click me!</>
+                  <>🔺 체크박스 구현 과정 보고 싶다면? Click me!</>
                 )}
               </S.ShowCode>
               {isOpen && (
@@ -130,7 +129,7 @@ const ProjectOne = () => {
                   바뀌기도 하고 다른 기능을 위한 useState가 존재하였기에 그
                   useState를 활용하자는 피드백이 있었다.{' '}
                   <p>
-                    5.{' '}
+                    5.
                     <c>
                       &nbsp;const [productList, setProductList] = useState([]);{' '}
                     </c>
@@ -146,7 +145,7 @@ const ProjectOne = () => {
                 </S.CodeWrap>
               )}
             </S.Description>
-            <S.Description>
+            <S.Description link>
               <a
                 href="https://bit.ly/3XLT7Vq"
                 target="_blank"
@@ -157,6 +156,10 @@ const ProjectOne = () => {
               >
                 🔗 프로젝트에 대한 회고가 블로그에 담겨있습니다.
               </a>
+              <S.CloseBtn2 onClick={() => navigate(-2)}>
+                <img src="/images/icon/close.png" alt="CloseBtn" />
+                CLOSE
+              </S.CloseBtn2>
             </S.Description>
           </S.Detail>
         </S.DetailWrap>

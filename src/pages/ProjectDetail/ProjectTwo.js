@@ -26,7 +26,6 @@ const ProjectTwo = () => {
           <S.Detail>
             <S.CloseBtn onClick={() => navigate(-2)}>
               <img src="/images/icon/close.png" alt="CloseBtn" />
-              CLOSE
             </S.CloseBtn>
             <S.ProjectTitle>Maehwa</S.ProjectTitle>
             <S.ProjectSubTitle>
@@ -64,9 +63,9 @@ const ProjectTwo = () => {
               </div>
               <S.ShowCode onClick={handleOpen}>
                 {isOpen ? (
-                  <>▼ Close me</>
+                  <>🔻 Close me</>
                 ) : (
-                  <>▲ Recoil 구현 과정 보고 싶다면? Click me!</>
+                  <>🔺 Recoil 구현 과정 보고 싶다면? Click me!</>
                 )}
               </S.ShowCode>
               {isOpen && (
@@ -147,7 +146,7 @@ const ProjectTwo = () => {
                 페이지 리뷰작성이 가능하도록 하드코딩
               </div>
             </S.Description>
-            <S.Description>
+            <S.Description link>
               <a
                 href="https://bit.ly/44B5uqh"
                 target="_blank"
@@ -158,6 +157,10 @@ const ProjectTwo = () => {
               >
                 🔗 프로젝트에 대한 회고가 블로그에 담겨있습니다.
               </a>
+              <S.CloseBtn2 onClick={() => navigate(-2)}>
+                <img src="/images/icon/close.png" alt="CloseBtn" />
+                CLOSE
+              </S.CloseBtn2>
             </S.Description>
           </S.Detail>
         </S.DetailWrap>

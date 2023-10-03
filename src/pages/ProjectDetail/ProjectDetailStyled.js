@@ -27,7 +27,7 @@ export const Detail = styled.div`
   width: 900px;
   max-width: 100%;
   box-sizing: border-box;
-  padding: 48px;
+  padding: 48px 48px 35px 48px;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px;
   margin: 32px auto;
@@ -61,6 +61,21 @@ export const CloseBtn = styled.div`
   color: #8a8a8a;
   right: 27px;
   top: 27px;
+  cursor: pointer;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+`;
+
+export const CloseBtn2 = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 17px;
+  font-family: fontBase;
+  color: #8a8a8a;
+  right: 27px;
   cursor: pointer;
   img {
     width: 22px;
@@ -136,6 +151,7 @@ export const Description = styled.div`
   line-height: 27px;
   padding: 0 10px;
   padding-top: ${({ point }) => (point ? '10px' : '0')};
+  padding-right: ${({ link }) => (link ? '0' : '10px')};
   span {
     font-size: 18px;
     font-family: fontBold;
@@ -150,7 +166,7 @@ export const Description = styled.div`
     box-shadow: inset 0 -10px 0 #e4ecf7;
   }
   a {
-    display: flex;
+    display: inline-block;
     text-decoration-line: none;
     margin-top: 40px;
   }
