@@ -1,9 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import * as S from './ProjectDetailStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectTwo = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
   //Scroll 위치 기억
   const location = useLocation();
   const { scrollPosition } = location.state || { scrollPosition: 0 };
@@ -56,6 +62,40 @@ const ProjectTwo = () => {
                 여러 상태들의 연관된 컴포넌트들을 유기적으로 관리할 수
                 있었습니다.
               </div>
+              <S.ShowCode onClick={handleOpen}>
+                {isOpen ? (
+                  <>▼ Close me</>
+                ) : (
+                  <>▲ Recoil 구현 과정 보고 싶다면? Click me!</>
+                )}
+              </S.ShowCode>
+              {isOpen && (
+                <S.CodeWrap>
+                  1. 우리 서비스의 기획상 모달 및 페이지 이동이 많아{' '}
+                  <c>&nbsp;Recoil </c>을 사용하였다. Redux는 Recoil에 비해
+                  상대적으로 코드를 작성하는 양이 많고 단기간 내에 완성해야
+                  했기에 작은 버그들을 감수해서라도 Recoil을 선택했다.
+                  <img src="/images/code/Recoil1.png" alt="Recoil-code" />
+                  2. <c>&nbsp;초기값 설정 </c> : Atom.js 파일을 생성해서 recoil
+                  설치 후, atom을 import 해주고 key 값은 useState에서의 현재
+                  상태값 변수를, default 값에는 초기값을 넣어주면 된다.
+                  <img src="/images/code/Recoil2.png" alt="Recoil-code" />
+                  3. <c>&nbsp;RecoilRoot </c> : Recoil 상태를 사용하는
+                  컴포넌트는 부모 트리 어딘가에 나타나는 RecoilRoot 가 필요하다.
+                  루트 컴포넌트가 RecoilRoot를 넣기에 가장 좋은 장소다.
+                  <img src="/images/code/Recoil3.png" alt="Recoil-code" />
+                  4. <c>&nbsp;Recoil 적용 </c> : 컴포넌트가 atom을 읽고 쓰게
+                  하기 위해서
+                  <c>&nbsp;useRecoilState() </c>를 아래와 같이 사용했다.
+                  <br />
+                  useRecoilState의 기능을 반으로 분리할 수도 있다.
+                  useRecoilValue 은 Recoil 상태의 값을 반환하고,
+                  useSetRecoilState은 Recoil 상태의 값을 업데이트하기 위한
+                  setter 함수를 반환하여 아래 코드 예시와 같이, 상황에 따라
+                  필요한 hook 을 사용하면 된다.
+                  <img src="/images/code/Recoil4.png" alt="Recoil-code" />
+                </S.CodeWrap>
+              )}
               <div>
                 <span>Point 2. </span>
                 <strong>디자인 라이브러리</strong>를 사용하여 다양한 디자인

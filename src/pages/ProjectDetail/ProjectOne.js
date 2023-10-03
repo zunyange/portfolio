@@ -1,9 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import * as S from './ProjectDetailStyled.js';
 import { Width } from '../../styles/common.js';
 
 const ProjectOne = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  };
   //Scroll 위치 기억
   const location = useLocation();
   const { scrollPosition } = location.state || { scrollPosition: 0 };
@@ -91,7 +96,7 @@ const ProjectOne = () => {
                 토큰을 저장하는 방식 적용
               </div>
               <div>
-                - checkbox를 통해 선택 제품에 의해 수량 변경 및 삭제가 가능하며
+                - Checkbox를 통해 선택 제품에 의해 수량 변경 및 삭제가 가능하며
                 선택한 제품의 총금액을 보여줌
               </div>
               <div>
@@ -100,6 +105,46 @@ const ProjectOne = () => {
               </div>
               - 최종 버튼은 쇼핑하기와 결제하기로 구분하여 해당 페이지에서
               결제를 보류할 수 있도록 편의화
+              <S.ShowCode onClick={handleOpen}>
+                {isOpen ? (
+                  <>▼ Close me</>
+                ) : (
+                  <>▲ 체크박스 구현 과정 보고 싶다면? Click me!</>
+                )}
+              </S.ShowCode>
+              {isOpen && (
+                <S.CodeWrap>
+                  1. 회원가입의 ‘약관동의’ 에서{' '}
+                  <c>&nbsp;new Array(숫자).fill </c> 문법을 사용하여 체크박스
+                  기능을 구현했었다. *체크박스는 2개뿐
+                  <img src="/images/code/Check1.png" alt="checkbox-code" />
+                  2. 따라서, 장바구니에서도 체크박스 기능이 필요하였기에
+                  재사용할 수 있다고 판단했다.
+                  <p>
+                    3. 각 체크박스의 선택 상태를 <c>&nbsp;checkedState </c>{' '}
+                    배열에 저장하고, <c>&nbsp;toggleSelected </c> 함수를
+                    호출하여 개별 체크박스의 선택 상태를 변경할 수 있다.
+                  </p>
+                  <img src="/images/code/Check2.png" alt="checkbox-code" />
+                  4. 1. 하지만, 장바구니에 담긴 상품에 따라 체크박스 개수가 계속
+                  바뀌기도 하고 다른 기능을 위한 useState가 존재하였기에 그
+                  useState를 활용하자는 피드백이 있었다.{' '}
+                  <p>
+                    5.{' '}
+                    <c>
+                      &nbsp;const [productList, setProductList] = useState([]);{' '}
+                    </c>
+                    에 map을 사용해서 들어오는 장바구니 리스트에 따라
+                    <br />
+                    <c>&nbsp;checkedState: !product.checkedState </c>를
+                    넣어주기로 했다.
+                  </p>
+                  <img src="/images/code/Check3.png" alt="checkbox-code" />
+                  6. 체크박스의 <c>&nbsp;name </c> 속성을 이용하여 장바구니의
+                  들어온 상품마다 name이 다르기 때문에 해당 상품을 찾아 선택
+                  상태를 변경하는 코드를 구현했다.
+                </S.CodeWrap>
+              )}
             </S.Description>
             <S.Description>
               <a

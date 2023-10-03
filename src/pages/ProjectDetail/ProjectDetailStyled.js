@@ -197,3 +197,29 @@ export const VideoWrap = styled.div`
     }
   }
 `;
+
+export const ShowCode = styled.div`
+  font-size: 15px;
+  font-family: fontLight;
+  cursor: pointer;
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 13px;
+  }
+`;
+
+export const CodeWrap = styled.div`
+  border: 1px rgb(164, 164, 164, 0.3) solid;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  img {
+    width: 100%;
+  }
+  c {
+    /* border: #f4f4f4;
+    border-radius: 5px; */
+    background-color: #ececec;
+    font-weight: bold;
+    font-size: 14px;
+  }
+`;
