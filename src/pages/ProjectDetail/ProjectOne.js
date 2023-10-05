@@ -6,6 +6,10 @@ import { Width } from '../../styles/common.js';
 const ProjectOne = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const goToHome = () => {
+    navigate('/');
+  };
+
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
@@ -17,10 +21,6 @@ const ProjectOne = () => {
   useEffect(() => {
     window.scrollTo(0, scrollPosition);
   }, [scrollPosition]);
-
-  const goToHome = () => {
-    navigate('/');
-  };
 
   return (
     <S.ProjectDetail>

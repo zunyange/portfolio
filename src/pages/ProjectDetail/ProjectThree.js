@@ -6,6 +6,10 @@ import { Width } from '../../styles/common.js';
 const ProjectThree = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const goToHome = () => {
+    navigate('/');
+  };
+
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
@@ -24,7 +28,7 @@ const ProjectThree = () => {
       <Width>
         <S.DetailWrap>
           <S.Detail>
-            <S.HomeBtn onClick={() => navigate(-2)}>
+            <S.HomeBtn onClick={goToHome}>
               <img src="/images/icon/home.png" alt="HomeBtn" />
             </S.HomeBtn>
             <S.ProjectTitle>Saedaron</S.ProjectTitle>

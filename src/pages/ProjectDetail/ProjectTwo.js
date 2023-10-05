@@ -6,6 +6,10 @@ import { Width } from '../../styles/common.js';
 const ProjectTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const goToHome = () => {
+    navigate('/');
+  };
+
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
@@ -24,7 +28,7 @@ const ProjectTwo = () => {
       <Width>
         <S.DetailWrap>
           <S.Detail>
-            <S.HomeBtn onClick={() => navigate(-2)}>
+            <S.HomeBtn onClick={goToHome}>
               <img src="/images/icon/home.png" alt="HomeBtn" />
             </S.HomeBtn>
             <S.ProjectTitle>Maehwa</S.ProjectTitle>
