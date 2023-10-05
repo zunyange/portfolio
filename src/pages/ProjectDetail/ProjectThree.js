@@ -24,9 +24,9 @@ const ProjectThree = () => {
       <Width>
         <S.DetailWrap>
           <S.Detail>
-            <S.CloseBtn onClick={() => navigate(-2)}>
-              <img src="/images/icon/close.png" alt="CloseBtn" />
-            </S.CloseBtn>
+            <S.HomeBtn onClick={() => navigate(-2)}>
+              <img src="/images/icon/home.png" alt="HomeBtn" />
+            </S.HomeBtn>
             <S.ProjectTitle>Saedaron</S.ProjectTitle>
             <S.ProjectSubTitle>
               <S.SubTitle>새다론 정보 서비스 구축 프로젝트</S.SubTitle>

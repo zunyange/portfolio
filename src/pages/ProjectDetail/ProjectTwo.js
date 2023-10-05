@@ -24,9 +24,9 @@ const ProjectTwo = () => {
       <Width>
         <S.DetailWrap>
           <S.Detail>
-            <S.CloseBtn onClick={() => navigate(-2)}>
-              <img src="/images/icon/close.png" alt="CloseBtn" />
-            </S.CloseBtn>
+            <S.HomeBtn onClick={() => navigate(-2)}>
+              <img src="/images/icon/home.png" alt="HomeBtn" />
+            </S.HomeBtn>
             <S.ProjectTitle>Maehwa</S.ProjectTitle>
             <S.ProjectSubTitle>
               <S.SubTitle>나에게 맞는 화장실을 찾는 서비스</S.SubTitle>

@@ -18,14 +18,18 @@ const ProjectOne = () => {
     window.scrollTo(0, scrollPosition);
   }, [scrollPosition]);
 
+  const goToHome = () => {
+    navigate('/');
+  };
+
   return (
     <S.ProjectDetail>
       <Width>
         <S.DetailWrap>
           <S.Detail>
-            <S.CloseBtn onClick={() => navigate(-2)}>
-              <img src="/images/icon/close.png" alt="CloseBtn" />
-            </S.CloseBtn>
+            <S.HomeBtn onClick={goToHome}>
+              <img src="/images/icon/home.png" alt="HomeBtn" />
+            </S.HomeBtn>
             <S.ProjectTitle>200OK</S.ProjectTitle>
             <S.ProjectSubTitle>
               <S.SubTitle>

@@ -52,14 +52,14 @@ export const ProjectTitle = styled.div`
   }
 `;
 
-export const CloseBtn = styled.div`
+export const HomeBtn = styled.div`
   position: absolute;
   display: flex;
   align-items: center;
   font-size: 17px;
   font-family: fontBase;
   color: #8a8a8a;
-  right: 27px;
+  right: 30px;
   top: 27px;
   cursor: pointer;
   img {
