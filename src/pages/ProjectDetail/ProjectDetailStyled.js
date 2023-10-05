@@ -68,7 +68,7 @@ export const HomeBtn = styled.div`
   }
 `;
 
-export const CloseBtn2 = styled.div`
+export const CloseBtn = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -81,6 +81,14 @@ export const CloseBtn2 = styled.div`
     width: 22px;
     height: 22px;
     margin-right: 5px;
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    padding-top: 25px;
+    font-size: 15px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
   }
 `;
 
@@ -150,7 +158,7 @@ export const ProjectImg = styled.div`
 export const Description = styled.div`
   line-height: 27px;
   padding: 0 10px;
-  padding-top: ${({ point }) => (point ? '10px' : '0')};
+  padding-top: ${({ point }) => (point ? '20px' : '0')};
   padding-right: ${({ link }) => (link ? '0' : '10px')};
   span {
     font-size: 18px;
@@ -174,6 +182,32 @@ export const Description = styled.div`
     padding: 0;
     line-height: 23px;
     font-size: 15px;
+  }
+`;
+
+export const Fruits = styled.div`
+  line-height: 27px;
+  padding: 25px 10px 15px 10px;
+  border-top: 1px rgb(164, 164, 164, 0.3) solid;
+  margin-top: 30px;
+  span {
+    font-size: 18px;
+    font-family: fontBold;
+    @media ${({ theme }) => theme.device.mobile} {
+      font-size: 15px;
+    }
+  }
+`;
+
+export const Leanred = styled.div`
+  line-height: 27px;
+  padding: 0 10px;
+  span {
+    font-size: 18px;
+    font-family: fontBold;
+    @media ${({ theme }) => theme.device.mobile} {
+      font-size: 15px;
+    }
   }
 `;
 

@@ -133,6 +133,34 @@ const ProjectThree = () => {
                 개별적으로 정의함
               </div>
             </S.Description>
+            <S.Fruits>
+              <span>성과</span>
+              <div>
+                - 서비스 운영을 위해 플로우가 부드럽게 느껴지도록 라이브러리 및
+                코드 최소화
+              </div>
+              <div>
+                - 현업 개발자의 코드 리뷰를 통한 지속적인 코드를 개선하여 제품
+                완성도와 품질 개선 및 웹 사이트 배포
+              </div>
+              <div> - 네이버 맵 API 를 활용한 위치기반 서비스 모듈 개발</div>
+            </S.Fruits>
+            <S.Leanred>
+              <span>배운 점</span>
+              <div>
+                - 백엔드와의 데이터 요청과 응답을 통해 원하는 데이터를 보내고
+                받아보면서 통신을 위해 실행되는 함수들의 구조를 변경해 가며
+                처리하는 방법을 훈련
+              </div>
+              <div>
+                - 유사한 서비스와 관련된 자료를 분석하고 장단점을 분류하여
+                팀원들과 디자인 및 기획 진행
+              </div>
+              <div>
+                - 브레이크 포인트별 콘텐츠 영역을 정리하며 웹 버전의 UI 시안을
+                기반으로 반응형 디자인을 직접 구상한 경험
+              </div>
+            </S.Leanred>
             <S.Description link>
               <a
                 href="https://dev.saedaron.com/"
@@ -144,10 +172,10 @@ const ProjectThree = () => {
               >
                 🔗 실제 서비스가 운영중입니다.
               </a>
-              <S.CloseBtn2 onClick={() => navigate(-2)}>
+              <S.CloseBtn onClick={() => navigate(-2)}>
                 <img src="/images/icon/close.png" alt="CloseBtn" />
                 CLOSE
-              </S.CloseBtn2>
+              </S.CloseBtn>
             </S.Description>
           </S.Detail>
         </S.DetailWrap>

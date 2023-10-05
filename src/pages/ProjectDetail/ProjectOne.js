@@ -149,6 +149,26 @@ const ProjectOne = () => {
                 </S.CodeWrap>
               )}
             </S.Description>
+            <S.Fruits>
+              <span>성과</span>
+              <div>- 실제 웹서비스와 흡사한 형태의 기능 및 레이아웃 구성</div>
+              <div>
+                - 코드 스플리팅, 성능 효율화 및 UX 개선을 통해 사용자 친화적인
+                웹 구현 경험
+              </div>
+            </S.Fruits>
+            <S.Leanred>
+              <span>배운 점</span>
+              <div>
+                - 1주 내로 리액트를 빠르게 학습하여 즉각적으로 프로젝트에 적용
+              </div>
+              <div>
+                - 프론트엔드, 백엔드 개발자 5명이 기획 및 디자인을 구성하고
+                변경사항을 실시간으로 전달 ∙ 적용하며 집중적으로 소통하는 소프트
+                스킬 습득
+              </div>
+              <div>- AWS S3 저장소에 프론트엔드 웹페이지 배포</div>
+            </S.Leanred>
             <S.Description link>
               <a
                 href="https://bit.ly/3XLT7Vq"
@@ -160,10 +180,10 @@ const ProjectOne = () => {
               >
                 🔗 프로젝트에 대한 회고가 블로그에 담겨있습니다.
               </a>
-              <S.CloseBtn2 onClick={() => navigate(-2)}>
+              <S.CloseBtn onClick={() => navigate(-2)}>
                 <img src="/images/icon/close.png" alt="CloseBtn" />
                 CLOSE
-              </S.CloseBtn2>
+              </S.CloseBtn>
             </S.Description>
           </S.Detail>
         </S.DetailWrap>

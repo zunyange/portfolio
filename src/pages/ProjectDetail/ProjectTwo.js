@@ -150,6 +150,31 @@ const ProjectTwo = () => {
                 페이지 리뷰작성이 가능하도록 하드코딩 경험
               </div>
             </S.Description>
+            <S.Fruits>
+              <span>성과</span>
+              <div>
+                - 리액트 컴포넌트를 활용해 재사용성을 높이고, 버튼 등의 컴포넌트
+                요소를 다양한 페이지에 응용해 구현
+              </div>
+              <div>
+                - 상호의존성을 가진 특성인 Recoil 사용으로 여러 상태들의 연관된
+                컴포넌트들을 유기적으로 관리
+              </div>
+            </S.Fruits>
+            <S.Leanred>
+              <span>배운 점</span>
+              <div>
+                - 백엔드 측 API 문서가 지속적으로 변화하는 환경에서 적응하기
+                위해 Mock data를 적극적으로 활용
+              </div>
+              <div>
+                - React 컴포넌트화 과정을 통한 리액트의 이해도 향상, 필요성 체감
+              </div>
+              <div>
+                - Figma를 통해 팀원 모두가 동일한 프로덕트를 보고 구현하며,
+                필요한 데이터를 쉽게 구성하는 등의 디자인 툴 경험
+              </div>
+            </S.Leanred>
             <S.Description link>
               <a
                 href="https://bit.ly/44B5uqh"
@@ -161,10 +186,10 @@ const ProjectTwo = () => {
               >
                 🔗 프로젝트에 대한 회고가 블로그에 담겨있습니다.
               </a>
-              <S.CloseBtn2 onClick={() => navigate(-2)}>
+              <S.CloseBtn onClick={() => navigate(-2)}>
                 <img src="/images/icon/close.png" alt="CloseBtn" />
                 CLOSE
-              </S.CloseBtn2>
+              </S.CloseBtn>
             </S.Description>
           </S.Detail>
         </S.DetailWrap>
