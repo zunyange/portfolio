@@ -3,8 +3,6 @@ import * as S from './HomeStyled.js';
 import { Width } from '../../styles/common.js';
 
 const Home = ({ home, onMoveAbout }) => {
-  // const txt = '사용자 중심 설계에 중점을 둔 문제 해결사';
-  // const txt = '김준영';
   const txt =
     '안녕하세요! 끈기와 열정으로 문제를 해결하는 개발자, 김준영입니다.';
   const [text, setText] = useState('');
