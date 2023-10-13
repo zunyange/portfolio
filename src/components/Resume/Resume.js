@@ -49,9 +49,9 @@ const Resume = ({ resume }) => {
               <S.Content>
                 <div>
                   &nbsp;제 자신이 성장할 수 있는 일을 우선으로 찾아 계획적으로
-                  실천합니다. 웹 개발에 필요한 JavaScript를 기본으로, React.js,
-                  Vue와 같은 트렌드로 자주 다뤄지는 프레임워크를 학습할 뿐만
-                  아니라 더 나은 개발자 경험과 코드 퀄리티 향상을 위해
+                  실천합니다. 웹 개발에 필요한 JavaScript를 기본으로, Next.js
+                  13, Vue.js와 같은 트렌드로 자주 다뤄지는 프레임워크를 학습할
+                  뿐만 아니라 더 나은 개발자 경험과 코드 퀄리티 향상을 위해
                   TypeScript로{' '}
                   <a
                     href="https://github.com/afterWe/Run_Base_front-end"

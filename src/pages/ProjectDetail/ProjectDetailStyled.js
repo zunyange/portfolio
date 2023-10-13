@@ -213,7 +213,7 @@ export const Leanred = styled.div`
 
 export const ClickMore = styled.span`
   font-size: 15px;
-  font-family: fontLight;
+  font-family: fontBold;
   padding-left: 275px;
   line-height: 20px;
   cursor: pointer;
