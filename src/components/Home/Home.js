@@ -43,7 +43,7 @@ const Home = ({ home, onMoveAbout }) => {
             Web Frontend Developer
             <p>김준영</p>
           </S.Introduce>
-          <S.SubIntroduce laptop>
+          <S.SubIntroduce laptop="true">
             {text}
             <br />
             개발 커뮤니티 활동이나 프로젝트 등을 통해 다양한 개발 경험을 즐기고
@@ -56,7 +56,7 @@ const Home = ({ home, onMoveAbout }) => {
               비즈니스 성장에 적극적으로 임하겠습니다.
             </div>
           </S.SubIntroduce>
-          <S.SubIntroduce responsive>
+          <S.SubIntroduce responsive="true">
             {text}
             <br />
             개발 커뮤니티 활동이나 프로젝트 등을 통해 다양한 개발 경험을 즐기고

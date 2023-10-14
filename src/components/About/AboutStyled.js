@@ -197,9 +197,9 @@ export const EduWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 1000px;
-  padding: ${({ one }) => (one ? '30px 20px 0 20px' : '25px 20px 0 20px')};
-  border-bottom: ${({ three }) => (three ? 'solid 1px #ccc' : '0')};
-  padding-bottom: ${({ three }) => (three ? '30px' : '0')};
+  padding: ${({ first }) => (first ? '30px 20px 0 20px' : '25px 20px 0 20px')};
+  border-bottom: ${({ third }) => (third ? 'solid 1px #ccc' : '0')};
+  padding-bottom: ${({ third }) => (third ? '30px' : '0')};
   @media ${({ theme }) => theme.device.tablet} {
     width: 700px;
     grid-template-columns: 1fr 2fr;
@@ -210,8 +210,8 @@ export const EduWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: ${({ two }) => (two ? '0px 20px' : '')};
-    padding: ${({ three }) => (three ? '0px 20px 25px 20px' : '')};
+    padding: ${({ second }) => (second ? '0px 20px' : '')};
+    padding: ${({ third }) => (third ? '0px 20px 25px 20px' : '')};
   }
 `;
 
@@ -220,7 +220,7 @@ export const EduTitle = styled.div`
   font-size: 25px;
   font-family: fontEng;
   @media ${({ theme }) => theme.device.mobile} {
-    padding-bottom: ${({ one }) => (one ? '30px' : '')};
+    padding-bottom: ${({ first }) => (first ? '30px' : '')};
   }
 `;
 

@@ -16,7 +16,7 @@ const Resume = ({ resume }) => {
       <Width>
         <S.ResumeWrap>
           <S.Title>Resume</S.Title>
-          <S.ResumeBox one>
+          <S.ResumeBox one="true">
             <S.ContentTitle>Why Frontend?</S.ContentTitle>
             <S.ContentBox>
               <S.Subtitle>사용자 = 0순위</S.Subtitle>
@@ -42,7 +42,7 @@ const Resume = ({ resume }) => {
               </S.Content>
             </S.ContentBox>
           </S.ResumeBox>
-          <S.ResumeBox two>
+          <S.ResumeBox two="true">
             <S.ContentTitle>Challenge</S.ContentTitle>
             <S.ContentBox>
               <S.Subtitle>끊임없이 도전하며 변화를 즐기자!</S.Subtitle>
@@ -69,11 +69,11 @@ const Resume = ({ resume }) => {
               </S.Content>
             </S.ContentBox>
           </S.ResumeBox>
-          <S.ResumeBox three>
+          <S.ResumeBox three="true">
             <S.ContentTitle>For All</S.ContentTitle>
             <S.ContentBox>
               <S.Subtitle>꼼꼼하게 모두와 함께</S.Subtitle>
-              <S.Content last>
+              <S.Content last="true">
                 <div>
                   &nbsp;꼼꼼한 성격을 지니고 있어 작성한 프로그램의 유지 보수 및
                   인수 인계가 용이하도록 코드를 작성합니다. 기능이나 단위 별로
@@ -113,7 +113,7 @@ const Resume = ({ resume }) => {
             <S.PotentTitle>Potential</S.PotentTitle>
             <S.PotentBox>
               <S.Potent>Slow and Steady wins the race.</S.Potent>
-              <S.CommitBox one>
+              <S.CommitBox one="true">
                 <img src="images/jun/commit.png" alt="git-commit" />
                 <div>
                   <div>
@@ -127,11 +127,11 @@ const Resume = ({ resume }) => {
               </S.CommitBox>
             </S.PotentBox>
           </S.PotentWrap>
-          <S.PotentWrap last>
+          <S.PotentWrap last="true">
             <S.PotentTitle> </S.PotentTitle>
-            <S.PotentBox last>
+            <S.PotentBox last="true">
               <S.Potent> </S.Potent>
-              <S.StudyWrap last>
+              <S.StudyWrap last="true">
                 <S.StudyBox>
                   {data.map(({ id, title, content, degree }) => (
                     <S.Table key={id}>
