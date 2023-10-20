@@ -22,7 +22,7 @@ const About = ({ about }) => {
             </S.Profile>
             <S.ProfileBox>
               <S.Number>
-                <img src="images/icon/phfirst.png" alt="phfirst" />
+                <img src="images/icon/phone.png" alt="phone" />
                 &nbsp; 010-3186-3510
               </S.Number>
               <S.Mail>
