@@ -155,7 +155,7 @@ const Project = ({ project }) => {
                     <div>
                       소비자에게 한눈에 보고 이해할 수 있는 최소한의 정보를
                       시각적인 형태로 제공하고, 그로 인해 사용자가 더 편리하게
-                      이용할 수 있도록 제작
+                      이용할 수 있도록 구현
                     </div>
                   </S.ProjectContent>
                 </S.ProjectDescription>
