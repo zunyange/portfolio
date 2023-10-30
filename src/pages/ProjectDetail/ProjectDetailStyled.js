@@ -221,7 +221,7 @@ export const ClickMore = styled.span`
     padding-left: 110px;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    padding-left: 100px;
+    padding-left: 90px;
     font-size: 13px;
   }
 `;
