@@ -197,6 +197,7 @@ export const Fruits = styled.div`
   div {
     @media ${({ theme }) => theme.device.mobile} {
       font-size: 15px;
+      line-height: 24px;
     }
   }
 `;
@@ -207,15 +208,18 @@ export const Leanred = styled.div`
   span {
     font-size: 18px;
     font-family: fontBold;
+  }
+  div {
     @media ${({ theme }) => theme.device.mobile} {
       font-size: 15px;
+      line-height: 24px;
     }
   }
 `;
 
 export const ClickMore = styled.span`
   font-size: 15px;
-  font-family: fontBold;
+  font-family: fontLight;
   padding-left: 275px;
   line-height: 20px;
   cursor: pointer;
@@ -223,7 +227,7 @@ export const ClickMore = styled.span`
     padding-left: 110px;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    padding-left: 90px;
+    padding-left: 60px;
     font-size: 13px;
   }
 `;
