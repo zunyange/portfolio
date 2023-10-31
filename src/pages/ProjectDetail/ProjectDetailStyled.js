@@ -190,7 +190,7 @@ export const Fruits = styled.div`
   padding: 25px 10px 15px 10px;
   border-top: 1px rgb(164, 164, 164, 0.3) solid;
   margin-top: 30px;
-  span {
+  div {
     font-size: 18px;
     font-family: fontBold;
     @media ${({ theme }) => theme.device.mobile} {
