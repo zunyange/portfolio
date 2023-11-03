@@ -200,6 +200,9 @@ export const Fruits = styled.div`
       line-height: 24px;
     }
   }
+  @media ${({ theme }) => theme.device.mobile} {
+    padding: 25px 0px 15px 0px;
+  }
 `;
 
 export const Leanred = styled.div`
@@ -214,6 +217,9 @@ export const Leanred = styled.div`
       font-size: 15px;
       line-height: 24px;
     }
+  }
+  @media ${({ theme }) => theme.device.mobile} {
+    padding: 0px;
   }
 `;
 
