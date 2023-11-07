@@ -50,7 +50,7 @@ const ProjectTwo = () => {
             <S.ProjectImg>
               <img src="/images/project/MaehwaMain.png" alt="Main-img" />
             </S.ProjectImg>
-            <S.Description>
+            <S.Description main>
               '매화를 찾아서'는 실생활에서의 불편함에 착안하여 지도로 내 주변
               화장실을 발견하고, 실사용자들이 제공한 리뷰와 필터링을 통해 나에게
               더 맞는 장소를 찾을 수 있는 서비스입니다. 화장실을 찾는 유저

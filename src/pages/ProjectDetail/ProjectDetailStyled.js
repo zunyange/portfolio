@@ -179,7 +179,7 @@ export const Description = styled.div`
     margin-top: 40px;
   }
   @media ${({ theme }) => theme.device.mobile} {
-    padding: 0;
+    padding: ${({ main }) => (main ? '0 0 15px 0' : '0')};
     line-height: 23px;
     font-size: 15px;
   }

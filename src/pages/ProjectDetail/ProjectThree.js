@@ -50,7 +50,7 @@ const ProjectThree = () => {
             <S.ProjectImg>
               <img src="/images/project/DabisuMain.png" alt="Main-img" />
             </S.ProjectImg>
-            <S.Description>
+            <S.Description main>
               개발 부서의 모든 팀원과 지속적으로 소통 및 협업을 하였고, 현업
               개발자분들의 코드 리뷰를 통한 지속적인 코드를 개선하여 제품
               완성도와 품질을 높혔습니다. MVP 형태의 프로토타입을 구현하여 현재
