@@ -155,11 +155,7 @@ const ProjectOne = () => {
               )}
             </S.Description>
             <S.ShowVideo onClick={handleOpenMov}>
-              {isOpenMov ? (
-                <>2배속입니다. </>
-              ) : (
-                <>〈 전체 기능 구현 영상으로 확인하기 〉</>
-              )}
+              {isOpenMov ? <>2배속입니다. </> : <>〈 담당 기능 구현 영상 〉</>}
             </S.ShowVideo>
             {isOpenMov && (
               <S.VideoWrap>
@@ -186,7 +182,7 @@ const ProjectOne = () => {
                 변경사항을 실시간으로 전달 ∙ 적용하며 집중적으로 소통하는 소프트
                 스킬 습득
               </div>
-              <div>- AWS S3 저장소에 프론트엔드 웹페이지 배포</div>
+              <div>- AWS S3 저장소에 프론트엔드 웹 페이지 배포</div>
             </S.Leanred>
             <S.Description link>
               <a
