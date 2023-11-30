@@ -5,6 +5,7 @@ import { Width } from '../../styles/common.js';
 
 const ProjectOne = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenMov, setIsOpenMov] = useState(false);
 
   const goToHome = () => {
     navigate('/');
@@ -12,6 +13,10 @@ const ProjectOne = () => {
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleOpenMov = () => {
+    setIsOpenMov(!isOpenMov);
   };
   //Scroll 위치 기억
   const location = useLocation();
@@ -149,6 +154,20 @@ const ProjectOne = () => {
                 </S.CodeWrap>
               )}
             </S.Description>
+            <S.ShowVideo onClick={handleOpenMov}>
+              {isOpenMov ? (
+                <>2배속입니다. </>
+              ) : (
+                <>〈 전체 기능 구현 영상으로 확인하기 〉</>
+              )}
+            </S.ShowVideo>
+            {isOpenMov && (
+              <S.VideoWrap>
+                <video alt="full-function" controls>
+                  <source src="/images/jun/200ok_final.mov" type="video/mp4" />
+                </video>
+              </S.VideoWrap>
+            )}
             <S.Fruits>
               <span>성과</span>
               <div>- 실제 웹서비스와 흡사한 형태의 기능 및 레이아웃 구성</div>

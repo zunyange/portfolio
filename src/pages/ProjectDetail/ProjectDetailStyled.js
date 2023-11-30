@@ -238,6 +238,32 @@ export const ClickMore = styled.span`
   }
 `;
 
+export const ShowVideo = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-weight: bold;
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 15px;
+  }
+  cursor: pointer;
+  &:hover {
+    color: #000000;
+    background-image: -webkit-linear-gradient(90deg, #369139, #e63c82);
+    @-webkit-keyframes hue {
+      from {
+        -webkit-filter: hue-rotate(0deg);
+      }
+      to {
+        -webkit-filter: hue-rotate(-360deg);
+      }
+    }
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 3s infinite linear;
+  }
+`;
+
 export const VideoWrap = styled.div`
   margin-left: 13px;
   display: flex;
