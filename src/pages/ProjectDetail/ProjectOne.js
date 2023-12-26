@@ -164,14 +164,14 @@ const ProjectOne = () => {
                 </video>
               </S.VideoWrap>
             )}
-            <S.Fruits>
+            {/* <S.Fruits>
               <span>성과</span>
               <div>- 실제 웹서비스와 흡사한 형태의 기능 및 레이아웃 구성</div>
               <div>
                 - 코드 스플리팅, 성능 효율화 및 UX 개선을 통해 사용자 친화적인
                 웹 구현 경험
               </div>
-            </S.Fruits>
+            </S.Fruits> */}
             <S.Leanred>
               <span>배운 점</span>
               <div>
