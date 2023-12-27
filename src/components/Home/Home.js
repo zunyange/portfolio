@@ -20,7 +20,7 @@ const Home = ({ home, onMoveAbout }) => {
   });
 
   const AskToAdmit = () => {
-    const confirmed = window.confirm('이력서를 다운받으시겠습니까?');
+    const confirmed = window.confirm('이력서를 비공개해두었습니다.');
 
     if (confirmed) {
       const link = document.createElement('a');
@@ -29,7 +29,6 @@ const Home = ({ home, onMoveAbout }) => {
       link.download = '김준영_이력서.pdf';
 
       document.body.appendChild(link);
-      link.click();
 
       document.body.removeChild(link);
     }
