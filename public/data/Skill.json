@@ -12,7 +12,7 @@
     "name": "Styled-components"
   },
   { "id": 4, "src": "/images/skill/TypeScript.svg", "name": "TypeScript" },
-  { "id": 5, "src": "/images/skill/NextJS.svg", "name": "Next.js" },
+  { "id": 5, "src": "/images/skill/HTML.svg", "name": "HTML" },
   { "id": 6, "src": "/images/skill/AWS-Light.svg", "name": "AWS" },
   { "id": 7, "src": "/images/skill/Jira.svg", "name": "Jira" },
   { "id": 8, "src": "/images/skill/Figma-Light.svg", "name": "Figma" }
